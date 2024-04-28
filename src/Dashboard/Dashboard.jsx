@@ -127,7 +127,7 @@ const Dashboard = () => {
                 </ul>
             </div>
             {/* dahsboard content */}
-            <div className="flex-1  h-screen overflow-y-scroll no-scrollbar bg-slate-100 border">
+            <div className="flex-1 w-full h-screen overflow-y-scroll no-scrollbar bg-[#f3f4f7] border">
                 <DashNav></DashNav>
                 <Outlet></Outlet>
             </div>

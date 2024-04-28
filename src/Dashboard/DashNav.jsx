@@ -1,87 +1,89 @@
-import { FaBars, FaUser } from "react-icons/fa";
-import { Link } from "react-router-dom";
-import Swal from "sweetalert2";
-import useAuth from "../Hooks/useAuth";
+import { FaBars, FaSearch, FaUser } from "react-icons/fa";
 import { MdOutlineKeyboardArrowDown } from "react-icons/md";
+import Input from "../Components/Input";
+import { RiFullscreenFill } from "react-icons/ri";
+import { HiOutlineSquares2X2 } from "react-icons/hi2";
+import { RiGlobalLine } from "react-icons/ri";
+import { IoMdNotificationsOutline } from "react-icons/io";
+import { IoSettingsOutline } from "react-icons/io5";
+import { CgWorkAlt } from "react-icons/cg";
+import { FiUserPlus } from "react-icons/fi";
+import { TbClockMinus } from "react-icons/tb";
+import { FaRegQuestionCircle } from "react-icons/fa";
+import useAuth from "../Hooks/useAuth";
 
 
 const DashNav = () => {
-    const { user, logOut } = useAuth();
-    const navLinks = <>
-        <li><Link className='font-semibold text-white' to='/'><FaBars></FaBars></Link></li>
-        <li><Link className='font-semibold text-white' to='/whoUse'>Who Can Use</Link></li>
-        <li><Link className='font-semibold text-white' to='/faq'>FA questions</Link></li>
-        <li><Link className='font-semibold text-white' to='/login'>Login</Link></li>
-    </>
-    const handleLogOut = () => {
-        logOut()
-            .then(() => {
-                Swal.fire({
-                    position: "center",
-                    icon: "success",
-                    title: "Logout Successfully",
-                    showConfirmButton: false,
-                    timer: 1500
-                });
-            })
-            .catch(() => {
-                Swal.fire({
-                    position: "center",
-                    icon: "error",
-                    title: "Your work has been saved",
-                    showConfirmButton: false,
-                    timer: 1500
-                });
-            })
-    }
+    const { user } = useAuth()
+
     return (
         <>
-            <div className="navbar fixed z-10 bg-white bordertext-black">
-                <div className="navbar-start">
-                    {/* <div className="dropdown">
-                        <label tabIndex={0} className="btn btn-ghost lg:hidden">
-                            <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
-                        </label>
-                        <ul tabIndex={0} className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow  bg-slate-700 rounded-box w-52">
-                            {navLinks}
-                        </ul>
-                    </div> */}
-                    <div to='/' className="btn btn-ghost lg:text-xl flex items-center"><FaBars></FaBars></div>
-                    <div className="dropdown dropdown-bottom">
-                        <div tabIndex={0} role="button" className="flex items-center gap-3">Create New <MdOutlineKeyboardArrowDown></MdOutlineKeyboardArrowDown></div>
-                        <ul tabIndex={0} className="dropdown-content z-[1] menu p-2 shadow bg-base-100 w-52">
-                            <li><a>Item 1</a></li>
-                            <li><a>Item 2</a></li>
-                        </ul>
-                    </div>
-                </div>
-                <div className="navbar-center hidden lg:flex">
-                    <ul className="menu menu-horizontal px-1">
-                        {navLinks}
-                    </ul>
-                </div>
-                <div className="navbar-end">
-                    <div className="dropdown dropdown-left z-10">
-                        <label tabIndex={0} className="m-5">
-                            <div className="avatar">
-                                <div className="w-10 rounded-full ring ring-primary ring-offset-base-100 ring-offset-2">
-                                    {
-                                        user ? <div><img className="mr-3 w-[40px] rounded-full" src={user.photoURL} alt="" /></div> : <FaUser className='mx-auto text-3xl'></FaUser>
-                                    }
+            <div className="flex w-full justify-between items-center h-16 fixed z-10 bg-white bordertext-black">
+                <div className="navbar-start ml-7">
+                    <div className="flex items-center gap-8">
+                        <FaBars className="text-2xl"></FaBars>
+                        <div className="dropdown dropdown-bottom">
+                            <div tabIndex={0} role="">
+                                <div>
+                                    <h1 className="flex items-center gap-2">
+                                        Create New <MdOutlineKeyboardArrowDown className="text-2xl"></MdOutlineKeyboardArrowDown></h1>
                                 </div>
                             </div>
-                        </label>
-                        <ul tabIndex={0} className="dropdown-content z-[1] menu p-2 shadow bg-red-400 rounded-box w-52">
-                            <div>
-                                <div className='my-5 text-xs text-white'>User Email : <br />{user ? <>{user.email}</> : <span className='text-black font-bold'>You are not Logged in</span>}</div>
-
-                                <li><Link to='/dashboard' className='font-semibold text-gray-200 my-2 mx-auto'><button className='px-3 py-1 rounded-md bg-blue-500 hover:bg-orange-600  w-full'>Dashboard</button></Link></li>
-
-                                <li><Link className='font-semibold text-gray-200 mx-auto' ><button onClick={handleLogOut} className='px-3 py-1 rounded-md bg-blue-500 hover:bg-orange-600 w-full'>Log Out</button></Link></li>
-                            </div>
-                        </ul>
+                            <ul tabIndex={0} className="dropdown-content z-[1] menu p-2 shadow-xl bg-base-100 w-52">
+                                <li><a><CgWorkAlt></CgWorkAlt>New Projects</a></li>
+                                <li><a><FiUserPlus></FiUserPlus>Create Users</a></li>
+                                <li><a><TbClockMinus></TbClockMinus>Revenue Report</a></li>
+                                <li><a><IoSettingsOutline></IoSettingsOutline>Settings</a></li>
+                                <div className="divider"></div>
+                                <li><a><FaRegQuestionCircle></FaRegQuestionCircle>Help & Suppor</a></li>
+                            </ul>
+                        </div>
                     </div>
+                </div>
+                <div className="navbar-end">
+                    <div className="flex items-center gap-6">
+                        <div className="w-1/5 relative">
+                            <Input type="text" className="py-[7px]" placeholder="Search..." /> <FaSearch className="absolute right-2 bottom-2 text-[#d2d9dd]" ></FaSearch>
+                        </div>
+                        <div className="flex gap-5 mt-3">
+                            <RiFullscreenFill className="text-2xl font-bold"></RiFullscreenFill>
+                            <HiOutlineSquares2X2 className="text-2xl font-bold"></HiOutlineSquares2X2>
+                            <RiGlobalLine className="text-2xl font-bold"></RiGlobalLine>
+                            <IoMdNotificationsOutline className="text-2xl font-bold"></IoMdNotificationsOutline>
+                            <div className="flex items-center">
+                                <div>
+                                    <label tabIndex={0} className="m-5">
+                                        <div className="avatar">
+                                            <div className="w-[32px] rounded-full ">
+                                                {
+                                                    user ? <div><img className="mr-3 w-[32px] rounded-full" src={user.photoURL} alt="" /></div> : <FaUser className='mx-auto text-2xl'></FaUser>
+                                                }
 
+                                            </div>
+                                        </div>
+                                    </label>
+                                </div>
+                                <div className="dropdown dropdown-bottom">
+                                    <div tabIndex={0} role="button" className="flex items-center gap-3">
+                                        {
+                                            user ? <div>{user?.displayName}</div> : <></>
+                                        }
+                                    </div>
+                                    <ul tabIndex={0} className="dropdown-content z-[1] menu p-2 shadow bg-base-100 w-52">
+                                        <li><a>New Projects</a></li>
+                                        <li><a>Create Users</a></li>
+                                        <li><a>Revenue Report</a></li>
+                                        <li><a>Settings</a></li>
+                                        <div className="divider"></div>
+                                        <li><a>Help & Suppor</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div>
+                                <IoSettingsOutline className="text-2xl font-bold"></IoSettingsOutline>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </>
