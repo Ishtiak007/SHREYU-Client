@@ -14,7 +14,7 @@ import useAuth from "../Hooks/useAuth";
 
 
 const DashNav = () => {
-    const { user } = useAuth()
+    const { user } = useAuth();
 
     return (
         <>
@@ -46,10 +46,10 @@ const DashNav = () => {
                             <Input type="text" className="py-[7px]" placeholder="Search..." /> <FaSearch className="absolute right-2 bottom-2 text-[#d2d9dd]" ></FaSearch>
                         </div>
                         <div className="flex gap-5 mt-3">
-                            <RiFullscreenFill className="text-2xl font-bold"></RiFullscreenFill>
-                            <HiOutlineSquares2X2 className="text-2xl font-bold"></HiOutlineSquares2X2>
-                            <RiGlobalLine className="text-2xl font-bold"></RiGlobalLine>
-                            <IoMdNotificationsOutline className="text-2xl font-bold"></IoMdNotificationsOutline>
+                            <RiFullscreenFill className="text-2xl font-bold cursor-pointer"></RiFullscreenFill>
+                            <HiOutlineSquares2X2 className="text-2xl font-bold cursor-pointer"></HiOutlineSquares2X2>
+                            <RiGlobalLine className="text-2xl font-bold cursor-pointer"></RiGlobalLine>
+                            <IoMdNotificationsOutline className="text-2xl font-bold cursor-pointer"></IoMdNotificationsOutline>
                             <div className="flex items-center">
                                 <div>
                                     <label tabIndex={0} className="m-5">
@@ -80,7 +80,7 @@ const DashNav = () => {
                                 </div>
                             </div>
                             <div>
-                                <IoSettingsOutline className="text-2xl font-bold"></IoSettingsOutline>
+                                <IoSettingsOutline className="text-2xl font-bold cursor-pointer"></IoSettingsOutline>
                             </div>
                         </div>
                     </div>
