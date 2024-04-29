@@ -1,9 +1,9 @@
 import { Link, useLocation, useNavigate } from "react-router-dom";
-import Button from "../../Components/Button";
-import CoverImage from "../../Components/CoverImage";
 import image1 from '../../assets/loginDashboard.jpg'
 import useAuth from "../../Hooks/useAuth";
 import Swal from "sweetalert2";
+import Button from "../../Shared/Button";
+import CoverImage from "../../Shared/CoverImage";
 
 
 const Login = () => {
@@ -41,7 +41,7 @@ const Login = () => {
     }
     return (
         <div>
-            <CoverImage img={image1} title={'Login Now from here'} description={'Welcome to Shoe-Savant World'}></CoverImage>
+            <CoverImage img={image1} title={'Login Now from here'} description={'Welcome to SHREYU'}></CoverImage>
 
             <div className="hero min-h-[80vh] bg-base-200">
 

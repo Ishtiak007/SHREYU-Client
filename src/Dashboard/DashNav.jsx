@@ -1,6 +1,5 @@
 import { FaBars, FaSearch, FaUser } from "react-icons/fa";
 import { MdOutlineKeyboardArrowDown } from "react-icons/md";
-import Input from "../Components/Input";
 import { RiFullscreenFill } from "react-icons/ri";
 import { HiOutlineSquares2X2 } from "react-icons/hi2";
 import { RiGlobalLine } from "react-icons/ri";
@@ -11,6 +10,8 @@ import { FiUserPlus } from "react-icons/fi";
 import { TbClockMinus } from "react-icons/tb";
 import { FaRegQuestionCircle } from "react-icons/fa";
 import useAuth from "../Hooks/useAuth";
+import { Link } from "react-router-dom";
+import Input from "../Shared/Input";
 
 
 const DashNav = () => {
@@ -21,7 +22,7 @@ const DashNav = () => {
             <div className="flex w-full justify-between items-center h-16 fixed z-10 bg-white bordertext-black">
                 <div className="navbar-start ml-7">
                     <div className="flex items-center gap-8">
-                        <FaBars className="text-2xl"></FaBars>
+                        <Link to='/'><FaBars className="text-2xl"></FaBars></Link>
                         <div className="dropdown dropdown-bottom">
                             <div tabIndex={0} role="">
                                 <div>
