@@ -18,6 +18,10 @@ import { TbMapSearch } from "react-icons/tb";
 import { MdShare } from "react-icons/md";
 import { MdOutlineKeyboardArrowRight } from "react-icons/md";
 import { RiPassValidLine } from "react-icons/ri";
+import { FaUsers } from "react-icons/fa6";
+import { FaRegCalendarDays } from "react-icons/fa6";
+import { MdOutlineCalendarToday } from "react-icons/md";
+import { HiOutlineCalendarDays } from "react-icons/hi2";
 import DashLink from "../Shared/DashLink";
 
 
@@ -49,7 +53,19 @@ const Dashboard = () => {
                                     <Link to='/dashboard/validation'><DashLink><RiPassValidLine></RiPassValidLine>Validation<span><MdOutlineKeyboardArrowRight></MdOutlineKeyboardArrowRight></span></DashLink></Link>
                                 </li>
                                 <li>
-
+                                    <Link to='/dashboard/allEmployees'><DashLink><FaUsers></FaUsers>All Employees<span><MdOutlineKeyboardArrowRight></MdOutlineKeyboardArrowRight></span></DashLink></Link>
+                                </li>
+                                <li>
+                                    <Link to='/dashboard/validation'><DashLink><FaRegCalendarDays></FaRegCalendarDays>Holidays<span><MdOutlineKeyboardArrowRight></MdOutlineKeyboardArrowRight></span></DashLink></Link>
+                                </li>
+                                <li>
+                                    <Link to='/dashboard/validation'><DashLink><MdOutlineCalendarToday></MdOutlineCalendarToday>Leaves (Admin)<span><MdOutlineKeyboardArrowRight></MdOutlineKeyboardArrowRight></span></DashLink></Link>
+                                </li>
+                                <li>
+                                    <Link to='/dashboard/validation'><DashLink><HiOutlineCalendarDays></HiOutlineCalendarDays>Leaves (Employee)<span><MdOutlineKeyboardArrowRight></MdOutlineKeyboardArrowRight></span></DashLink></Link>
+                                </li>
+                                <li>
+                                    <Link to='/dashboard/validation'><DashLink><RiPassValidLine></RiPassValidLine>Leaves Settings<span><MdOutlineKeyboardArrowRight></MdOutlineKeyboardArrowRight></span></DashLink></Link>
                                 </li>
                             </div>
                             <hr className="mt-5" />

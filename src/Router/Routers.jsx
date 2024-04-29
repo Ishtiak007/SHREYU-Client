@@ -8,6 +8,7 @@ import Dashboard from "../Dashboard/Dashboard";
 import AdvancedTables from "../Pages/AdvancedTables/AdvancedTables";
 import BasicElements from "../Pages/Forms/BasicElements/BasicElements";
 import Validation from "../Pages/FormValidation/Validation/Validation";
+import AllEmployees from "../Pages/AllEmployees/AllEmployees";
 
 export const router = createBrowserRouter([
     {
@@ -39,6 +40,10 @@ export const router = createBrowserRouter([
             {
                 path: 'validation',
                 element: <Validation></Validation>
+            },
+            {
+                path: 'allEmployees',
+                element: <AllEmployees></AllEmployees>
             }
         ]
     }
