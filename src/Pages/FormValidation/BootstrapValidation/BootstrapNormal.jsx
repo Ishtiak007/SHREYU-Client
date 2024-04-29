@@ -100,7 +100,7 @@ const BootstrapNormal = () => {
                     </div>
 
                 </div>
-                <div className="flex gap-3 my-5">
+                <div className="flex items-center gap-3 my-5">
                     <label className="label cursor-pointer">
                         <input type="checkbox" defaultChecked className="checkbox checkbox-sm mx-auto" />
                     </label>
