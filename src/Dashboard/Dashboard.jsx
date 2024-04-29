@@ -56,7 +56,7 @@ const Dashboard = () => {
                                     <Link to='/dashboard/allEmployees'><DashLink><FaUsers></FaUsers>All Employees<span><MdOutlineKeyboardArrowRight></MdOutlineKeyboardArrowRight></span></DashLink></Link>
                                 </li>
                                 <li>
-                                    <Link to='/dashboard/validation'><DashLink><FaRegCalendarDays></FaRegCalendarDays>Holidays<span><MdOutlineKeyboardArrowRight></MdOutlineKeyboardArrowRight></span></DashLink></Link>
+                                    <Link to='/dashboard/holidays'><DashLink><FaRegCalendarDays></FaRegCalendarDays>Holidays<span><MdOutlineKeyboardArrowRight></MdOutlineKeyboardArrowRight></span></DashLink></Link>
                                 </li>
                                 <li>
                                     <Link to='/dashboard/validation'><DashLink><MdOutlineCalendarToday></MdOutlineCalendarToday>Leaves (Admin)<span><MdOutlineKeyboardArrowRight></MdOutlineKeyboardArrowRight></span></DashLink></Link>
