@@ -33,9 +33,65 @@ const Selectmenu = () => {
                         </select>
                     </div>
                 </div>
+                <Title heading={'SWITCHES'} subheading={'A switch has the markup of a custom checkbox but uses the .form-switch class to render a toggle switch. Switches also support the disabled attribute.'}></Title>
+
+                <div>
+                    <div className="flex items-center gap-4 my-7">
+                        <input type="checkbox" className="toggle toggle-primary" />
+                        <p>Toggle this switch element</p>
+                    </div>
+                    <div className="flex items-center gap-4 my-3">
+                        <input type="checkbox" className="toggle toggle-primary" disabled />
+                        <p>Disabled switch element</p>
+                    </div>
+                </div>
             </Container>
             <Container className="p-4 bg-white flex-1">
-                <Title heading={'SEARCH'} subheading={'A Table allowing search'}></Title>
+                <Title heading={'CHECKBOXES'}></Title>
+                <div>
+                    <div className="flex items-center gap-3">
+                        <label className="label cursor-pointer">
+                            <input type="checkbox" defaultChecked className="checkbox checkbox-primary checkbox-sm" />
+                        </label>
+                        <p>Check this custom checkbox</p>
+                    </div>
+                    <div className="flex items-center gap-3">
+                        <label className="label cursor-pointer">
+                            <input type="checkbox" defaultChecked className="checkbox checkbox-primary checkbox-sm" />
+                        </label>
+                        <p>Check this custom checkbox</p>
+                    </div>
+                </div>
+                <div className="my-5">
+                    <Title heading={'RADIOS'}></Title>
+                    <div className="flex items-center gap-3">
+                        <label className="label cursor-pointer">
+                            <input type="checkbox" defaultChecked className="checkbox checkbox-accent checkbox-sm" />
+                        </label>
+                        <p>Toggle this custom radio</p>
+                    </div>
+                    <div className="flex items-center gap-3">
+                        <label className="label cursor-pointer">
+                            <input type="checkbox" defaultChecked className="checkbox checkbox-accent checkbox-sm" />
+                        </label>
+                        <p>Or toggle this other custom radio</p>
+                    </div>
+                </div>
+                <div className="my-5">
+                    <Title heading={'DISABLED'}></Title>
+                    <div className="flex items-center gap-3">
+                        <label className="label cursor-pointer">
+                            <input type="checkbox" defaultChecked className="checkbox checkbox-sm" disabled />
+                        </label>
+                        <p>Check this custom checkbox</p>
+                    </div>
+                    <div className="flex items-center gap-3">
+                        <label className="label cursor-pointer">
+                            <input type="checkbox" defaultChecked className="checkbox checkbox-sm" disabled />
+                        </label>
+                        <p>Toggle this custom radio</p>
+                    </div>
+                </div>
             </Container>
         </div>
     );
