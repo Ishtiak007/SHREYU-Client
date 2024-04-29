@@ -37,6 +37,16 @@ const Dashboard = () => {
                             </li>
                             <hr className="mt-5" />
                             <div className="space-y-6">
+                                <h1 className="mt-3 ml-4 mb-2">MY TASKS</h1>
+                                <li>
+                                    <Link to='/dashboard/advancedTables'><DashLink><HiOutlineSquares2X2></HiOutlineSquares2X2> Tables<span><MdOutlineKeyboardArrowRight></MdOutlineKeyboardArrowRight></span></DashLink></Link>
+                                </li>
+                                <li>
+                                    <Link to='/dashboard'><DashLink><CiBookmark></CiBookmark> Forms<span><MdOutlineKeyboardArrowRight></MdOutlineKeyboardArrowRight></span></DashLink></Link>
+                                </li>
+                            </div>
+                            <hr className="mt-5" />
+                            <div className="space-y-6">
                                 <h1 className="mt-3 ml-4 mb-2">APPS</h1>
                                 <li>
                                     <Link to='/dashboard'><DashLink><FaRegCalendarAlt></FaRegCalendarAlt> Calendar </DashLink></Link>

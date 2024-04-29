@@ -1,10 +1,13 @@
-import PaginationSort from "../Tables/PaginationSort";
+import PaginationSortComp from "../Tables/PaginationSortTable/PaginationSortComp";
+import SearchTables from "../Tables/SearchTables/SearchTables";
+
 
 
 const AdvancedTables = () => {
     return (
-        <div>
-            <PaginationSort></PaginationSort>
+        <div className="space-y-10">
+            <PaginationSortComp></PaginationSortComp>
+            <SearchTables></SearchTables>
         </div>
     );
 };

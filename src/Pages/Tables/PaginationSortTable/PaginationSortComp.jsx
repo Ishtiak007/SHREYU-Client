@@ -1,82 +1,81 @@
-import Container from "../../Shared/Container";
-import Pagination from "../../Shared/Pagination";
-import Title from "../../Shared/Title";
 
+import Container from '../../../Shared/Container';
+import Title from '../../../Shared/Title';
+import Pagination from '../../../Shared/Pagination';
 
-
-const PaginationSort = () => {
+const PaginationSortComp = () => {
     const userData = [
         {
-            "name": "Ataur Rahman",
-            "phoneNumber": "0176736724687",
-            "age": "45",
+            "name": "Sarah",
+            "phoneNumber": "+880 10XX XXXXXX",
+            "age": "25",
             "company": "MarcuricIT"
         },
         {
-            "name": "Ataur Rahman",
-            "phoneNumber": "0176736724687",
-            "age": "45",
-            "company": "MarcuricIT"
+            "name": "John",
+            "phoneNumber": "+880 14XX XXXXXX",
+            "age": "42",
+            "company": "McAfee Security,"
         },
         {
-            "name": "Ataur Rahman",
-            "phoneNumber": "0176736724687",
-            "age": "45",
-            "company": "MarcuricIT"
+            "name": "David",
+            "phoneNumber": "+880 13XX XXXXXX",
+            "age": "63",
+            "company": "Norton Antivirus"
         },
         {
-            "name": "Ataur Rahman",
+            "name": "Smith",
             "phoneNumber": "0176736724687",
-            "age": "45",
-            "company": "MarcuricIT"
+            "age": "55",
+            "company": "Netgear Switch"
         },
         {
-            "name": "Ataur Rahman",
-            "phoneNumber": "0176736724687",
+            "name": "Patel",
+            "phoneNumber": "01769999999",
             "age": "45",
-            "company": "MarcuricIT"
+            "company": "Internet of Things (IoT)"
         },
         {
-            "name": "Ataur Rahman",
-            "phoneNumber": "0176736724687",
-            "age": "45",
-            "company": "MarcuricIT"
+            "name": "Garcia",
+            "phoneNumber": "+880 11XX XXXXXX",
+            "age": "33",
+            "company": "Blockchain"
         },
         {
-            "name": "Ataur Rahman",
+            "name": "Jack",
             "phoneNumber": "0176736724687",
-            "age": "45",
-            "company": "MarcuricIT"
+            "age": "54",
+            "company": "Microsoft Azure"
         },
         {
-            "name": "Ataur Rahman",
-            "phoneNumber": "0176736724687",
-            "age": "45",
-            "company": "MarcuricIT"
+            "name": "Lizzie",
+            "phoneNumber": "+880 11XX XXXXXX",
+            "age": "50",
+            "company": "TP-Link Access Point"
         },
         {
-            "name": "Ataur Rahman",
+            "name": "Davey",
             "phoneNumber": "0176736724687",
-            "age": "45",
-            "company": "MarcuricIT"
+            "age": "47",
+            "company": "Kaspersky Total Security"
         },
         {
-            "name": "Ataur Rahman",
-            "phoneNumber": "0176736724687",
-            "age": "45",
-            "company": "MarcuricIT"
+            "name": "Marie",
+            "phoneNumber": "+880 14XX XXXXXX",
+            "age": "21",
+            "company": "Google LLC"
         },
         {
-            "name": "Ataur Rahman",
+            "name": "Alexander",
             "phoneNumber": "0176736724687",
             "age": "45",
-            "company": "MarcuricIT"
+            "company": "Samsung SSD"
         },
         {
-            "name": "Ataur Rahman",
-            "phoneNumber": "0176736724687",
-            "age": "45",
-            "company": "MarcuricIT"
+            "name": "Taylor-Smith",
+            "phoneNumber": "+880 16XX XXXXXX",
+            "age": "24",
+            "company": "Google Chrome"
         },
     ];
     return (
@@ -123,4 +122,4 @@ const PaginationSort = () => {
     );
 };
 
-export default PaginationSort;
+export default PaginationSortComp;
