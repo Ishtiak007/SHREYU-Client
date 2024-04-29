@@ -1,7 +1,6 @@
 import { Link, NavLink, Outlet } from "react-router-dom";
 import DashNav from "./DashNav";
 import logo from '../assets/logoDashboard.png'
-import { FaHome } from "react-icons/fa";
 import { FaRegCalendarAlt } from "react-icons/fa";
 import { BsChatLeftDots } from "react-icons/bs";
 import { CiMail } from "react-icons/ci";
