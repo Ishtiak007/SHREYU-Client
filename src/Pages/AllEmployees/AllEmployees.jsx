@@ -98,6 +98,12 @@ const AllEmployees = () => {
                     <Button className='p-2 text-white'>Add Employee</Button>
                 </div>
             </div>
+            <div className="flex items-center justify-around my-8">
+                <input type="text" placeholder="Employee ID" className="input input-bordered w-full max-w-xs" />
+                <input type="text" placeholder="Employee Name" className="input input-bordered w-full max-w-xs" />
+                <input type="text" placeholder="His/Her Work" className="input input-bordered w-full max-w-xs" />
+                <Button className='p-2 text-white'>Search employee</Button>
+            </div>
             <Container className="p-4">
                 <div className=" grid grid-cols-4 gap-5">
                     {
