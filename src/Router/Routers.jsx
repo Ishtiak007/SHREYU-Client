@@ -6,6 +6,7 @@ import Home from "../Pages/Home/Home";
 import Login from "../Pages/Login/Login";
 import Dashboard from "../Dashboard/Dashboard";
 import AdvancedTables from "../Pages/AdvancedTables/AdvancedTables";
+import BasicElements from "../Pages/Forms/BasicElements/BasicElements";
 
 export const router = createBrowserRouter([
     {
@@ -29,6 +30,10 @@ export const router = createBrowserRouter([
             {
                 path: 'advancedTables',
                 element: <AdvancedTables></AdvancedTables>
+            },
+            {
+                path: 'basicElement',
+                element: <BasicElements></BasicElements>
             }
         ]
     }

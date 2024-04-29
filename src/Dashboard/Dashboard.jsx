@@ -42,7 +42,13 @@ const Dashboard = () => {
                                     <Link to='/dashboard/advancedTables'><DashLink><HiOutlineSquares2X2></HiOutlineSquares2X2> Tables<span><MdOutlineKeyboardArrowRight></MdOutlineKeyboardArrowRight></span></DashLink></Link>
                                 </li>
                                 <li>
+                                    <Link to='/dashboard/basicElement'><DashLink><CiBookmark></CiBookmark> Forms<span><MdOutlineKeyboardArrowRight></MdOutlineKeyboardArrowRight></span></DashLink></Link>
+                                </li>
+                                <li>
                                     <Link to='/dashboard'><DashLink><CiBookmark></CiBookmark> Forms<span><MdOutlineKeyboardArrowRight></MdOutlineKeyboardArrowRight></span></DashLink></Link>
+                                </li>
+                                <li>
+
                                 </li>
                             </div>
                             <hr className="mt-5" />
@@ -124,7 +130,7 @@ const Dashboard = () => {
                 </ul>
             </div>
             {/* dahsboard content */}
-            <div className="flex-1 w-full h-screen overflow-y-scroll no-scrollbar bg-[#f3f4f7] border">
+            <div className="flex-1 w-full h-screen overflow-y-scroll bg-[#f3f4f7] border">
                 <DashNav></DashNav>
                 <div className="p-7 mt-12">
                     <Outlet></Outlet>
