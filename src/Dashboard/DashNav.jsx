@@ -1,4 +1,4 @@
-import { FaBars, FaSearch, FaUser } from "react-icons/fa";
+import { FaHome, FaSearch, FaUser } from "react-icons/fa";
 import { MdOutlineKeyboardArrowDown } from "react-icons/md";
 import { RiFullscreenFill } from "react-icons/ri";
 import { HiOutlineSquares2X2 } from "react-icons/hi2";
@@ -22,7 +22,7 @@ const DashNav = () => {
             <div className="flex w-full justify-between items-center h-16 fixed z-10 bg-white bordertext-black">
                 <div className="navbar-start ml-7">
                     <div className="flex items-center gap-8">
-                        <Link to='/'><FaBars className="text-2xl"></FaBars></Link>
+                        <Link to='/'><FaHome className="text-2xl"></FaHome></Link>
                         <div className="dropdown dropdown-bottom">
                             <div tabIndex={0} role="">
                                 <div>

@@ -21,6 +21,7 @@ const EmployeeAttendance = () => {
 
 
             <Container className="p-4">
+
                 <div className='lg:flex gap-3'>
                     <div className='lg:flex-1'>
                         <div className="card bg-base-100 shadow-xl">
