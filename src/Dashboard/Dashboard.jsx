@@ -22,6 +22,7 @@ import { FaUsers } from "react-icons/fa6";
 import { FaRegCalendarDays } from "react-icons/fa6";
 import { MdOutlineCalendarToday } from "react-icons/md";
 import { HiOutlineCalendarDays } from "react-icons/hi2";
+import { MdMenuBook } from "react-icons/md";
 import DashLink from "../Shared/DashLink";
 
 
@@ -37,9 +38,6 @@ const Dashboard = () => {
                             <div>
                                 <img src={logo} className="w-[100px] ml-3 my-10" alt="Logo" />
                             </div>
-                            <li className="mt-6">
-                                <Link className="flex items-center gap-2 ml-4 hover:text-blue-500 focus:outline-none  focus:text-violet-500" to='/dashboard'><FaHome></FaHome> Dashboard</Link>
-                            </li>
                             <hr className="mt-5" />
                             <div className="space-y-6">
                                 <h1 className="mt-3 ml-4 mb-2">MY TASKS</h1>
@@ -63,6 +61,12 @@ const Dashboard = () => {
                                 </li>
                                 <li>
                                     <Link to='/dashboard/employeeLeaves'><DashLink><HiOutlineCalendarDays></HiOutlineCalendarDays>Leaves (Employee)<span><MdOutlineKeyboardArrowRight></MdOutlineKeyboardArrowRight></span></DashLink></Link>
+                                </li>
+                                <li>
+                                    <Link to='/dashboard/adminAttendance'><DashLink><MdMenuBook></MdMenuBook>Attendance Admin<span><MdOutlineKeyboardArrowRight></MdOutlineKeyboardArrowRight></span></DashLink></Link>
+                                </li>
+                                <li>
+                                    <Link to='/dashboard/employeeAttendance'><DashLink><MdMenuBook></MdMenuBook>Attendance Employee<span><MdOutlineKeyboardArrowRight></MdOutlineKeyboardArrowRight></span></DashLink></Link>
                                 </li>
                                 <li>
                                     <Link to='/dashboard/validation'><DashLink><RiPassValidLine></RiPassValidLine>Leaves Settings<span><MdOutlineKeyboardArrowRight></MdOutlineKeyboardArrowRight></span></DashLink></Link>
@@ -127,9 +131,6 @@ const Dashboard = () => {
                             </div>
                         </> :
                             <>
-                                <li>
-                                    <NavLink to='/dashboard/history'> Not Fot History</NavLink>
-                                </li>
                                 <li>
                                     <NavLink to='/dashboard/cart'> My Cart </NavLink>
                                 </li>

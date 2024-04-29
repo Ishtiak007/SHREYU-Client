@@ -12,6 +12,8 @@ import AllEmployees from "../Pages/AllEmployees/AllEmployees";
 import Holidays from "../Pages/Holidays/Holidays";
 import LeavesAdmin from "../Pages/LeavesAdmin/LeavesAdmin";
 import LeavesEmployee from "../Pages/LeavesEmployee/LeavesEmployee";
+import AdminAttendance from "../Pages/AdminAttendance/AdminAttendance";
+import EmployeeAttendance from "../Pages/EmployeeAttendance/EmployeeAttendance";
 
 export const router = createBrowserRouter([
     {
@@ -59,6 +61,14 @@ export const router = createBrowserRouter([
             {
                 path: 'employeeLeaves',
                 element: <LeavesEmployee></LeavesEmployee>
+            },
+            {
+                path: 'adminAttendance',
+                element: <AdminAttendance></AdminAttendance>
+            },
+            {
+                path: 'employeeAttendance',
+                element: <EmployeeAttendance></EmployeeAttendance>
             }
         ]
     }
