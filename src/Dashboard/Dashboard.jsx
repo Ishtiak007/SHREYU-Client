@@ -17,6 +17,7 @@ import { HiOutlineSquares2X2 } from "react-icons/hi2";
 import { TbMapSearch } from "react-icons/tb";
 import { MdShare } from "react-icons/md";
 import { MdOutlineKeyboardArrowRight } from "react-icons/md";
+import { RiPassValidLine } from "react-icons/ri";
 import DashLink from "../Shared/DashLink";
 
 
@@ -42,10 +43,10 @@ const Dashboard = () => {
                                     <Link to='/dashboard/advancedTables'><DashLink><HiOutlineSquares2X2></HiOutlineSquares2X2> Tables<span><MdOutlineKeyboardArrowRight></MdOutlineKeyboardArrowRight></span></DashLink></Link>
                                 </li>
                                 <li>
-                                    <Link to='/dashboard/basicElement'><DashLink><CiBookmark></CiBookmark> Forms<span><MdOutlineKeyboardArrowRight></MdOutlineKeyboardArrowRight></span></DashLink></Link>
+                                    <Link to='/dashboard/basicElement'><DashLink><CiBookmark></CiBookmark> Basic Elements<span><MdOutlineKeyboardArrowRight></MdOutlineKeyboardArrowRight></span></DashLink></Link>
                                 </li>
                                 <li>
-                                    <Link to='/dashboard'><DashLink><CiBookmark></CiBookmark> Forms<span><MdOutlineKeyboardArrowRight></MdOutlineKeyboardArrowRight></span></DashLink></Link>
+                                    <Link to='/dashboard/validation'><DashLink><RiPassValidLine></RiPassValidLine>Validation<span><MdOutlineKeyboardArrowRight></MdOutlineKeyboardArrowRight></span></DashLink></Link>
                                 </li>
                                 <li>
 
