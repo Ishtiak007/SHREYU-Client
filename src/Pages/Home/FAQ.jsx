@@ -52,7 +52,7 @@ const FAQ = () => {
                                 </div>
                                 <div className="collapse-content">
                                     <p className="text-sm">
-                                        As an admin, you have the authority to create new user accounts for employees. Simply log in to your admin account and navigate to the "User Management" section. Here, you'll find an option to add a new user. Fill in the necessary details such as name, email, and role, and the new account will be created.
+                                        As an admin, you have the authority to create new user accounts for employees. Simply log in to your admin account and navigate to the User Management section. Here, youll find an option to add a new user. Fill in the necessary details such as name, email, and role, and the new account will be created.
                                     </p>
                                 </div>
                             </div>
@@ -63,7 +63,7 @@ const FAQ = () => {
                                 </div>
                                 <div className="collapse-content">
                                     <p className="text-sm">
-                                        You can find contact details of other users or employees under the "Contacts" section. Here, you'll see a list of all registered users along with their contact information. You can search for specific users by name or filter by department or role.
+                                        You can find contact details of other users or employees under the Contacts section. Here, youll see a list of all registered users along with their contact information. You can search for specific users by name or filter by department or role.
                                     </p>
                                 </div>
                             </div>

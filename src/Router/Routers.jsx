@@ -14,6 +14,8 @@ import LeavesAdmin from "../Pages/LeavesAdmin/LeavesAdmin";
 import LeavesEmployee from "../Pages/LeavesEmployee/LeavesEmployee";
 import AdminAttendance from "../Pages/AdminAttendance/AdminAttendance";
 import EmployeeAttendance from "../Pages/EmployeeAttendance/EmployeeAttendance";
+import WhoCan from "../Pages/Home/WhoCan";
+import FAQ from "../Pages/Home/FAQ";
 
 export const router = createBrowserRouter([
     {
@@ -27,6 +29,14 @@ export const router = createBrowserRouter([
             {
                 path: '/login',
                 element: <Login></Login>
+            },
+            {
+                path: '/whoUse',
+                element: <WhoCan></WhoCan>
+            },
+            {
+                path: '/faq',
+                element: <FAQ></FAQ>
             }
         ]
     },
