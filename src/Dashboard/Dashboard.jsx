@@ -82,7 +82,7 @@ const Dashboard = () => {
                                         <Link to='/dashboard'><DashLink><IoStatsChart></IoStatsChart> Charts</DashLink></Link>
                                     </li>
                                     <li>
-                                        <Link to='/dashboard/paginationSlot'><DashLink><HiOutlineSquares2X2></HiOutlineSquares2X2> Tables<span><MdOutlineKeyboardArrowRight></MdOutlineKeyboardArrowRight></span></DashLink></Link>
+                                        <Link to='/dashboard/advancedTables'><DashLink><HiOutlineSquares2X2></HiOutlineSquares2X2> Tables<span><MdOutlineKeyboardArrowRight></MdOutlineKeyboardArrowRight></span></DashLink></Link>
                                     </li>
                                     <li>
                                         <Link to='/dashboard'><DashLink><TbMapSearch></TbMapSearch> Maps</DashLink></Link>

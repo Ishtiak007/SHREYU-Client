@@ -5,7 +5,7 @@ import MainLayout from "../Layout/MainLayout";
 import Home from "../Pages/Home/Home";
 import Login from "../Pages/Login/Login";
 import Dashboard from "../Dashboard/Dashboard";
-import PaginationSort from "../Pages/Tables/PaginationSort";
+import AdvancedTables from "../Pages/AdvancedTables/AdvancedTables";
 
 export const router = createBrowserRouter([
     {
@@ -27,8 +27,8 @@ export const router = createBrowserRouter([
         element: <Dashboard></Dashboard>,
         children: [
             {
-                path: 'paginationSlot',
-                element: <PaginationSort></PaginationSort>
+                path: 'advancedTables',
+                element: <AdvancedTables></AdvancedTables>
             }
         ]
     }
