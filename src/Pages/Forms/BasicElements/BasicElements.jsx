@@ -1,4 +1,5 @@
 import BasicEleForm from "../BasicEleForm/BasicEleForm";
+import BasicExample from "../BasicExample/BasicExample";
 import FloatingLabel from "../FloatingLabel/FloatingLabel";
 import Selectmenu from "../SelectMenu/Selectmenu";
 
@@ -9,6 +10,7 @@ const BasicElements = () => {
             <BasicEleForm></BasicEleForm>
             <Selectmenu></Selectmenu>
             <FloatingLabel></FloatingLabel>
+            <BasicExample></BasicExample>
         </div>
     );
 };
