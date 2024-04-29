@@ -28,7 +28,7 @@ import DashLink from "../Shared/DashLink";
 const Dashboard = () => {
     const isAdmin = true
     return (
-        <div className="flex">
+        <div className="lg:flex">
             {/* bashboard sidebar */}
             <div className="w-64 h-screen overflow-y-scroll no-scrollbar bg-white border">
                 <ul className="">
@@ -59,10 +59,10 @@ const Dashboard = () => {
                                     <Link to='/dashboard/holidays'><DashLink><FaRegCalendarDays></FaRegCalendarDays>Holidays<span><MdOutlineKeyboardArrowRight></MdOutlineKeyboardArrowRight></span></DashLink></Link>
                                 </li>
                                 <li>
-                                    <Link to='/dashboard/validation'><DashLink><MdOutlineCalendarToday></MdOutlineCalendarToday>Leaves (Admin)<span><MdOutlineKeyboardArrowRight></MdOutlineKeyboardArrowRight></span></DashLink></Link>
+                                    <Link to='/dashboard/adminLeaves'><DashLink><MdOutlineCalendarToday></MdOutlineCalendarToday>Leaves (Admin)<span><MdOutlineKeyboardArrowRight></MdOutlineKeyboardArrowRight></span></DashLink></Link>
                                 </li>
                                 <li>
-                                    <Link to='/dashboard/validation'><DashLink><HiOutlineCalendarDays></HiOutlineCalendarDays>Leaves (Employee)<span><MdOutlineKeyboardArrowRight></MdOutlineKeyboardArrowRight></span></DashLink></Link>
+                                    <Link to='/dashboard/employeeLeaves'><DashLink><HiOutlineCalendarDays></HiOutlineCalendarDays>Leaves (Employee)<span><MdOutlineKeyboardArrowRight></MdOutlineKeyboardArrowRight></span></DashLink></Link>
                                 </li>
                                 <li>
                                     <Link to='/dashboard/validation'><DashLink><RiPassValidLine></RiPassValidLine>Leaves Settings<span><MdOutlineKeyboardArrowRight></MdOutlineKeyboardArrowRight></span></DashLink></Link>

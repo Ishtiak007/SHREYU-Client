@@ -6,8 +6,8 @@ import Title from '../../../Shared/Title';
 
 const BasicExample = () => {
     return (
-        <div className="flex gap-8">
-            <Container className="p-4 bg-white flex-1">
+        <div className="lg:flex gap-8">
+            <Container className="p-4 bg-white lg:flex-1">
                 <Title heading={'BASIC EXAMPLE'}></Title>
                 <div className="space-y-4 my-5">
                     <form className="card-body">
@@ -26,7 +26,7 @@ const BasicExample = () => {
                                 <a href="#" className="label-text-alt link link-hover">Forgot password?</a>
                             </label>
                         </div>
-                        <div className="flex items-center gap-3">
+                        <div className="lg:flex items-center gap-3">
                             <label className="label cursor-pointer">
                                 <input type="checkbox" defaultChecked className="checkbox checkbox-sm" />
                             </label>
@@ -38,30 +38,30 @@ const BasicExample = () => {
                     </form>
                 </div>
             </Container>
-            <Container className="p-4 bg-white flex-1">
+            <Container className="p-4 bg-white lg:flex-1">
                 <Title heading={'HORIZONTAL FORM'}></Title>
                 <div className="my-5">
                     <Title heading={'FLOATING SELECTS'}></Title>
                     <div className='space-y-4'>
-                        <div className="flex flex-1 items-center justify-between">
+                        <div className="lg:flex lg:flex-1 items-center justify-between">
                             <label className="label">
                                 <span className="label-text text-[#4c4e60] font-bold text-sm">Email :</span>
                             </label>
                             <FormInput type="email" placeholder="email" className="input w-[65%]" required />
                         </div>
-                        <div className="flex flex-1 items-center  justify-between">
+                        <div className="lg:flex lg:flex-1 items-center  justify-between">
                             <label className="label">
                                 <span className="label-text text-[#4c4e60] font-bold text-sm">Password :</span>
                             </label>
                             <FormInput type="password" placeholder="password" className="input w-[65%]" required />
                         </div>
-                        <div className="flex flex-1 items-center  justify-between">
+                        <div className="lg:flex lg:flex-1 items-center  justify-between">
                             <label className="label">
                                 <span className="label-text text-[#4c4e60] font-bold text-sm">Re Password :</span>
                             </label>
                             <FormInput type="password" placeholder="Re password" className="input w-[65%]" required />
                         </div>
-                        <div className="flex items-center gap-3 justify-center">
+                        <div className="lg:flex items-center gap-3 justify-center">
                             <label className="label cursor-pointer">
                                 <input type="checkbox" defaultChecked className="checkbox checkbox-sm mx-auto" />
                             </label>

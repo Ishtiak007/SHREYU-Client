@@ -105,7 +105,7 @@ const AllEmployees = () => {
                 <Button className='p-2 text-white'>Search employee</Button>
             </div>
             <Container className="p-4">
-                <div className=" grid grid-cols-4 gap-5">
+                <div className=" lg:grid grid-cols-4 gap-5">
                     {
                         employees?.map(employees => <EmployeeCard key={employees.id} employees={employees}></EmployeeCard>)
                     }

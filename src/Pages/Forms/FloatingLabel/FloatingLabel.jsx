@@ -4,8 +4,8 @@ import Title from "../../../Shared/Title";
 
 const FloatingLabel = () => {
     return (
-        <div className="flex gap-8">
-            <Container className="p-4 bg-white flex-1">
+        <div className="lg:flex gap-8">
+            <Container className="p-4 bg-white lg:flex-1">
                 <Title heading={'FLOATING LABEL'}></Title>
                 <div className="space-y-4 my-5">
                     <div>
@@ -23,14 +23,14 @@ const FloatingLabel = () => {
                     </div>
                 </div>
             </Container>
-            <Container className="p-4 bg-white flex-1">
+            <Container className="p-4 bg-white lg:flex-1">
                 <Title heading={'FLOATING TEXTAREA'}></Title>
                 <div>
                     <textarea className="textarea textarea-bordered w-full" placeholder="Comment"></textarea>
                 </div>
                 <div className="my-5">
                     <Title heading={'FLOATING SELECTS'}></Title>
-                    <div className="flex items-center gap-3">
+                    <div className="lg:flex items-center gap-3">
                         <select className="select select-bordered w-full">
                             <option disabled selected>Who shot first?</option>
                             <option>Han Solo</option>

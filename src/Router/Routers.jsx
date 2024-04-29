@@ -10,6 +10,8 @@ import BasicElements from "../Pages/Forms/BasicElements/BasicElements";
 import Validation from "../Pages/FormValidation/Validation/Validation";
 import AllEmployees from "../Pages/AllEmployees/AllEmployees";
 import Holidays from "../Pages/Holidays/Holidays";
+import LeavesAdmin from "../Pages/LeavesAdmin/LeavesAdmin";
+import LeavesEmployee from "../Pages/LeavesEmployee/LeavesEmployee";
 
 export const router = createBrowserRouter([
     {
@@ -49,6 +51,14 @@ export const router = createBrowserRouter([
             {
                 path: 'holidays',
                 element: <Holidays></Holidays>
+            },
+            {
+                path: 'adminLeaves',
+                element: <LeavesAdmin></LeavesAdmin>
+            },
+            {
+                path: 'employeeLeaves',
+                element: <LeavesEmployee></LeavesEmployee>
             }
         ]
     }
