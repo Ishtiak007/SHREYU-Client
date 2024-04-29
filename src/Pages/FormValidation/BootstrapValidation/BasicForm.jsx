@@ -52,7 +52,7 @@ const BasicForm = () => {
                             type="password"
                             placeholder="password"
                             className="input input-bordered w-full " />
-                        {errors.userName && <span className='text-red-500'>This password field is required</span>}
+                        {errors.password && <span className='text-red-500'>This password field is required</span>}
                     </div>
 
                     <div className="form-control w-full my-6">
@@ -60,12 +60,12 @@ const BasicForm = () => {
                             <span className="label-text font-bold">Confirm Password</span>
                         </label>
                         <input
-                            {...register("password", { required: true })}
-                            name="password"
-                            type="password"
+                            {...register("confirmPassword", { required: true })}
+                            name="confirmPassword"
+                            type="confirmPassword"
                             placeholder="confirm password"
                             className="input input-bordered w-full " />
-                        {errors.userName && <span className='text-red-500'>This confirm field is required</span>}
+                        {errors.confirmPassword && <span className='text-red-500'>This confirmPassword field is required</span>}
                     </div>
                 </div>
 

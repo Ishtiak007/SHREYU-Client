@@ -3,6 +3,7 @@ import Title from "../../../Shared/Title";
 import BasicForm from "./BasicForm";
 import BootstrapNormal from "./BootstrapNormal";
 import BootstrapTooltip from "./BootstrapTooltip";
+import HorizontalForm from "./HorizontalForm";
 
 
 const BootstrapValidation = () => {
@@ -24,8 +25,8 @@ const BootstrapValidation = () => {
                     <BasicForm></BasicForm>
                 </Container>
                 <Container className="p-4 bg-white flex-1">
-                    <Title heading={'BOOTSTRAP VALIDATION (TOOLTIPS)'} subheading={'If your form layout allows it, you can swap the .valid | invalid-feedback classes for .valid | invalid-tooltip classes to display validation feedback in a styled tooltip.'}></Title>
-                    <BootstrapTooltip></BootstrapTooltip>
+                    <Title heading={'HORIZONTAL FORM'} subheading={'React validation with react-hook-form library.'}></Title>
+                    <HorizontalForm></HorizontalForm>
                 </Container>
             </div>
         </div>
