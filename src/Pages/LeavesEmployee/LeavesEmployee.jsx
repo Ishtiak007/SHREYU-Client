@@ -1,5 +1,9 @@
-import Button from "../../Shared/Button";
+
+import { GoDotFill } from "react-icons/go";
 import Container from "../../Shared/Container";
+import OutlineInput from "../../Shared/OutlineInput";
+import { BsThreeDotsVertical } from "react-icons/bs";
+import { FaEdit, FaTrash } from "react-icons/fa";
 
 
 const LeavesEmployee = () => {
@@ -162,39 +166,86 @@ const LeavesEmployee = () => {
                     </div>
                 </div>
                 <div className="flex items-center gap-7">
-                    <Button className='p-2 text-white'>Add New</Button>
+                    <div className="flex items-center gap-7 ">
+                        <button onClick={() => document.getElementById('my_modal_4').showModal()} className='px-4 py-2 rounded-[18px] font-bold bg-[#FF902F] text-white'>+ Add Leave</button>
+
+                        {/* You can open the modal using document.getElementById('ID').showModal() method */}
+                        <dialog id="my_modal_4" className="modal ">
+                            <div className="modal-box ">
+                                <form method="dialog">
+                                    {/* if there is a button in form, it will close the modal */}
+                                    <button className="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">✕</button>
+                                </form>
+                                <div className="m-7 space-y-8">
+                                    <div>
+                                        <p className="text-[17px]">Leave Type*</p>
+                                        <select className="select select-bordered w-full my-2">
+                                            <option className="text-base" disabled selected>Select Leave Type</option>
+                                            <option className="text-base">Casual leave 12 days</option>
+                                            <option className="text-base">Medical Leave</option>
+                                            <option className="text-base">Lose of pay</option>
+                                        </select>
+                                    </div>
+                                    <div>
+                                        <p className="text-[17px]">From *</p>
+                                        <OutlineInput type="date" placeholder="from" className="input w-[350px] my-2" required ></OutlineInput>
+                                    </div>
+                                    <div>
+                                        <p className="text-[17px]">To *</p>
+                                        <OutlineInput type="date" placeholder="To" className="input w-[350px] my-2" required ></OutlineInput>
+                                    </div>
+                                    <div>
+                                        <p className="text-[17px]">Number of Days</p>
+                                        <OutlineInput className="input w-[350px] my-2 bg-[#E9E9EA] " disabled ></OutlineInput>
+                                    </div>
+                                    <div>
+                                        <p className="text-[17px]">Remaining Leaves</p>
+                                        <OutlineInput placeholder='12' className="input w-[350px] my-2 bg-[#E9E9EA]" ></OutlineInput>
+                                    </div>
+                                    <div>
+                                        <p className="text-[17px]">Leave Reason</p>
+                                        <OutlineInput className="input w-[350px] h-32 my-2" ></OutlineInput>
+                                    </div>
+                                    <div className="flex justify-center">
+                                        <button className='px-11 py-2 flex rounded-[18px] font-bold bg-[#FF902F] text-white'>Submit</button>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </dialog>
+                    </div>
                 </div>
             </div>
 
             <div className="flex justify-around gap-6 mt-4">
                 <div>
-                    <div className="card bg-base-100 shadow-xl">
+                    <div className="card w-[270px] h-28 bg-base-100">
                         <div className="card-body">
-                            <p>Other Leave</p>
+                            <p className="text-center">Other Leave</p>
                             <h2 className="card-title mx-auto">13</h2>
                         </div>
                     </div>
                 </div>
                 <div>
-                    <div className="card bg-base-100 shadow-xl">
+                    <div className="card w-[270px] h-28 bg-base-100">
                         <div className="card-body">
-                            <p>Remaining Leave</p>
+                            <p className="text-center">Remaining Leave</p>
                             <h2 className="card-title mx-auto">4</h2>
                         </div>
                     </div>
                 </div>
                 <div>
-                    <div className="card bg-base-100 shadow-xl">
+                    <div className="card w-[270px] h-28 bg-base-100">
                         <div className="card-body">
-                            <p>Medical Leave</p>
+                            <p className="text-center">Medical Leave</p>
                             <h2 className="card-title mx-auto">3</h2>
                         </div>
                     </div>
                 </div>
                 <div>
-                    <div className="card bg-base-100 shadow-xl">
+                    <div className="card w-[270px] h-28 bg-base-100">
                         <div className="card-body">
-                            <p>Annual Leave</p>
+                            <p className="text-center">Annual Leave</p>
                             <h2 className="card-title mx-auto">16</h2>
                         </div>
                     </div>
@@ -223,8 +274,14 @@ const LeavesEmployee = () => {
                                 <td className="text-base text-center">{leaveAdmin.to}</td>
                                 <td className="text-base text-center">{leaveAdmin.days}</td>
                                 <td className="text-base text-center">{leaveAdmin.reason}</td>
-                                <td className="text-base mt-3 text-center badge badge-accent badge-outline">{leaveAdmin.status}</td>
-                                <td className="text-base text-center cursor-pointer">Cancel</td>
+                                <td className="text-base mt-6 text-center badge badge-neutral badge-outline cursor-pointer"><GoDotFill className="text-green-500 p-[2px] border border-green-500 rounded-full mr-2"></GoDotFill>{leaveAdmin.status}</td>
+                                <td className="text-base text-center mx-auto cursor-pointer"><div className="dropdown">
+                                    <div tabIndex={0} role="button" className="mx-10"><BsThreeDotsVertical></BsThreeDotsVertical></div>
+                                    <ul tabIndex={0} className="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-28">
+                                        <li><a><FaTrash></FaTrash> Delete</a></li>
+                                        <li><a><FaEdit></FaEdit> Edit</a></li>
+                                    </ul>
+                                </div></td>
                             </tr>)}
                         </tbody>
                     </table>

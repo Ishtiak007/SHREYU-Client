@@ -1,6 +1,5 @@
 
 import { FaEdit, FaTrash } from "react-icons/fa";
-import Button from "../../Shared/Button";
 import Container from "../../Shared/Container";
 import OutlineInput from "../../Shared/OutlineInput";
 import { BsThreeDotsVertical } from "react-icons/bs";
@@ -255,7 +254,7 @@ const LeavesAdmin = () => {
                                 <td className="text-base text-center">{leaveAdmin.reason}</td>
                                 <td className="text-base mt-6 text-center badge badge-neutral badge-outline cursor-pointer"><GoDotFill className="text-green-500 p-[2px] border border-green-500 rounded-full mr-2"></GoDotFill>{leaveAdmin.status}</td>
                                 <td className="text-base text-center mx-auto cursor-pointer"><div className="dropdown">
-                                    <div tabIndex={0} role="button" className="m-4"><BsThreeDotsVertical></BsThreeDotsVertical></div>
+                                    <div tabIndex={0} role="button" className="mx-10"><BsThreeDotsVertical></BsThreeDotsVertical></div>
                                     <ul tabIndex={0} className="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-28">
                                         <li><a><FaTrash></FaTrash> Delete</a></li>
                                         <li><a><FaEdit></FaEdit> Edit</a></li>
