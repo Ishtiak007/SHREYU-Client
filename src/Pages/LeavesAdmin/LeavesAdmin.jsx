@@ -1,7 +1,10 @@
 
+import { FaEdit, FaTrash } from "react-icons/fa";
 import Button from "../../Shared/Button";
 import Container from "../../Shared/Container";
 import OutlineInput from "../../Shared/OutlineInput";
+import { BsThreeDotsVertical } from "react-icons/bs";
+import { GoDotFill } from "react-icons/go";
 
 
 const LeavesAdmin = () => {
@@ -63,7 +66,7 @@ const LeavesAdmin = () => {
             "to": "25 Feb 2023",
             "days": "10 days",
             "reason": "Going to Hospital",
-            "status": "Declined",
+            "status": "Approved",
             "photo": "https://i.ibb.co/9qWGHvD/user6.jpg"
         },
         {
@@ -83,7 +86,7 @@ const LeavesAdmin = () => {
             "to": "17 Feb 2023",
             "days": "5 days",
             "reason": "Personal",
-            "status": "Declined",
+            "status": "Approved",
             "photo": "https://i.ibb.co/f8f5Srf/user9.jpg"
         },
     ]
@@ -153,33 +156,33 @@ const LeavesAdmin = () => {
 
             <div className="flex justify-around gap-6 mt-4">
                 <div>
-                    <div className="card bg-base-100 shadow-xl">
+                    <div className="card w-[270px] h-[110px] bg-base-100">
                         <div className="card-body">
-                            <p>Today Presents</p>
+                            <p className="text-center">Today Presents</p>
                             <h2 className="card-title mx-auto">5/8</h2>
                         </div>
                     </div>
                 </div>
                 <div>
-                    <div className="card bg-base-100 shadow-xl">
+                    <div className="card w-[270px] h-[110px] bg-base-100">
                         <div className="card-body">
-                            <p>Planned Leaves</p>
+                            <p className="text-center">Planned Leaves</p>
                             <h2 className="card-title mx-auto">9 days</h2>
                         </div>
                     </div>
                 </div>
                 <div>
-                    <div className="card bg-base-100 shadow-xl">
+                    <div className="card w-[270px] h-[110px] bg-base-100">
                         <div className="card-body">
-                            <p>Unplanned Leaves</p>
+                            <p className="text-center">Unplanned Leaves</p>
                             <h2 className="card-title mx-auto">0 days</h2>
                         </div>
                     </div>
                 </div>
                 <div>
-                    <div className="card bg-base-100 shadow-xl">
+                    <div className="card w-[270px] h-[110px] bg-base-100">
                         <div className="card-body">
-                            <p>Pending Requests</p>
+                            <p className="text-center">Pending Requests</p>
                             <h2 className="card-title mx-auto">12</h2>
                         </div>
                     </div>
@@ -188,30 +191,39 @@ const LeavesAdmin = () => {
 
 
             <div className="flex justify-around mt-10 items-center">
-                <div> <label className="input input-bordered flex items-center gap-2">
-                    Name
-                    <input type="text" className="grow" placeholder="Daisy" />
+                <div> <label className="input input-bordered flex items-center gap-2  w-40">
+                    Employee Name
+                    <input type="text" className="grow" />
                 </label>
-                </div>
-                <div> <label className="input input-bordered flex items-center gap-2">
-                    Name
-                    <input type="text" className="grow" placeholder="Daisy" />
-                </label>
-                </div>
-                <div> <select className="select select-bordered w-full max-w-xs">
-                    <option disabled selected>Who shot first?</option>
-                    <option>Han Solo</option>
-                    <option>Greedo</option>
-                </select>
-                </div>
-                <div> <select className="select select-bordered w-full max-w-xs">
-                    <option disabled selected>Who shot first?</option>
-                    <option>Han Solo</option>
-                    <option>Greedo</option>
-                </select>
                 </div>
                 <div>
-                    <Button className='p-2 text-white'>Search</Button>
+                    <select className="select select-bordered  w-40 my-2">
+                        <option className="text-base" disabled selected>Leave Type</option>
+                        <option className="text-base">Casual leave 12 days</option>
+                        <option className="text-base">Medical Leave</option>
+                        <option className="text-base">Lose of pay</option>
+                    </select>
+                </div>
+                <div>
+                    <select className="select select-bordered my-2  w-40">
+                        <option className="text-base" disabled selected>Leave Status</option>
+                        <option className="text-base">Casual leave 12 days</option>
+                        <option className="text-base">Medical Leave</option>
+                        <option className="text-base">Lose of pay</option>
+                    </select>
+                </div>
+                <div> <label className="input input-bordered flex items-center gap-2  w-40">
+                    From
+                    <input type="date" className="grow" />
+                </label>
+                </div>
+                <div> <label className="input input-bordered flex items-center gap-2  w-40">
+                    To
+                    <input type="date" className="grow" />
+                </label>
+                </div>
+                <div>
+                    <button className='py-3 px-3 bg-[#36BA45] rounded-md text-white w-40'>Search</button>
                 </div>
             </div>
             <Container className="p-4">
@@ -241,8 +253,14 @@ const LeavesAdmin = () => {
                                 <td className="text-base text-center">{leaveAdmin.to}</td>
                                 <td className="text-base text-center">{leaveAdmin.days}</td>
                                 <td className="text-base text-center">{leaveAdmin.reason}</td>
-                                <td className="text-base mt-6 text-center badge badge-accent badge-outline">{leaveAdmin.status}</td>
-                                <td className="text-base text-center cursor-pointer">Cancel</td>
+                                <td className="text-base mt-6 text-center badge badge-neutral badge-outline cursor-pointer"><GoDotFill className="text-green-500 p-[2px] border border-green-500 rounded-full mr-2"></GoDotFill>{leaveAdmin.status}</td>
+                                <td className="text-base text-center mx-auto cursor-pointer"><div className="dropdown">
+                                    <div tabIndex={0} role="button" className="m-4"><BsThreeDotsVertical></BsThreeDotsVertical></div>
+                                    <ul tabIndex={0} className="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-28">
+                                        <li><a><FaTrash></FaTrash> Delete</a></li>
+                                        <li><a><FaEdit></FaEdit> Edit</a></li>
+                                    </ul>
+                                </div></td>
                             </tr>)}
                         </tbody>
                     </table>
