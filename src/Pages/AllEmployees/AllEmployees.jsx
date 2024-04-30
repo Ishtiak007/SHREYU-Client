@@ -1,7 +1,6 @@
 import { FaBars } from "react-icons/fa";
 import { LuGanttChartSquare } from "react-icons/lu";
 import Container from "../../Shared/Container";
-import Button from "../../Shared/Button";
 import EmployeeCard from "./EmployeeCard";
 
 

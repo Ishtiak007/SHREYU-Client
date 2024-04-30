@@ -1,6 +1,9 @@
 
-import Button from "../../Shared/Button";
+import { FaEdit, FaTrash } from "react-icons/fa";
 import Container from "../../Shared/Container";
+import { BsThreeDotsVertical } from "react-icons/bs";
+import OutlineInput from "../../Shared/OutlineInput";
+
 
 
 const Holidays = () => {
@@ -59,7 +62,31 @@ const Holidays = () => {
                     </div>
                 </div>
                 <div className="flex items-center gap-7">
-                    <Button className='p-2 text-white'>Add Holiday</Button>
+                    <button onClick={() => document.getElementById('my_modal_3').showModal()} className='px-4 py-2 rounded-[18px] font-bold bg-[#FF902F] text-white'>+ Add Holiday</button>
+
+                    {/* You can open the modal using document.getElementById('ID').showModal() method */}
+                    <dialog id="my_modal_3" className="modal">
+                        <div className="modal-box">
+                            <form method="dialog">
+                                {/* if there is a button in form, it will close the modal */}
+                                <button className="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">✕</button>
+                            </form>
+                            <div className="m-7 space-y-8">
+                                <div>
+                                    <p className="text-sm">Holiday Name *</p>
+                                    <OutlineInput type="email" placeholder="Holiday Name" className="input w-[350px] my-1" required ></OutlineInput>
+                                </div>
+                                <div>
+                                    <p className="text-sm">Holiday *</p>
+                                    <OutlineInput type="date" placeholder="Holiday" className="input w-[350px] my-1" required ></OutlineInput>
+                                </div>
+                                <div className="flex justify-center">
+                                    <button className='px-11 py-2 flex rounded-[18px] font-bold bg-[#FF902F] text-white'>Submit</button>
+                                </div>
+                            </div>
+
+                        </div>
+                    </dialog>
                 </div>
             </div>
             <Container className="p-4">
@@ -80,7 +107,13 @@ const Holidays = () => {
                                 <td className="text-base text-center">{holiday.title}</td>
                                 <td className="text-base text-center">{holiday.holiday}</td>
                                 <td className="text-base text-center">{holiday.day}</td>
-                                <td className="text-base text-center mx-auto cursor-pointer">Delete</td>
+                                <td className="text-base text-center mx-auto cursor-pointer"><div className="dropdown">
+                                    <div tabIndex={0} role="button" className="m-4"><BsThreeDotsVertical></BsThreeDotsVertical></div>
+                                    <ul tabIndex={0} className="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-28">
+                                        <li><a><FaTrash></FaTrash> Delete</a></li>
+                                        <li><a><FaEdit></FaEdit> Edit</a></li>
+                                    </ul>
+                                </div></td>
                             </tr>)}
                         </tbody>
                     </table>
