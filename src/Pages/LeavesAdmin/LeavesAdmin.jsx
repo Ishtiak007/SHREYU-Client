@@ -1,6 +1,7 @@
 
 import Button from "../../Shared/Button";
 import Container from "../../Shared/Container";
+import OutlineInput from "../../Shared/OutlineInput";
 
 
 const LeavesAdmin = () => {
@@ -99,7 +100,54 @@ const LeavesAdmin = () => {
                     </div>
                 </div>
                 <div className="flex items-center gap-7">
-                    <Button className='p-2 text-white'>Add New</Button>
+                    <div className="flex items-center gap-7 ">
+                        <button onClick={() => document.getElementById('my_modal_4').showModal()} className='px-4 py-2 rounded-[18px] font-bold bg-[#FF902F] text-white'>+ Add Leave</button>
+
+                        {/* You can open the modal using document.getElementById('ID').showModal() method */}
+                        <dialog id="my_modal_4" className="modal ">
+                            <div className="modal-box ">
+                                <form method="dialog">
+                                    {/* if there is a button in form, it will close the modal */}
+                                    <button className="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">✕</button>
+                                </form>
+                                <div className="m-7 space-y-8">
+                                    <div>
+                                        <p className="text-[17px]">Leave Type*</p>
+                                        <select className="select select-bordered w-full my-2">
+                                            <option className="text-base" disabled selected>Select Leave Type</option>
+                                            <option className="text-base">Casual leave 12 days</option>
+                                            <option className="text-base">Medical Leave</option>
+                                            <option className="text-base">Lose of pay</option>
+                                        </select>
+                                    </div>
+                                    <div>
+                                        <p className="text-[17px]">From *</p>
+                                        <OutlineInput type="date" placeholder="from" className="input w-[350px] my-2" required ></OutlineInput>
+                                    </div>
+                                    <div>
+                                        <p className="text-[17px]">To *</p>
+                                        <OutlineInput type="date" placeholder="To" className="input w-[350px] my-2" required ></OutlineInput>
+                                    </div>
+                                    <div>
+                                        <p className="text-[17px]">Number of Days</p>
+                                        <OutlineInput className="input w-[350px] my-2 bg-[#E9E9EA] " disabled ></OutlineInput>
+                                    </div>
+                                    <div>
+                                        <p className="text-[17px]">Remaining Leaves</p>
+                                        <OutlineInput placeholder='12' className="input w-[350px] my-2 bg-[#E9E9EA]" ></OutlineInput>
+                                    </div>
+                                    <div>
+                                        <p className="text-[17px]">Leave Reason</p>
+                                        <OutlineInput className="input w-[350px] h-32 my-2" ></OutlineInput>
+                                    </div>
+                                    <div className="flex justify-center">
+                                        <button className='px-11 py-2 flex rounded-[18px] font-bold bg-[#FF902F] text-white'>Submit</button>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </dialog>
+                    </div>
                 </div>
             </div>
 
