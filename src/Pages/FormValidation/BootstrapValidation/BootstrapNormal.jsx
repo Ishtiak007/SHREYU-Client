@@ -1,5 +1,4 @@
 import { useForm } from "react-hook-form";
-import Button from "../../../Shared/Button";
 
 
 const BootstrapNormal = () => {
@@ -10,13 +9,14 @@ const BootstrapNormal = () => {
     return (
         <div className="space-y-4 my-5">
             <form onSubmit={handleSubmit(onSubmit)}>
-                <div className="lg:flex gap-6">
+                <div className=" gap-6">
                     <div className="form-control w-full my-6">
                         <label className="label">
                             <span className="label-text font-bold">First Name</span>
                         </label>
                         <input
                             {...register("firstName", { required: true })}
+                            defaultValue={"Jhon"}
                             name="firstName"
                             type="text"
                             placeholder="First Name"
@@ -30,6 +30,7 @@ const BootstrapNormal = () => {
                         </label>
                         <input
                             {...register("lastName", { required: true })}
+                            defaultValue={"Doe"}
                             name="lastName"
                             type="text"
                             placeholder="Last Name"
@@ -41,7 +42,7 @@ const BootstrapNormal = () => {
 
 
 
-                <div className="lg:flex gap-6">
+                <div className=" gap-6">
                     <div className="form-control w-full my-6">
                         <label className="label">
                             <span className="label-text font-bold">User Name</span>
@@ -71,7 +72,7 @@ const BootstrapNormal = () => {
 
 
 
-                <div className="lg:flex gap-6">
+                <div className=" gap-6">
                     <div className="form-control w-full my-6">
                         <label className="label">
                             <span className="label-text font-bold">State</span>
@@ -107,7 +108,7 @@ const BootstrapNormal = () => {
                     <p>Agree to terms and conditions</p>
                 </div>
                 <div>
-                    <Button className="p-2 text-white">Submit</Button>
+                    <button className="btn-primary btn text-white">Submit</button>
                 </div>
             </form>
         </div>

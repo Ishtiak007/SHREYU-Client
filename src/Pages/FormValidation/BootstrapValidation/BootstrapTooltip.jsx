@@ -1,6 +1,5 @@
 
 import { useForm } from 'react-hook-form';
-import Button from '../../../Shared/Button';
 
 const BootstrapTooltip = () => {
     const { register, handleSubmit, formState: { errors } } = useForm();
@@ -10,13 +9,14 @@ const BootstrapTooltip = () => {
     return (
         <div className="space-y-4 my-5">
             <form onSubmit={handleSubmit(onSubmit)}>
-                <div className="lg:flex gap-6">
+                <div className="gap-6">
                     <div className="form-control w-full my-6">
                         <label className="label">
                             <span className="label-text font-bold">First Name</span>
                         </label>
                         <input
                             {...register("firstName", { required: true })}
+                            defaultValue={"Jhon"}
                             name="firstName"
                             type="text"
                             placeholder="First Name"
@@ -30,6 +30,7 @@ const BootstrapTooltip = () => {
                         </label>
                         <input
                             {...register("lastName", { required: true })}
+                            defaultValue={"Doe"}
                             name="lastName"
                             type="text"
                             placeholder="Last Name"
@@ -41,7 +42,7 @@ const BootstrapTooltip = () => {
 
 
 
-                <div className="lg:flex gap-6">
+                <div className="gap-6">
                     <div className="form-control w-full my-6">
                         <label className="label">
                             <span className="label-text font-bold">User Name</span>
@@ -71,7 +72,7 @@ const BootstrapTooltip = () => {
 
 
 
-                <div className="lg:flex gap-6">
+                <div className=" gap-6">
                     <div className="form-control w-full my-6">
                         <label className="label">
                             <span className="label-text font-bold">State</span>
@@ -101,7 +102,7 @@ const BootstrapTooltip = () => {
 
                 </div>
                 <div>
-                    <Button className="p-2 text-white">Submit</Button>
+                    <button className="btn-primary btn text-white">Submit</button>
                 </div>
             </form>
         </div>
