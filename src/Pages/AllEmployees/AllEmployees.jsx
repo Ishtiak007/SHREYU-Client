@@ -94,18 +94,25 @@ const AllEmployees = () => {
                 </div>
                 <div className="flex items-center gap-7">
                     <LuGanttChartSquare className="text-2xl cursor-pointer"></LuGanttChartSquare>
-                    <FaBars className="text-2xl cursor-pointer"></FaBars>
-                    <Button className='p-2 text-white'>Add Employee</Button>
+                    <FaBars className="text-2xl cursor-pointer hover:text-[#FF902F]"></FaBars>
+                    <div>
+                        <button className="p-2 w-36 bg-[#FF902F] text-white rounded-3xl">Add Employee</button>
+                    </div>
                 </div>
             </div>
-            <div className="flex items-center justify-around my-8">
-                <input type="text" placeholder="Employee ID" className="input input-bordered w-full max-w-xs" />
-                <input type="text" placeholder="Employee Name" className="input input-bordered w-full max-w-xs" />
-                <input type="text" placeholder="His/Her Work" className="input input-bordered w-full max-w-xs" />
-                <Button className='p-2 text-white'>Search employee</Button>
+            <div className="lg:grid grid-cols-4 gap-5 my-3">
+                <input type="text" placeholder="Employee ID" className="input input-bordered w-[270px]" />
+                <input type="text" placeholder="Employee Name" className="input input-bordered w-[270px]" />
+                <select className="select select-bordered w-[270px]">
+                    <option className="font-bold text-base" disabled selected>Designation</option>
+                    <option className="font-bold">Jon doe</option>
+                    <option className="font-bold">Greedo</option>
+                    <option className="font-bold">John Smith</option>
+                </select>
+                <button className='p-[10px] bg-[#36BA45] rounded-md w-[270px] text-white'>Search employee</button>
             </div>
-            <Container className="p-4">
-                <div className=" lg:grid grid-cols-4 gap-5">
+            <Container>
+                <div className="lg:grid grid-cols-4 gap-5">
                     {
                         employees?.map(employees => <EmployeeCard key={employees.id} employees={employees}></EmployeeCard>)
                     }
