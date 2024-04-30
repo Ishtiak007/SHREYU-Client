@@ -1,4 +1,4 @@
-import Button from "../../../Shared/Button";
+
 import Container from "../../../Shared/Container";
 import Title from "../../../Shared/Title";
 
@@ -16,8 +16,8 @@ const InlineForm = () => {
                         <div className="form-control">
                             <input type="password" placeholder="password" className="input input-bordered lg:w-[200px]" required />
                         </div>
-                        <div className="form-control">
-                            <Button className='p-2 text-white'>Submit</Button>
+                        <div className="form-control w-[120px]">
+                            <button className="p-2 bg-[#4759d3] rounded-md text-white">Submit</button>
                         </div>
                     </form>
                 </div>
@@ -36,8 +36,8 @@ const InlineForm = () => {
                             </label>
                             <p>Check me out !</p>
                         </div>
-                        <div className="form-control">
-                            <Button className='p-2 text-white'>Submit</Button>
+                        <div className="form-control w-[120px]">
+                            <button className="p-2 bg-[#4759d3] rounded-md text-white">Submit</button>
                         </div>
                     </form>
                 </div>

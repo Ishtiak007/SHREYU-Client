@@ -1,5 +1,5 @@
 
-import Button from '../../../Shared/Button';
+
 import Container from '../../../Shared/Container';
 import FormInput from '../../../Shared/FormInput';
 import Title from '../../../Shared/Title';
@@ -33,7 +33,7 @@ const BasicExample = () => {
                             <p>Check me out !</p>
                         </div>
                         <div className="form-control mt-6 w-1/6">
-                            <Button className="p-2 text-white">Submit</Button>
+                            <button className="p-2 bg-[#4759d3] rounded-md text-white">Submit</button>
                         </div>
                     </form>
                 </div>
@@ -47,19 +47,19 @@ const BasicExample = () => {
                             <label className="label">
                                 <span className="label-text text-[#4c4e60] font-bold text-sm">Email :</span>
                             </label>
-                            <FormInput type="email" placeholder="email" className="input w-[65%]" required />
+                            <FormInput type="email" placeholder="email" className="input w-[260px]" required />
                         </div>
                         <div className="lg:flex lg:flex-1 items-center  justify-between">
                             <label className="label">
                                 <span className="label-text text-[#4c4e60] font-bold text-sm">Password :</span>
                             </label>
-                            <FormInput type="password" placeholder="password" className="input w-[65%]" required />
+                            <FormInput type="password" placeholder="password" className="input w-[260px]" required />
                         </div>
                         <div className="lg:flex lg:flex-1 items-center  justify-between">
                             <label className="label">
                                 <span className="label-text text-[#4c4e60] font-bold text-sm">Re Password :</span>
                             </label>
-                            <FormInput type="password" placeholder="Re password" className="input w-[65%]" required />
+                            <FormInput type="password" placeholder="Re password" className="input w-[260px]" required />
                         </div>
                         <div className="lg:flex items-center gap-3 justify-center">
                             <label className="label cursor-pointer">
@@ -67,8 +67,8 @@ const BasicExample = () => {
                             </label>
                             <p>Check me out !</p>
                         </div>
-                        <div className="form-control mt-6">
-                            <Button className='p-2 text-white w-36 mx-auto'>Submit</Button>
+                        <div className="form-control mt-6 text-center mx-auto w-[100px]">
+                            <button className="p-2 bg-[#1fa5c1] rounded-md text-white">Submit</button>
                         </div>
                     </div>
                 </div>
