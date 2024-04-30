@@ -1,5 +1,4 @@
 import { useForm } from "react-hook-form";
-import Button from "../../../Shared/Button";
 
 
 const BasicForm = () => {
@@ -76,8 +75,8 @@ const BasicForm = () => {
                     <p>Remember Me</p>
                 </div>
                 <div className="flex justify-end space-x-5">
-                    <Button className="p-2 text-white">Submit</Button>
-                    <Button className="p-2 text-white bg-orange-500">cancel</Button>
+                    <button className="p-2 bg-blue-600 rounded-md text-white">Submit</button>
+                    <button className="p-2 bg-[#5C636A] rounded-md text-white">cancel</button>
                 </div>
             </form>
         </div>

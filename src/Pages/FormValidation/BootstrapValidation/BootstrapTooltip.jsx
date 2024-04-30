@@ -102,7 +102,7 @@ const BootstrapTooltip = () => {
 
                 </div>
                 <div>
-                    <button className="btn-primary btn text-white">Submit</button>
+                    <button className="p-2 bg-blue-600 rounded-md text-white">Submit</button>
                 </div>
             </form>
         </div>
