@@ -2,9 +2,14 @@ import { FaBars } from "react-icons/fa";
 import { LuGanttChartSquare } from "react-icons/lu";
 import Container from "../../Shared/Container";
 import EmployeeCard from "./EmployeeCard";
+import { useForm } from "react-hook-form";
 
 
 const AllEmployees = () => {
+    const { register, handleSubmit, formState: { errors } } = useForm();
+    const onSubmit = async (data) => {
+        console.log(data)
+    }
     const employees = [
         {
             "id": "1",
@@ -95,7 +100,211 @@ const AllEmployees = () => {
                     <LuGanttChartSquare className="text-2xl cursor-pointer"></LuGanttChartSquare>
                     <FaBars className="text-2xl cursor-pointer hover:text-[#FF902F]"></FaBars>
                     <div>
-                        <button className="p-2 w-36 bg-[#FF902F] text-white rounded-3xl">Add Employee</button>
+                        <button onClick={() => document.getElementById('my_modal_9').showModal()} className="p-2 w-36 bg-[#FF902F] text-white rounded-3xl">Add Employee</button>
+                        {/* You can open the modal using document.getElementById('ID').showModal() method */}
+                        <dialog id="my_modal_9" className="modal">
+                            <div className="modal-box w-11/12 max-w-5xl">
+                                <div className="modal-action">
+                                    <form method="dialog">
+                                        {/* if there is a button, it will close the modal */}
+                                        <button className="btn">X</button>
+                                    </form>
+                                </div>
+                                <form onSubmit={handleSubmit(onSubmit)}>
+                                    <div className="flex gap-6">
+                                        <div className="form-control w-full my-6">
+                                            <label className="label">
+                                                <span className="label-text font-bold">First Name</span>
+                                            </label>
+                                            <input
+                                                {...register("firstName", { required: true })}
+                                                defaultValue={"Jhon"}
+                                                name="firstName"
+                                                type="text"
+                                                placeholder="First Name"
+                                                className="input input-bordered w-full " />
+                                            {errors.firstName && <span className='text-red-500'>This First Name field is required</span>}
+                                        </div>
+
+                                        <div className="form-control w-full my-6">
+                                            <label className="label">
+                                                <span className="label-text font-bold">Last Name</span>
+                                            </label>
+                                            <input
+                                                {...register("lastName", { required: true })}
+                                                defaultValue={"Doe"}
+                                                name="lastName"
+                                                type="text"
+                                                placeholder="Last Name"
+                                                className="input input-bordered w-full " />
+                                            {errors.lastName && <span className='text-red-500'>This lastName field is required</span>}
+                                        </div>
+                                    </div>
+
+
+
+
+                                    <div className=" flex gap-6">
+                                        <div className="form-control w-full my-6">
+                                            <label className="label">
+                                                <span className="label-text font-bold">User Name</span>
+                                            </label>
+                                            <input
+                                                {...register("userName", { required: true })}
+                                                name="userName"
+                                                type="text"
+                                                placeholder="User Name"
+                                                className="input input-bordered w-full " />
+                                            {errors.userName && <span className='text-red-500'>This userName field is required</span>}
+                                        </div>
+
+                                        <div className="form-control w-full my-6">
+                                            <label className="label">
+                                                <span className="label-text font-bold">Email</span>
+                                            </label>
+                                            <input
+                                                {...register("email", { required: true })}
+                                                name="email"
+                                                type="email"
+                                                placeholder="email"
+                                                className="input input-bordered w-full " />
+                                            {errors.email && <span className='text-red-500'>This email field is required</span>}
+                                        </div>
+                                    </div>
+
+
+
+                                    <div className=" flex gap-6">
+                                        <div className="form-control w-full my-6">
+                                            <label className="label">
+                                                <span className="label-text font-bold">Password</span>
+                                            </label>
+                                            <input
+                                                {...register("password", { required: true })}
+                                                name="password"
+                                                type="password"
+                                                placeholder="password"
+                                                className="input input-bordered w-full " />
+                                            {errors.password && <span className='text-red-500'>This password field is required</span>}
+                                        </div>
+
+
+                                        <div className="form-control w-full my-6">
+                                            <label className="label">
+                                                <span className="label-text font-bold">Confirm Password</span>
+                                            </label>
+                                            <input
+                                                {...register("confirmPassword", { required: true })}
+                                                name="confirmPassword"
+                                                type="password"
+                                                placeholder="confirm Password"
+                                                className="input input-bordered w-full " />
+                                            {errors.confirmPassword && <span className='text-red-500'>This confirmPassword field is required</span>}
+                                        </div>
+
+                                    </div>
+
+
+                                    <div className=" flex gap-6">
+                                        <div className="form-control w-full my-6">
+                                            <label className="label">
+                                                <span className="label-text font-bold">Employee ID</span>
+                                            </label>
+                                            <input
+                                                {...register("employeeID", { required: true })}
+                                                name="employeeID"
+                                                type="text"
+                                                placeholder="employeeID"
+                                                className="input input-bordered w-full " />
+                                            {errors.employeeID && <span className='text-red-500'>This employeeID field is required</span>}
+                                        </div>
+
+
+                                        <div className="form-control w-full my-6">
+                                            <label className="label">
+                                                <span className="label-text font-bold">Joining Date</span>
+                                            </label>
+                                            <input
+                                                {...register("joiningDate", { required: true })}
+                                                name="joiningDate"
+                                                type="date"
+                                                placeholder="joiningDate"
+                                                className="input input-bordered w-full " />
+                                            {errors.joiningDate && <span className='text-red-500'>This joiningDate field is required</span>}
+                                        </div>
+                                    </div>
+
+                                    <div className=" flex gap-6">
+                                        <div className="form-control w-full my-6">
+                                            <label className="label">
+                                                <span className="label-text font-bold">Phone Number</span>
+                                            </label>
+                                            <input
+                                                {...register("phoneNumber", { required: true })}
+                                                name="phoneNumber"
+                                                type="number"
+                                                placeholder="phoneNumber"
+                                                className="input input-bordered w-full " />
+                                            {errors.phoneNumber && <span className='text-red-500'>This phoneNumber field is required</span>}
+                                        </div>
+
+
+                                        <div className="form-control w-full my-6">
+                                            <label className="label">
+                                                <span className="label-text font-bold">company</span>
+                                            </label>
+                                            <select defaultValue='default' {...register("company", { required: true })}
+                                                className="select select-bordered w-full">
+                                                <option value="default" disabled>Select a company</option>
+                                                <option value={'globalTecnology'}>Global Tecnology</option>
+                                                <option value={'techInfo'}>tech info</option>
+                                            </select>
+                                            {errors.company && <span className='text-red-500'>This company field is required</span>}
+                                        </div>
+                                    </div>
+
+                                    <div className=" flex gap-6">
+                                        <div className="form-control w-full my-6">
+                                            <label className="label">
+                                                <span className="label-text font-bold">Department</span>
+                                            </label>
+                                            <select defaultValue='default' {...register("department", { required: true })}
+                                                className="select select-bordered w-full">
+                                                <option value="default" disabled>Select a company</option>
+                                                <option value={'frontendWeb'}>Frontend web</option>
+                                                <option value={'backendweb'}>Backend Web</option>
+                                                <option value={'fullStack'}>Full stack</option>
+                                            </select>
+                                            {errors.department && <span className='text-red-500'>This department field is required</span>}
+                                        </div>
+
+
+                                        <div className="form-control w-full my-6">
+                                            <label className="label">
+                                                <span className="label-text font-bold">Designation</span>
+                                            </label>
+                                            <select defaultValue='default' {...register("designation", { required: true })}
+                                                className="select select-bordered w-full">
+                                                <option value="default" disabled>Select a company</option>
+                                                <option value={'frontendWeb'}>Frontend web</option>
+                                                <option value={'backendweb'}>Backend Web</option>
+                                                <option value={'fullStack'}>Full stack</option>
+                                            </select>
+                                            {errors.designation && <span className='text-red-500'>This designation field is required</span>}
+                                        </div>
+                                    </div>
+
+
+
+
+
+                                    <div className=" text-center my-7">
+                                        <button className="py-3 px-12 font-bold bg-[#ff9b44] rounded-[25px] text-white">Submit</button>
+                                    </div>
+                                </form>
+
+                            </div>
+                        </dialog>
                     </div>
                 </div>
             </div>
