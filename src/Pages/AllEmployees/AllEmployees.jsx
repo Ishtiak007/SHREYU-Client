@@ -108,7 +108,7 @@ const AllEmployees = () => {
                                     <div><h1 className="text-xl font-semibold">Add Employee</h1></div>
                                     <form method="dialog flex">
                                         {/* if there is a button, it will close the modal */}
-                                        <button className="btn">X</button>
+                                        <button className="btn rounded-full">X</button>
                                     </form>
                                 </div>
                                 <form onSubmit={handleSubmit(onSubmit)}>

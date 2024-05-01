@@ -68,7 +68,7 @@ const Dashboard = () => {
                                     <Link to='/dashboard/employeeAttendance'><DashLink><MdMenuBook></MdMenuBook>Attendance Employee<span><MdOutlineKeyboardArrowRight></MdOutlineKeyboardArrowRight></span></DashLink></Link>
                                 </li>
                                 <li>
-                                    <Link to='/dashboard/validation'><DashLink><RiPassValidLine></RiPassValidLine>Leaves Settings<span><MdOutlineKeyboardArrowRight></MdOutlineKeyboardArrowRight></span></DashLink></Link>
+                                    <Link to='/dashboard/leavesSettings'><DashLink><RiPassValidLine></RiPassValidLine>Leaves Settings<span><MdOutlineKeyboardArrowRight></MdOutlineKeyboardArrowRight></span></DashLink></Link>
                                 </li>
                             </div>
                             <hr className="mt-5" />

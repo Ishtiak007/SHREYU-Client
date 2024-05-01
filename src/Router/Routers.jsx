@@ -16,6 +16,7 @@ import AdminAttendance from "../Pages/AdminAttendance/AdminAttendance";
 import EmployeeAttendance from "../Pages/EmployeeAttendance/EmployeeAttendance";
 import WhoCan from "../Pages/Home/WhoCan";
 import FAQ from "../Pages/Home/FAQ";
+import LeavesSettings from "../Pages/LeavesSettings/LeavesSettings";
 
 export const router = createBrowserRouter([
     {
@@ -79,6 +80,10 @@ export const router = createBrowserRouter([
             {
                 path: 'employeeAttendance',
                 element: <EmployeeAttendance></EmployeeAttendance>
+            },
+            {
+                path: 'leavesSettings',
+                element: <LeavesSettings></LeavesSettings>
             }
         ]
     }
