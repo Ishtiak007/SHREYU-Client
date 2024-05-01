@@ -47,7 +47,7 @@ const LeavesSettings = () => {
                 <div className="p-4">
                     <div className="flex justify-between items-center">
                         <h1 className="text-xl">Annual</h1>
-                        <input type="checkbox" className="toggle toggle-success" checked />
+                        <input type="checkbox" className="toggle toggle-success" />
                     </div>
 
                     <div className="my-7 flex items-center gap-20">
@@ -157,7 +157,7 @@ const LeavesSettings = () => {
                 <div className="p-4">
                     <div className="flex justify-between items-center">
                         <h1 className="text-xl">Hospitalisation</h1>
-                        <input type="checkbox" className="toggle toggle-success" checked />
+                        <input type="checkbox" className="toggle toggle-success" />
                     </div>
                     <div className="my-7 flex items-center gap-20">
                         <div>
@@ -175,7 +175,7 @@ const LeavesSettings = () => {
                 <div className="p-4">
                     <div className="flex justify-between items-center">
                         <h1 className="text-xl">Maternity Assigned to female only</h1>
-                        <input type="checkbox" className="toggle toggle-success" checked />
+                        <input type="checkbox" className="toggle toggle-success" />
                     </div>
                     <div className="my-7 flex items-center gap-20">
                         <div>
@@ -193,7 +193,7 @@ const LeavesSettings = () => {
                 <div className="p-4">
                     <div className="flex justify-between items-center">
                         <h1 className="text-xl">Paternity Assigned to male only</h1>
-                        <input type="checkbox" className="toggle toggle-success" checked />
+                        <input type="checkbox" className="toggle toggle-success" disabled />
                     </div>
                     <div className="my-7 flex items-center gap-20">
                         <div>
@@ -216,7 +216,7 @@ const LeavesSettings = () => {
                                 <h1 className="text-xl">LOP</h1>
                                 <button className="px-3 py-1 text-white font-bold mt-4 bg-red-500 rounded-md">Delete</button>
                             </div>
-                            <input type="checkbox" className="toggle toggle-success" checked />
+                            <input type="checkbox" className="toggle toggle-success" />
                         </div>
 
                         <div className="my-7 flex items-center gap-20">
@@ -305,7 +305,8 @@ const LeavesSettings = () => {
                                                 <div className="mask mask-squircle w-6 h-6">
                                                     <img src={employees.photo} alt="Avatar Tailwind CSS Component" />
                                                 </div>
-                                            </div></th>
+                                            </div>
+                                            </th>
                                             <td className="text-center mx-auto cursor-pointer"><div className="dropdown">
                                                 <div tabIndex={0} role="button" className="mx-10"><BsThreeDotsVertical></BsThreeDotsVertical></div>
                                                 <ul tabIndex={0} className="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-28">
