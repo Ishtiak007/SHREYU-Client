@@ -104,8 +104,9 @@ const AllEmployees = () => {
                         {/* You can open the modal using document.getElementById('ID').showModal() method */}
                         <dialog id="my_modal_9" className="modal">
                             <div className="modal-box w-11/12 max-w-5xl">
-                                <div className="modal-action">
-                                    <form method="dialog">
+                                <div className="modal-action flex justify-between">
+                                    <div><h1 className="text-xl font-semibold">Add Employee</h1></div>
+                                    <form method="dialog flex">
                                         {/* if there is a button, it will close the modal */}
                                         <button className="btn">X</button>
                                     </form>
@@ -295,7 +296,202 @@ const AllEmployees = () => {
                                     </div>
 
 
-
+                                    <div>
+                                        <div className="overflow-x-auto my-6">
+                                            <table className="table table-zebra">
+                                                {/* head */}
+                                                <thead>
+                                                    <tr>
+                                                        <th className="text-base font-bold">Module Permission</th>
+                                                        <th className="text-base font-bold">Read</th>
+                                                        <th className="text-base font-bold">Write</th>
+                                                        <th className="text-base font-bold">Create</th>
+                                                        <th className="text-base font-bold">Delete</th>
+                                                        <th className="text-base font-bold">Import</th>
+                                                        <th className="text-base font-bold">Export</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    {/* row 1 */}
+                                                    <tr>
+                                                        <th className="font-bold text-gray-400">Holidays</th>
+                                                        <td><label>
+                                                            <input type="checkbox" className="checkbox" />
+                                                        </label></td>
+                                                        <td><label>
+                                                            <input type="checkbox" className="checkbox" />
+                                                        </label></td>
+                                                        <td><label>
+                                                            <input type="checkbox" className="checkbox" />
+                                                        </label></td>
+                                                        <td><label>
+                                                            <input type="checkbox" className="checkbox" />
+                                                        </label></td>
+                                                        <td><label>
+                                                            <input type="checkbox" className="checkbox" />
+                                                        </label></td>
+                                                        <td><label>
+                                                            <input type="checkbox" className="checkbox" />
+                                                        </label></td>
+                                                    </tr>
+                                                    {/* row 2 */}
+                                                    <tr>
+                                                        <th className="font-bold text-gray-400">Leaves</th>
+                                                        <td><label>
+                                                            <input type="checkbox" className="checkbox" />
+                                                        </label></td>
+                                                        <td><label>
+                                                            <input type="checkbox" className="checkbox" />
+                                                        </label></td>
+                                                        <td><label>
+                                                            <input type="checkbox" className="checkbox" />
+                                                        </label></td>
+                                                        <td><label>
+                                                            <input type="checkbox" className="checkbox" />
+                                                        </label></td>
+                                                        <td><label>
+                                                            <input type="checkbox" className="checkbox" />
+                                                        </label></td>
+                                                        <td><label>
+                                                            <input type="checkbox" className="checkbox" />
+                                                        </label></td>
+                                                    </tr>
+                                                    {/* row 3 */}
+                                                    <tr>
+                                                        <th className="font-bold text-gray-400">Clierts</th>
+                                                        <td><label>
+                                                            <input type="checkbox" className="checkbox" />
+                                                        </label></td>
+                                                        <td><label>
+                                                            <input type="checkbox" className="checkbox" />
+                                                        </label></td>
+                                                        <td><label>
+                                                            <input type="checkbox" className="checkbox" />
+                                                        </label></td>
+                                                        <td><label>
+                                                            <input type="checkbox" className="checkbox" />
+                                                        </label></td>
+                                                        <td><label>
+                                                            <input type="checkbox" className="checkbox" />
+                                                        </label></td>
+                                                        <td><label>
+                                                            <input type="checkbox" className="checkbox" />
+                                                        </label></td>
+                                                    </tr>
+                                                    {/* row 4 */}
+                                                    <tr>
+                                                        <th className="font-bold text-gray-400">Projects</th>
+                                                        <td><label>
+                                                            <input type="checkbox" className="checkbox" />
+                                                        </label></td>
+                                                        <td><label>
+                                                            <input type="checkbox" className="checkbox" />
+                                                        </label></td>
+                                                        <td><label>
+                                                            <input type="checkbox" className="checkbox" />
+                                                        </label></td>
+                                                        <td><label>
+                                                            <input type="checkbox" className="checkbox" />
+                                                        </label></td>
+                                                        <td><label>
+                                                            <input type="checkbox" className="checkbox" />
+                                                        </label></td>
+                                                        <td><label>
+                                                            <input type="checkbox" className="checkbox" />
+                                                        </label></td>
+                                                    </tr>
+                                                    {/* row 5 */}
+                                                    <tr>
+                                                        <th className="font-bold text-gray-400">Tasks</th>
+                                                        <td><label>
+                                                            <input type="checkbox" className="checkbox" />
+                                                        </label></td>
+                                                        <td><label>
+                                                            <input type="checkbox" className="checkbox" />
+                                                        </label></td>
+                                                        <td><label>
+                                                            <input type="checkbox" className="checkbox" />
+                                                        </label></td>
+                                                        <td><label>
+                                                            <input type="checkbox" className="checkbox" />
+                                                        </label></td>
+                                                        <td><label>
+                                                            <input type="checkbox" className="checkbox" />
+                                                        </label></td>
+                                                        <td><label>
+                                                            <input type="checkbox" className="checkbox" />
+                                                        </label></td>
+                                                    </tr>
+                                                    {/* row 6 */}
+                                                    <tr>
+                                                        <th className="font-bold text-gray-400">Chats</th>
+                                                        <td><label>
+                                                            <input type="checkbox" className="checkbox" />
+                                                        </label></td>
+                                                        <td><label>
+                                                            <input type="checkbox" className="checkbox" />
+                                                        </label></td>
+                                                        <td><label>
+                                                            <input type="checkbox" className="checkbox" />
+                                                        </label></td>
+                                                        <td><label>
+                                                            <input type="checkbox" className="checkbox" />
+                                                        </label></td>
+                                                        <td><label>
+                                                            <input type="checkbox" className="checkbox" />
+                                                        </label></td>
+                                                        <td><label>
+                                                            <input type="checkbox" className="checkbox" />
+                                                        </label></td>
+                                                    </tr>
+                                                    {/* row 7 */}
+                                                    <tr>
+                                                        <th className="font-bold text-gray-400">Assets</th>
+                                                        <td><label>
+                                                            <input type="checkbox" className="checkbox" />
+                                                        </label></td>
+                                                        <td><label>
+                                                            <input type="checkbox" className="checkbox" />
+                                                        </label></td>
+                                                        <td><label>
+                                                            <input type="checkbox" className="checkbox" />
+                                                        </label></td>
+                                                        <td><label>
+                                                            <input type="checkbox" className="checkbox" />
+                                                        </label></td>
+                                                        <td><label>
+                                                            <input type="checkbox" className="checkbox" />
+                                                        </label></td>
+                                                        <td><label>
+                                                            <input type="checkbox" className="checkbox" />
+                                                        </label></td>
+                                                    </tr>
+                                                    {/* row 8 */}
+                                                    <tr>
+                                                        <th className="font-bold text-gray-400">Timing</th>
+                                                        <td><label>
+                                                            <input type="checkbox" className="checkbox" />
+                                                        </label></td>
+                                                        <td><label>
+                                                            <input type="checkbox" className="checkbox" />
+                                                        </label></td>
+                                                        <td><label>
+                                                            <input type="checkbox" className="checkbox" />
+                                                        </label></td>
+                                                        <td><label>
+                                                            <input type="checkbox" className="checkbox" />
+                                                        </label></td>
+                                                        <td><label>
+                                                            <input type="checkbox" className="checkbox" />
+                                                        </label></td>
+                                                        <td><label>
+                                                            <input type="checkbox" className="checkbox" />
+                                                        </label></td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
 
 
                                     <div className=" text-center my-7">
