@@ -26,7 +26,7 @@ const HorizontalForm = () => {
                 </div>
                 <div className="flex items-center gap-3 justify-center">
                     <label className="label cursor-pointer">
-                        <input type="checkbox" defaultChecked className="checkbox checkbox-sm mx-auto" />
+                        <input type="checkbox" className="checkbox checkbox-sm mx-auto" />
                     </label>
                     <p>Check me out !</p>
                 </div>

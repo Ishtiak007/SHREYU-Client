@@ -70,7 +70,7 @@ const BasicForm = () => {
 
                 <div className="flex gap-3 items-center my-5">
                     <label className="label cursor-pointer">
-                        <input type="checkbox" defaultChecked className="checkbox checkbox-sm mx-auto" />
+                        <input type="checkbox" className="checkbox checkbox-sm mx-auto" />
                     </label>
                     <p>Remember Me</p>
                 </div>

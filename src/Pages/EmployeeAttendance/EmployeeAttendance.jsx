@@ -20,7 +20,7 @@ const EmployeeAttendance = () => {
 
 
 
-            <Container className="p-4">
+            <Container className="lg:p-4">
 
                 <div className='lg:flex gap-3'>
                     <div className='lg:flex-1'>
@@ -31,7 +31,7 @@ const EmployeeAttendance = () => {
                             <div className="card-body text-center">
                                 <h1 className='text-center'>Punch In at</h1>
                                 <p className='text-center'>Wed, 11th Mar 2023 10.00 AM</p>
-                                <div className='flex justify-around gap-4'>
+                                <div className='lg:flex space-y-3 justify-around gap-4'>
                                     <p className='bg-slate-500 bg-opacity-15 py-4'>Break 1.21 hrs</p>
                                     <p className='bg-slate-500 bg-opacity-15 py-4'>Overtime 3 hrs</p>
                                 </div>

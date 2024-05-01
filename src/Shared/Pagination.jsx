@@ -30,7 +30,7 @@ const Pagination = () => {
 
             <div>
                 <div className="lg:space-x-4">
-                    <input className="join-item btn rounded-full mx-2 btn-circle" type="radio" name="options" aria-label="1" checked />
+                    <input className="join-item btn rounded-full mx-2 btn-circle" type="radio" name="options" aria-label="1" />
                     <input className="join-item btn btn-circle" type="radio" name="options" aria-label="2" />
                     <input className="join-item btn btn-circle" type="radio" name="options" aria-label="3" />
                     <input className="join-item btn btn-circle" type="radio" name="options" aria-label="4" />

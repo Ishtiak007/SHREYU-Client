@@ -51,13 +51,13 @@ const Selectmenu = () => {
                 <div>
                     <div className="lg:flex items-center gap-3">
                         <label className="label cursor-pointer">
-                            <input type="checkbox" defaultChecked className="checkbox checkbox-primary checkbox-sm" />
+                            <input type="checkbox" className="checkbox checkbox-primary checkbox-sm" />
                         </label>
                         <p>Check this custom checkbox</p>
                     </div>
                     <div className="lg:flex items-center gap-3">
                         <label className="label cursor-pointer">
-                            <input type="checkbox" defaultChecked className="checkbox checkbox-primary checkbox-sm" />
+                            <input type="checkbox" className="checkbox checkbox-primary checkbox-sm" />
                         </label>
                         <p>Check this custom checkbox</p>
                     </div>
@@ -66,13 +66,13 @@ const Selectmenu = () => {
                     <Title heading={'RADIOS'}></Title>
                     <div className="lg:flex items-center gap-3">
                         <label className="label cursor-pointer">
-                            <input type="checkbox" defaultChecked className="checkbox checkbox-accent checkbox-sm" />
+                            <input type="checkbox" className="checkbox checkbox-accent checkbox-sm" />
                         </label>
                         <p>Toggle this custom radio</p>
                     </div>
                     <div className="lg:flex items-center gap-3">
                         <label className="label cursor-pointer">
-                            <input type="checkbox" defaultChecked className="checkbox checkbox-accent checkbox-sm" />
+                            <input type="checkbox" className="checkbox checkbox-accent checkbox-sm" />
                         </label>
                         <p>Or toggle this other custom radio</p>
                     </div>
@@ -81,13 +81,13 @@ const Selectmenu = () => {
                     <Title heading={'DISABLED'}></Title>
                     <div className="lg:flex items-center gap-3">
                         <label className="label cursor-pointer">
-                            <input type="checkbox" defaultChecked className="checkbox checkbox-sm" disabled />
+                            <input type="checkbox" className="checkbox checkbox-sm" disabled />
                         </label>
                         <p>Check this custom checkbox</p>
                     </div>
                     <div className="lg:flex items-center gap-3">
                         <label className="label cursor-pointer">
-                            <input type="checkbox" defaultChecked className="checkbox checkbox-sm" disabled />
+                            <input type="checkbox" className="checkbox checkbox-sm" disabled />
                         </label>
                         <p>Toggle this custom radio</p>
                     </div>

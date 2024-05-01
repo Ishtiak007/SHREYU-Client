@@ -30,7 +30,7 @@ const LeavesSettings = () => {
 
     return (
         <div>
-            <div className="flex items-center justify-between">
+            <div className="lg:flex items-center justify-between">
                 <div>
                     <h1 className="my-6 text-2xl">Leave Setting</h1>
                     <div className="text-lg breadcrumbs mr-2">
@@ -50,25 +50,25 @@ const LeavesSettings = () => {
                         <input type="checkbox" className="toggle toggle-success" />
                     </div>
 
-                    <div className="my-7 flex items-center gap-20">
+                    <div className="my-7 lg:flex items-center gap-20">
                         <div>
                             <p className="text-base my-1">Days</p>
-                            <OutlineInput type='text' className="p-3 w-[370px]"></OutlineInput>
+                            <OutlineInput type='text' className="p-3 lg:w-[370px]"></OutlineInput>
                         </div>
                         <div className="mt-8">
                             <button className="px-3 py-2 rounded-md border border-gray-200 font-bold">Cancel</button>
                             <button className="px-4 py-2 rounded-md bg-[#FF902F] font-bold text-white ml-3">Save</button>
                         </div>
                     </div>
-                    <div className="my-7 flex items-center gap-20">
+                    <div className="my-7 lg:flex items-center gap-20">
                         <div>
                             <p className="text-base my-1">Carry forward</p>
-                            <div className="flex gap-5">
+                            <div className="lg:flex gap-5">
                                 <div className="flex items-center gap-2">
                                     <input type="radio" name="radio-1" className="radio" />
                                     No
                                 </div>
-                                <div className="flex items-center gap-2">
+                                <div className="lg:flex items-center gap-2">
                                     <input type="radio" name="radio-1" className="radio" />
                                     Yes
                                 </div>
@@ -85,10 +85,10 @@ const LeavesSettings = () => {
                             <button className="px-4 py-2 rounded-md bg-[#FF902F] font-bold text-white ml-3">Save</button>
                         </div>
                     </div>
-                    <div className="my-7 flex items-center gap-20">
+                    <div className="my-7 lg:flex items-center gap-20">
                         <div>
                             <p className="text-base my-1">Earned leave</p>
-                            <div className="flex gap-5">
+                            <div className="lg:flex gap-5">
                                 <div className="flex items-center gap-2">
                                     <input type="radio" name="radio-1" className="radio" />
                                     No
@@ -111,12 +111,12 @@ const LeavesSettings = () => {
                         </div>
                     </div>
                     <div>
-                        <div className="flex justify-between items-center">
+                        <div className="lg:flex justify-between items-center">
                             <h1 className="text-xl">Custom policy</h1>
                             <CustomPolicy></CustomPolicy>
                         </div>
 
-                        <Container className="p-4">
+                        <Container className="lg:p-4">
                             <div className="overflow-x-auto my-10 bg-white">
                                 <table className="table table-zebra ">
                                     <thead className="bg-gray-200 ">
@@ -159,10 +159,10 @@ const LeavesSettings = () => {
                         <h1 className="text-xl">Hospitalisation</h1>
                         <input type="checkbox" className="toggle toggle-success" />
                     </div>
-                    <div className="my-7 flex items-center gap-20">
+                    <div className="my-7 lg:flex items-center gap-20">
                         <div>
                             <p className="text-base my-1">Days</p>
-                            <OutlineInput type='text' className="p-3 w-[370px]"></OutlineInput>
+                            <OutlineInput type='text' className="p-3 lg:w-[370px]"></OutlineInput>
                         </div>
                         <div className="mt-8">
                             <button className="px-3 py-2 rounded-md border border-gray-200 font-bold">Cancel</button>
@@ -177,10 +177,10 @@ const LeavesSettings = () => {
                         <h1 className="text-xl">Maternity Assigned to female only</h1>
                         <input type="checkbox" className="toggle toggle-success" />
                     </div>
-                    <div className="my-7 flex items-center gap-20">
+                    <div className="my-7 lg:flex items-center gap-20">
                         <div>
                             <p className="text-base my-1">Days</p>
-                            <OutlineInput type='text' className="p-3 w-[370px]"></OutlineInput>
+                            <OutlineInput type='text' className="p-3 lg:w-[370px]"></OutlineInput>
                         </div>
                         <div className="mt-8">
                             <button className="px-3 py-2 rounded-md border border-gray-200 font-bold">Cancel</button>
@@ -195,10 +195,10 @@ const LeavesSettings = () => {
                         <h1 className="text-xl">Paternity Assigned to male only</h1>
                         <input type="checkbox" className="toggle toggle-success" disabled />
                     </div>
-                    <div className="my-7 flex items-center gap-20">
+                    <div className="my-7 lg:flex items-center gap-20">
                         <div>
                             <p className="text-base my-1">Days</p>
-                            <OutlineInput type='text' className="p-3 w-[370px]"></OutlineInput>
+                            <OutlineInput type='text' className="p-3 lg:w-[370px]"></OutlineInput>
                         </div>
                         <div className="mt-8">
                             <button className="px-3 py-2 rounded-md border border-gray-200 font-bold">Cancel</button>
@@ -222,17 +222,17 @@ const LeavesSettings = () => {
                         <div className="my-7 flex items-center gap-20">
                             <div>
                                 <p className="text-base my-1">Days</p>
-                                <OutlineInput type='text' className="p-3 w-[370px]"></OutlineInput>
+                                <OutlineInput type='text' className="p-3 lg:w-[370px]"></OutlineInput>
                             </div>
                             <div className="mt-8">
                                 <button className="px-3 py-2 rounded-md border border-gray-200 font-bold">Cancel</button>
                                 <button className="px-4 py-2 rounded-md bg-[#FF902F] font-bold text-white ml-3">Save</button>
                             </div>
                         </div>
-                        <div className="my-7 flex items-center gap-20">
+                        <div className="my-7 lg:flex items-center gap-20">
                             <div>
                                 <p className="text-base my-1">Carry forward</p>
-                                <div className="flex gap-5">
+                                <div className="lg:flex gap-5">
                                     <div className="flex items-center gap-2">
                                         <input type="radio" name="radio-1" className="radio" />
                                         No
@@ -254,10 +254,10 @@ const LeavesSettings = () => {
                                 <button className="px-4 py-2 rounded-md bg-[#FF902F] font-bold text-white ml-3">Save</button>
                             </div>
                         </div>
-                        <div className="my-7 flex items-center gap-20">
+                        <div className="my-7 lg:flex items-center gap-20">
                             <div>
                                 <p className="text-base my-1">Earned leave</p>
-                                <div className="flex gap-5">
+                                <div className="lg:flex gap-5">
                                     <div className="flex items-center gap-2">
                                         <input type="radio" name="radio-1" className="radio" />
                                         No
@@ -280,12 +280,12 @@ const LeavesSettings = () => {
                             </div>
                         </div>
                         <div>
-                            <div className="flex justify-between items-center">
+                            <div className="lg:flex justify-between items-center">
                                 <h1 className="text-xl">Custom policy</h1>
                                 <CustomPolicy></CustomPolicy>
                             </div>
                         </div>
-                        <Container className="p-4">
+                        <Container className="lg:p-4">
                             <div className="overflow-x-auto my-10 bg-white">
                                 <table className="table table-zebra ">
                                     <thead className="bg-gray-200 ">

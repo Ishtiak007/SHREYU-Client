@@ -59,7 +59,7 @@ const Holidays = () => {
     ]
     return (
         <div>
-            <div className="flex items-center justify-between">
+            <div className="lg:flex items-center justify-between">
                 <div>
                     <h1 className="my-6 text-2xl">Holidays</h1>
                     <div className="text-lg breadcrumbs mr-2">

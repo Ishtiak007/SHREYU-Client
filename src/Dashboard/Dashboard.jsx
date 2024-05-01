@@ -30,7 +30,7 @@ const Dashboard = () => {
     return (
         <div className="lg:flex">
             {/* bashboard sidebar */}
-            <div className="w-64 h-screen overflow-y-scroll no-scrollbar bg-white border">
+            <div className="lg:w-64 lg:h-screen overflow-y-scroll no-scrollbar bg-white border">
                 <ul className="">
                     {
                         isAdmin ? <>

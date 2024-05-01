@@ -297,8 +297,8 @@ const AdminAttendance = () => {
 
 
 
-            <Container className="p-4">
-                <div className="overflow-x-auto overflow-auto my-10 bg-white h-[68vh]">
+            <Container className="lg:p-4">
+                <div className="overflow-x-auto overflow-auto my-10 bg-white lg:h-[68vh]">
                     <table className="table table-zebra ">
                         <thead className="bg-[#42453d]">
                             <tr>

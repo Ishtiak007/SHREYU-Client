@@ -91,7 +91,7 @@ const LeavesAdmin = () => {
     ]
     return (
         <div>
-            <div className="flex items-center justify-between">
+            <div className="lg:flex items-center justify-between">
                 <div>
                     <h1 className="my-6 text-2xl">Admin Leaves</h1>
                     <div className="text-lg breadcrumbs mr-2">
@@ -101,7 +101,7 @@ const LeavesAdmin = () => {
                         </ul>
                     </div>
                 </div>
-                <div className="flex items-center gap-7">
+                <div className="lg:flex items-center gap-7">
                     <div className="flex items-center gap-7 ">
                         <button onClick={() => document.getElementById('my_modal_4').showModal()} className='px-4 py-2 rounded-[18px] font-bold bg-[#FF902F] text-white'>+ Add Leave</button>
 
@@ -153,7 +153,7 @@ const LeavesAdmin = () => {
                 </div>
             </div>
 
-            <div className="flex justify-around gap-6 mt-4">
+            <div className="lg:flex space-y-3 justify-around gap-6 mt-4">
                 <div>
                     <div className="card w-[270px] h-[110px] bg-base-100">
                         <div className="card-body">
@@ -189,7 +189,7 @@ const LeavesAdmin = () => {
             </div>
 
 
-            <div className="flex justify-around mt-10 items-center">
+            <div className="lg:flex lg:justify-around space-y-3 mt-10 items-center">
                 <div> <label className="input input-bordered flex items-center gap-2  w-40">
                     Employee Name
                     <input type="text" className="grow" />
@@ -225,8 +225,8 @@ const LeavesAdmin = () => {
                     <button className='py-3 px-3 bg-[#36BA45] rounded-md text-white w-40'>Search</button>
                 </div>
             </div>
-            <Container className="p-4">
-                <div className="overflow-x-auto my-10 bg-white h-[68vh]">
+            <Container className="lg:p-4">
+                <div className="overflow-x-auto my-10 bg-white lg:h-[68vh]">
                     <table className="table table-zebra ">
                         <thead className="bg-[#42453d]">
                             <tr>

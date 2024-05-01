@@ -13,7 +13,7 @@ const FAQ = () => {
                         </h2>
                         <div className="join join-vertical w-full my-20">
                             <div className="collapse collapse-arrow join-item border border-[#ececec]">
-                                <input type="radio" name="my-accordion-4" checked="checked" />
+                                <input type="radio" name="my-accordion-4" />
                                 <div className="collapse-title font-bold text[#333]">
                                     How do I register as a user on the website?
                                 </div>

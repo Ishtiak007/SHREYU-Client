@@ -155,7 +155,7 @@ const LeavesEmployee = () => {
     ]
     return (
         <div>
-            <div className="flex items-center justify-between">
+            <div className="lg:flex items-center justify-between">
                 <div>
                     <h1 className="my-6 text-2xl">Employee Leaves</h1>
                     <div className="text-lg breadcrumbs mr-2">
@@ -165,7 +165,7 @@ const LeavesEmployee = () => {
                         </ul>
                     </div>
                 </div>
-                <div className="flex items-center gap-7">
+                <div className="lg:flex items-center gap-7">
                     <div className="flex items-center gap-7 ">
                         <button onClick={() => document.getElementById('my_modal_4').showModal()} className='px-4 py-2 rounded-[18px] font-bold bg-[#FF902F] text-white'>+ Add Leave</button>
 
@@ -217,7 +217,7 @@ const LeavesEmployee = () => {
                 </div>
             </div>
 
-            <div className="flex justify-around gap-6 mt-4">
+            <div className="lg:flex space-y-3 justify-around gap-6 mt-4">
                 <div>
                     <div className="card w-[270px] h-28 bg-base-100">
                         <div className="card-body">
@@ -251,8 +251,8 @@ const LeavesEmployee = () => {
                     </div>
                 </div>
             </div>
-            <Container className="p-4">
-                <div className="overflow-x-auto my-10 bg-white h-[68vh]">
+            <Container className="lg:p-4">
+                <div className="overflow-x-auto my-10 bg-white lg:h-[68vh]">
                     <table className="table table-zebra ">
                         <thead className="bg-[#42453d]">
                             <tr>

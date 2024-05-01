@@ -32,7 +32,7 @@ const InlineForm = () => {
                         </div>
                         <div className="flex items-center gap-3">
                             <label className="label cursor-pointer">
-                                <input type="checkbox" defaultChecked className="checkbox checkbox-sm" />
+                                <input type="checkbox" className="checkbox checkbox-sm" />
                             </label>
                             <p>Check me out !</p>
                         </div>

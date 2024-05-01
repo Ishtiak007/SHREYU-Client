@@ -92,8 +92,8 @@ const PaginationSortComp = () => {
     ];
     return (
         <div>
-            <div className="flex justify-between items-center">
-                <h1 className="my-6 text-xl">Advanced Tables</h1>
+            <div className="lg:flex justify-between items-center">
+                <h1 className="my-6 lg:text-xl">Advanced Tables</h1>
                 <div className="text-lg breadcrumbs mr-2">
                     <ul>
                         <li><a>Shreyu</a></li>
