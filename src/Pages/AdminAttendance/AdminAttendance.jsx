@@ -8,6 +8,7 @@ import img1 from '../../assets/employee.jpg'
 const AdminAttendance = () => {
     const attendance = [
         {
+            "id": "1",
             "name": "Jon Doe",
             "day1": "present",
             "day2": "present",
@@ -41,6 +42,7 @@ const AdminAttendance = () => {
             "day30": "present",
         },
         {
+            "id": "2",
             "name": "Bernardo Galaviz",
             "day1": "present",
             "day2": "present",
@@ -74,6 +76,7 @@ const AdminAttendance = () => {
             "day30": "present",
         },
         {
+            "id": "3",
             "name": "Jeffrey Warden",
             "day1": "present",
             "day2": "present",
@@ -107,6 +110,7 @@ const AdminAttendance = () => {
             "day30": "present",
         },
         {
+            "id": "4",
             "name": "Bernardo Galaviz",
             "day1": "present",
             "day2": "present",
@@ -140,6 +144,7 @@ const AdminAttendance = () => {
             "day30": "present",
         },
         {
+            "id": "5",
             "name": "Lesley Gatlin",
             "day1": "present",
             "day2": "present",
@@ -173,6 +178,7 @@ const AdminAttendance = () => {
             "day30": "present",
         },
         {
+            "id": "6",
             "name": "Bernardo Galaviz",
             "day1": "present",
             "day2": "present",
@@ -206,6 +212,7 @@ const AdminAttendance = () => {
             "day30": "present",
         },
         {
+            "id": "7",
             "name": "Jeffrey Warden",
             "day1": "present",
             "day2": "present",
@@ -239,6 +246,7 @@ const AdminAttendance = () => {
             "day30": "present",
         },
         {
+            "id": "8",
             "name": "Lesley Gatlin",
             "day1": "present",
             "day2": "present",

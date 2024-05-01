@@ -9,41 +9,49 @@ import OutlineInput from "../../Shared/OutlineInput";
 const Holidays = () => {
     const holiday = [
         {
+            "id": "1",
             "title": "New Year",
             "holiday": "1 Jan 2023",
             "day": "Wednesday"
         },
         {
+            "id": "2",
             "title": "Good Friday",
             "holiday": "14 Apr 2023",
             "day": "Monday"
         },
         {
+            "id": "3",
             "title": "May",
             "holiday": "1 May 2023",
             "day": "Sunday"
         },
         {
+            "id": "4",
             "title": "Memorial",
             "holiday": "	28 May 2023",
             "day": "Wednesday"
         },
         {
+            "id": "5",
             "title": "Ramzon",
             "holiday": "	26 Jun 2023",
             "day": "Wednesday"
         },
         {
+            "id": "6",
             "title": "Bakrid",
             "holiday": "2 Sep 2023",
             "day": "Sunday"
         },
         {
+            "id": "7",
             "title": "Deepavali",
             "holiday": "18 Oct 2023",
             "day": "Wednesday"
         },
         {
+            "id": "8",
             "title": "Christmas",
             "holiday": "25 Dec 2023",
             "day": "Friday"
@@ -102,7 +110,7 @@ const Holidays = () => {
                             </tr>
                         </thead>
                         <tbody>
-                            {holiday?.map((holiday, index) => <tr key={holiday._id}>
+                            {holiday?.map((holiday, index) => <tr key={holiday.id}>
                                 <th className="text-base text-center">{index + 1}</th>
                                 <td className="text-base text-center">{holiday.title}</td>
                                 <td className="text-base text-center">{holiday.holiday}</td>
