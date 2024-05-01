@@ -1,15 +1,33 @@
-import { useForm } from "react-hook-form";
-import { IoPlayForward } from "react-icons/io5";
-import { IoPlayBack } from "react-icons/io5";
-import { MdArrowBackIosNew } from "react-icons/md";
-import { MdArrowForwardIos } from "react-icons/md";
+
+import { FaEdit, FaTrash } from "react-icons/fa";
+import Container from "../../Shared/Container";
+import OutlineInput from "../../Shared/OutlineInput";
+import CustomPolicy from "./CustomPolicy";
+import { BsThreeDotsVertical } from "react-icons/bs";
 
 
 const LeavesSettings = () => {
-    const { register, handleSubmit, formState: { errors } } = useForm();
-    const onSubmit = async (data) => {
-        console.log(data)
-    }
+    const employees = [
+        {
+            "id": "1",
+            "name": "John Doe",
+            "day": "5",
+            "photo": "https://i.ibb.co/h2NWkS0/user1.jpg"
+        },
+        {
+            "id": "2",
+            "name": "Richard Miles",
+            "day": "7",
+            "photo": "https://i.ibb.co/cCWB1HM/user2.jpg"
+        },
+        {
+            "id": "3",
+            "name": "John Smith",
+            "day": "9",
+            "photo": "https://i.ibb.co/TL3TTQw/user3.jpg"
+        },
+    ]
+
     return (
         <div>
             <div className="flex items-center justify-between">
@@ -22,78 +40,287 @@ const LeavesSettings = () => {
                         </ul>
                     </div>
                 </div>
-                <div className="flex items-center gap-7">
-                    <div>
-                        <button onClick={() => document.getElementById('my_modal_9').showModal()} className="p-2 w-36 bg-[#FF902F] text-white rounded-3xl">Add Employee</button>
-                        {/* You can open the modal using document.getElementById('ID').showModal() method */}
-                        <dialog id="my_modal_9" className="modal">
-                            <div className="modal-box w-11/12 max-w-5xl">
-                                <div className="modal-action flex justify-between">
-                                    <div><h1 className="text-xl font-semibold">Add Custom Policy</h1></div>
-                                    <form method="dialog flex">
-                                        {/* if there is a button, it will close the modal */}
-                                        <button className="btn rounded-full">X</button>
-                                    </form>
+                <CustomPolicy></CustomPolicy>
+            </div>
+
+            <Container className='bg-white'>
+                <div className="p-4">
+                    <div className="flex justify-between items-center">
+                        <h1 className="text-xl">Annual</h1>
+                        <input type="checkbox" className="toggle toggle-success" checked />
+                    </div>
+
+                    <div className="my-7 flex items-center gap-20">
+                        <div>
+                            <p className="text-base my-1">Days</p>
+                            <OutlineInput type='text' className="p-3 w-[370px]"></OutlineInput>
+                        </div>
+                        <div className="mt-8">
+                            <button className="px-3 py-2 rounded-md border border-gray-200 font-bold">Cancel</button>
+                            <button className="px-4 py-2 rounded-md bg-[#FF902F] font-bold text-white ml-3">Save</button>
+                        </div>
+                    </div>
+                    <div className="my-7 flex items-center gap-20">
+                        <div>
+                            <p className="text-base my-1">Carry forward</p>
+                            <div className="flex gap-5">
+                                <div className="flex items-center gap-2">
+                                    <input type="radio" name="radio-1" className="radio" />
+                                    No
                                 </div>
-                                <form onSubmit={handleSubmit(onSubmit)}>
-                                    <div className="gap-6">
-                                        <div className="form-control w-full my-6">
-                                            <label className="label">
-                                                <span className="label-text font-bold">Policy Name*</span>
-                                            </label>
-                                            <input
-                                                {...register("policyName", { required: true })}
-                                                name="policyName"
-                                                type="text"
-                                                className="input input-bordered w-full " />
-                                            {errors.policyName && <span className='text-red-500'>This policyName field is required</span>}
-                                        </div>
-
-                                        <div className="form-control w-full my-6">
-                                            <label className="label">
-                                                <span className="label-text font-bold">Days*</span>
-                                            </label>
-                                            <input
-                                                {...register("days", { required: true })}
-                                                name="days"
-                                                type="text"
-                                                placeholder="days"
-                                                className="input input-bordered w-full " />
-                                            {errors.days && <span className='text-red-500'>This days field is required</span>}
-                                        </div>
-                                    </div>
-
-                                    <div className="bg-[#f9f9f9] p-4">
-                                        <div className=" flex justify-between">
-                                            <ul className="menu bg-white w-72 border overflow-x-auto overflow-scroll">
-                                                <li className="menu-title">Add employee</li>
-                                                <li><a>Bernardo Galaviz</a></li>
-                                                <li><a>Jeffrey Warden</a></li>
-                                                <li><a>John Doe</a></li>
-                                                <li><a>Mike Litorus</a></li>
-                                            </ul>
-                                            <div className="space-y-3">
-                                                <IoPlayForward className="text-2xl w-24 h-9 rounded-md border bg-white"></IoPlayForward>
-                                                <MdArrowForwardIos className="text-2xl w-24 h-9 rounded-md border bg-white"></MdArrowForwardIos>
-                                                <MdArrowBackIosNew className="text-2xl w-24 h-9 rounded-md border bg-white"></MdArrowBackIosNew>
-                                                <IoPlayBack className="text-2xl w-24 h-9 rounded-md border bg-white"></IoPlayBack>
-                                            </div>
-                                            <ul className="menu bg-white w-72 border overflow-x-auto overflow-scroll">
-                                            </ul>
-                                        </div>
-                                    </div>
-
-
-                                    <div className=" text-center my-7">
-                                        <button className="py-3 px-12 font-bold bg-[#ff9b44] rounded-[25px] text-white">Submit</button>
-                                    </div>
-                                </form>
-
+                                <div className="flex items-center gap-2">
+                                    <input type="radio" name="radio-1" className="radio" />
+                                    Yes
+                                </div>
+                                <div>
+                                    <label className="input input-bordered flex items-center gap-2">
+                                        Max
+                                        <input type="text" className="grow" />
+                                    </label>
+                                </div>
                             </div>
-                        </dialog>
+                        </div>
+                        <div className="mt-8">
+                            <button className="px-3 py-2 rounded-md border border-gray-200 font-bold">Cancel</button>
+                            <button className="px-4 py-2 rounded-md bg-[#FF902F] font-bold text-white ml-3">Save</button>
+                        </div>
+                    </div>
+                    <div className="my-7 flex items-center gap-20">
+                        <div>
+                            <p className="text-base my-1">Earned leave</p>
+                            <div className="flex gap-5">
+                                <div className="flex items-center gap-2">
+                                    <input type="radio" name="radio-1" className="radio" />
+                                    No
+                                </div>
+                                <div className="flex items-center gap-2">
+                                    <input type="radio" name="radio-1" className="radio" />
+                                    Yes
+                                </div>
+                                <div>
+                                    <label className="input input-bordered flex items-center gap-2">
+                                        Max
+                                        <input type="text" className="grow" />
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="mt-8">
+                            <button className="px-3 py-2 rounded-md border border-gray-200 font-bold">Cancel</button>
+                            <button className="px-4 py-2 rounded-md bg-[#FF902F] font-bold text-white ml-3">Save</button>
+                        </div>
+                    </div>
+                    <div>
+                        <div className="flex justify-between items-center">
+                            <h1 className="text-xl">Custom policy</h1>
+                            <CustomPolicy></CustomPolicy>
+                        </div>
+
+                        <Container className="p-4">
+                            <div className="overflow-x-auto my-10 bg-white">
+                                <table className="table table-zebra ">
+                                    <thead className="bg-gray-200 ">
+                                        <tr>
+                                            <th className="text-base text-center">Name</th>
+                                            <th className="text-base text-center">Day</th>
+                                            <th className="text-base text-center">Assignee</th>
+                                            <th className="text-base text-center">Action</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        {employees?.map((employees) => <tr key={employees.id}>
+
+                                            <td className="text-center">{employees.name}</td>
+                                            <td className="text-center">{employees.day}</td>
+                                            <th className="text-center"> <div className="avatar">
+                                                <div className="mask mask-squircle w-6 h-6">
+                                                    <img src={employees.photo} alt="Avatar Tailwind CSS Component" />
+                                                </div>
+                                            </div></th>
+                                            <td className="text-center mx-auto cursor-pointer"><div className="dropdown">
+                                                <div tabIndex={0} role="button" className="mx-10"><BsThreeDotsVertical></BsThreeDotsVertical></div>
+                                                <ul tabIndex={0} className="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-28">
+                                                    <li><a><FaTrash></FaTrash> Delete</a></li>
+                                                    <li><a><FaEdit></FaEdit> Edit</a></li>
+                                                </ul>
+                                            </div></td>
+                                        </tr>)}
+                                    </tbody>
+                                </table>
+                            </div>
+                        </Container>
                     </div>
                 </div>
-            </div>
+            </Container>
+
+            <Container className='bg-white my-5'>
+                <div className="p-4">
+                    <div className="flex justify-between items-center">
+                        <h1 className="text-xl">Hospitalisation</h1>
+                        <input type="checkbox" className="toggle toggle-success" checked />
+                    </div>
+                    <div className="my-7 flex items-center gap-20">
+                        <div>
+                            <p className="text-base my-1">Days</p>
+                            <OutlineInput type='text' className="p-3 w-[370px]"></OutlineInput>
+                        </div>
+                        <div className="mt-8">
+                            <button className="px-3 py-2 rounded-md border border-gray-200 font-bold">Cancel</button>
+                            <button className="px-4 py-2 rounded-md bg-[#FF902F] font-bold text-white ml-3">Save</button>
+                        </div>
+                    </div>
+                </div>
+            </Container>
+            <Container className='bg-white my-5'>
+                <div className="p-4">
+                    <div className="flex justify-between items-center">
+                        <h1 className="text-xl">Maternity Assigned to female only</h1>
+                        <input type="checkbox" className="toggle toggle-success" checked />
+                    </div>
+                    <div className="my-7 flex items-center gap-20">
+                        <div>
+                            <p className="text-base my-1">Days</p>
+                            <OutlineInput type='text' className="p-3 w-[370px]"></OutlineInput>
+                        </div>
+                        <div className="mt-8">
+                            <button className="px-3 py-2 rounded-md border border-gray-200 font-bold">Cancel</button>
+                            <button className="px-4 py-2 rounded-md bg-[#FF902F] font-bold text-white ml-3">Save</button>
+                        </div>
+                    </div>
+                </div>
+            </Container>
+            <Container className='bg-white my-5'>
+                <div className="p-4">
+                    <div className="flex justify-between items-center">
+                        <h1 className="text-xl">Paternity Assigned to male only</h1>
+                        <input type="checkbox" className="toggle toggle-success" checked />
+                    </div>
+                    <div className="my-7 flex items-center gap-20">
+                        <div>
+                            <p className="text-base my-1">Days</p>
+                            <OutlineInput type='text' className="p-3 w-[370px]"></OutlineInput>
+                        </div>
+                        <div className="mt-8">
+                            <button className="px-3 py-2 rounded-md border border-gray-200 font-bold">Cancel</button>
+                            <button className="px-4 py-2 rounded-md bg-[#FF902F] font-bold text-white ml-3">Save</button>
+                        </div>
+                    </div>
+                </div>
+            </Container>
+
+            <Container>
+                <Container className='bg-white'>
+                    <div className="p-4">
+                        <div className="flex justify-between items-center">
+                            <div>
+                                <h1 className="text-xl">LOP</h1>
+                                <button className="px-3 py-1 text-white font-bold mt-4 bg-red-500 rounded-md">Delete</button>
+                            </div>
+                            <input type="checkbox" className="toggle toggle-success" checked />
+                        </div>
+
+                        <div className="my-7 flex items-center gap-20">
+                            <div>
+                                <p className="text-base my-1">Days</p>
+                                <OutlineInput type='text' className="p-3 w-[370px]"></OutlineInput>
+                            </div>
+                            <div className="mt-8">
+                                <button className="px-3 py-2 rounded-md border border-gray-200 font-bold">Cancel</button>
+                                <button className="px-4 py-2 rounded-md bg-[#FF902F] font-bold text-white ml-3">Save</button>
+                            </div>
+                        </div>
+                        <div className="my-7 flex items-center gap-20">
+                            <div>
+                                <p className="text-base my-1">Carry forward</p>
+                                <div className="flex gap-5">
+                                    <div className="flex items-center gap-2">
+                                        <input type="radio" name="radio-1" className="radio" />
+                                        No
+                                    </div>
+                                    <div className="flex items-center gap-2">
+                                        <input type="radio" name="radio-1" className="radio" />
+                                        Yes
+                                    </div>
+                                    <div>
+                                        <label className="input input-bordered flex items-center gap-2">
+                                            Max
+                                            <input type="text" className="grow" />
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="mt-8">
+                                <button className="px-3 py-2 rounded-md border border-gray-200 font-bold">Cancel</button>
+                                <button className="px-4 py-2 rounded-md bg-[#FF902F] font-bold text-white ml-3">Save</button>
+                            </div>
+                        </div>
+                        <div className="my-7 flex items-center gap-20">
+                            <div>
+                                <p className="text-base my-1">Earned leave</p>
+                                <div className="flex gap-5">
+                                    <div className="flex items-center gap-2">
+                                        <input type="radio" name="radio-1" className="radio" />
+                                        No
+                                    </div>
+                                    <div className="flex items-center gap-2">
+                                        <input type="radio" name="radio-1" className="radio" />
+                                        Yes
+                                    </div>
+                                    <div>
+                                        <label className="input input-bordered flex items-center gap-2">
+                                            Max
+                                            <input type="text" className="grow" />
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="mt-8">
+                                <button className="px-3 py-2 rounded-md border border-gray-200 font-bold">Cancel</button>
+                                <button className="px-4 py-2 rounded-md bg-[#FF902F] font-bold text-white ml-3">Save</button>
+                            </div>
+                        </div>
+                        <div>
+                            <div className="flex justify-between items-center">
+                                <h1 className="text-xl">Custom policy</h1>
+                                <CustomPolicy></CustomPolicy>
+                            </div>
+                        </div>
+                        <Container className="p-4">
+                            <div className="overflow-x-auto my-10 bg-white">
+                                <table className="table table-zebra ">
+                                    <thead className="bg-gray-200 ">
+                                        <tr>
+                                            <th className="text-base text-center">Name</th>
+                                            <th className="text-base text-center">Day</th>
+                                            <th className="text-base text-center">Assignee</th>
+                                            <th className="text-base text-center">Action</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        {employees?.map((employees) => <tr key={employees.id}>
+
+                                            <td className="text-center">{employees.name}</td>
+                                            <td className="text-center">{employees.day}</td>
+                                            <th className="text-center"> <div className="avatar">
+                                                <div className="mask mask-squircle w-6 h-6">
+                                                    <img src={employees.photo} alt="Avatar Tailwind CSS Component" />
+                                                </div>
+                                            </div></th>
+                                            <td className="text-center mx-auto cursor-pointer"><div className="dropdown">
+                                                <div tabIndex={0} role="button" className="mx-10"><BsThreeDotsVertical></BsThreeDotsVertical></div>
+                                                <ul tabIndex={0} className="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-28">
+                                                    <li><a><FaTrash></FaTrash> Delete</a></li>
+                                                    <li><a><FaEdit></FaEdit> Edit</a></li>
+                                                </ul>
+                                            </div></td>
+                                        </tr>)}
+                                    </tbody>
+                                </table>
+                            </div>
+                        </Container>
+                    </div>
+                </Container>
+            </Container>
 
         </div>
     );
