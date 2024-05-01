@@ -1,271 +1,275 @@
 import Container from "../../Shared/Container";
+import { RxCross2 } from "react-icons/rx";
+import { FaCheck } from "react-icons/fa";
+import Button from "../../Shared/Button";
+import img1 from '../../assets/employee.jpg'
 
 
 const AdminAttendance = () => {
     const attendance = [
         {
             "name": "Jon Doe",
-            "day1": "https://i.ibb.co/zhCdPBN/check-button-removebg-preview.png",
-            "day2": "https://i.ibb.co/zhCdPBN/check-button-removebg-preview.png",
-            "day3": "https://i.ibb.co/zhCdPBN/check-button-removebg-preview.png",
-            "day4": "https://i.ibb.co/zhCdPBN/check-button-removebg-preview.png",
-            "day5": "https://i.ibb.co/zhCdPBN/check-button-removebg-preview.png",
-            "day6": "https://i.ibb.co/zhCdPBN/check-button-removebg-preview.png",
-            "day7": "https://i.ibb.co/RSxBmhW/360-F-340251800-LCw-H7-U3-LFo7-DUn-GNbp-EKX5fr-MJJD8a6-J-removebg-preview.png",
-            "day8": "https://i.ibb.co/RSxBmhW/360-F-340251800-LCw-H7-U3-LFo7-DUn-GNbp-EKX5fr-MJJD8a6-J-removebg-preview.png",
-            "day9": "https://i.ibb.co/RSxBmhW/360-F-340251800-LCw-H7-U3-LFo7-DUn-GNbp-EKX5fr-MJJD8a6-J-removebg-preview.png",
-            "day10": "https://i.ibb.co/zhCdPBN/check-button-removebg-preview.png",
-            "day11": "https://i.ibb.co/zhCdPBN/check-button-removebg-preview.png",
-            "day12": "https://i.ibb.co/zhCdPBN/check-button-removebg-preview.png",
-            "day13": "https://i.ibb.co/zhCdPBN/check-button-removebg-preview.png",
-            "day14": "https://i.ibb.co/zhCdPBN/check-button-removebg-preview.png",
-            "day15": "https://i.ibb.co/RSxBmhW/360-F-340251800-LCw-H7-U3-LFo7-DUn-GNbp-EKX5fr-MJJD8a6-J-removebg-preview.png",
-            "day16": "https://i.ibb.co/zhCdPBN/check-button-removebg-preview.png",
-            "day17": "https://i.ibb.co/zhCdPBN/check-button-removebg-preview.png",
-            "day18": "https://i.ibb.co/zhCdPBN/check-button-removebg-preview.png",
-            "day19": "https://i.ibb.co/zhCdPBN/check-button-removebg-preview.png",
-            "day20": "https://i.ibb.co/zhCdPBN/check-button-removebg-preview.png",
-            "day21": "https://i.ibb.co/zhCdPBN/check-button-removebg-preview.png",
-            "day22": "https://i.ibb.co/RSxBmhW/360-F-340251800-LCw-H7-U3-LFo7-DUn-GNbp-EKX5fr-MJJD8a6-J-removebg-preview.png",
-            "day23": "https://i.ibb.co/zhCdPBN/check-button-removebg-preview.png",
-            "day24": "https://i.ibb.co/zhCdPBN/check-button-removebg-preview.png",
-            "day25": "https://i.ibb.co/zhCdPBN/check-button-removebg-preview.png",
-            "day26": "https://i.ibb.co/zhCdPBN/check-button-removebg-preview.png",
-            "day27": "https://i.ibb.co/zhCdPBN/check-button-removebg-preview.png",
-            "day28": "https://i.ibb.co/zhCdPBN/check-button-removebg-preview.png",
-            "day29": "https://i.ibb.co/zhCdPBN/check-button-removebg-preview.png",
-            "day30": "https://i.ibb.co/zhCdPBN/check-button-removebg-preview.png",
+            "day1": "present",
+            "day2": "present",
+            "day3": "present",
+            "day4": "present",
+            "day5": "present",
+            "day6": "present",
+            "day7": "absent",
+            "day8": "absent",
+            "day9": "absent",
+            "day10": "present",
+            "day11": "present",
+            "day12": "present",
+            "day13": "present",
+            "day14": "present",
+            "day15": "absent",
+            "day16": "present",
+            "day17": "present",
+            "day18": "present",
+            "day19": "present",
+            "day20": "present",
+            "day21": "present",
+            "day22": "absent",
+            "day23": "present",
+            "day24": "present",
+            "day25": "present",
+            "day26": "present",
+            "day27": "present",
+            "day28": "present",
+            "day29": "present",
+            "day30": "present",
         },
         {
             "name": "Bernardo Galaviz",
-            "day1": "https://i.ibb.co/zhCdPBN/check-button-removebg-preview.png",
-            "day2": "https://i.ibb.co/zhCdPBN/check-button-removebg-preview.png",
-            "day3": "https://i.ibb.co/zhCdPBN/check-button-removebg-preview.png",
-            "day4": "https://i.ibb.co/zhCdPBN/check-button-removebg-preview.png",
-            "day5": "https://i.ibb.co/zhCdPBN/check-button-removebg-preview.png",
-            "day6": "https://i.ibb.co/zhCdPBN/check-button-removebg-preview.png",
-            "day7": "https://i.ibb.co/RSxBmhW/360-F-340251800-LCw-H7-U3-LFo7-DUn-GNbp-EKX5fr-MJJD8a6-J-removebg-preview.png",
-            "day8": "https://i.ibb.co/RSxBmhW/360-F-340251800-LCw-H7-U3-LFo7-DUn-GNbp-EKX5fr-MJJD8a6-J-removebg-preview.png",
-            "day9": "https://i.ibb.co/RSxBmhW/360-F-340251800-LCw-H7-U3-LFo7-DUn-GNbp-EKX5fr-MJJD8a6-J-removebg-preview.png",
-            "day10": "https://i.ibb.co/zhCdPBN/check-button-removebg-preview.png",
-            "day11": "https://i.ibb.co/zhCdPBN/check-button-removebg-preview.png",
-            "day12": "https://i.ibb.co/zhCdPBN/check-button-removebg-preview.png",
-            "day13": "https://i.ibb.co/zhCdPBN/check-button-removebg-preview.png",
-            "day14": "https://i.ibb.co/zhCdPBN/check-button-removebg-preview.png",
-            "day15": "https://i.ibb.co/RSxBmhW/360-F-340251800-LCw-H7-U3-LFo7-DUn-GNbp-EKX5fr-MJJD8a6-J-removebg-preview.png",
-            "day16": "https://i.ibb.co/zhCdPBN/check-button-removebg-preview.png",
-            "day17": "https://i.ibb.co/zhCdPBN/check-button-removebg-preview.png",
-            "day18": "https://i.ibb.co/zhCdPBN/check-button-removebg-preview.png",
-            "day19": "https://i.ibb.co/zhCdPBN/check-button-removebg-preview.png",
-            "day20": "https://i.ibb.co/zhCdPBN/check-button-removebg-preview.png",
-            "day21": "https://i.ibb.co/zhCdPBN/check-button-removebg-preview.png",
-            "day22": "https://i.ibb.co/RSxBmhW/360-F-340251800-LCw-H7-U3-LFo7-DUn-GNbp-EKX5fr-MJJD8a6-J-removebg-preview.png",
-            "day23": "https://i.ibb.co/zhCdPBN/check-button-removebg-preview.png",
-            "day24": "https://i.ibb.co/zhCdPBN/check-button-removebg-preview.png",
-            "day25": "https://i.ibb.co/zhCdPBN/check-button-removebg-preview.png",
-            "day26": "https://i.ibb.co/zhCdPBN/check-button-removebg-preview.png",
-            "day27": "https://i.ibb.co/zhCdPBN/check-button-removebg-preview.png",
-            "day28": "https://i.ibb.co/zhCdPBN/check-button-removebg-preview.png",
-            "day29": "https://i.ibb.co/zhCdPBN/check-button-removebg-preview.png",
-            "day30": "https://i.ibb.co/zhCdPBN/check-button-removebg-preview.png",
+            "day1": "present",
+            "day2": "present",
+            "day3": "present",
+            "day4": "present",
+            "day5": "present",
+            "day6": "present",
+            "day7": "absent",
+            "day8": "absent",
+            "day9": "absent",
+            "day10": "present",
+            "day11": "present",
+            "day12": "present",
+            "day13": "present",
+            "day14": "present",
+            "day15": "absent",
+            "day16": "present",
+            "day17": "present",
+            "day18": "present",
+            "day19": "present",
+            "day20": "present",
+            "day21": "present",
+            "day22": "absent",
+            "day23": "present",
+            "day24": "present",
+            "day25": "present",
+            "day26": "present",
+            "day27": "present",
+            "day28": "present",
+            "day29": "present",
+            "day30": "present",
         },
         {
             "name": "Jeffrey Warden",
-            "day1": "https://i.ibb.co/zhCdPBN/check-button-removebg-preview.png",
-            "day2": "https://i.ibb.co/zhCdPBN/check-button-removebg-preview.png",
-            "day3": "https://i.ibb.co/zhCdPBN/check-button-removebg-preview.png",
-            "day4": "https://i.ibb.co/zhCdPBN/check-button-removebg-preview.png",
-            "day5": "https://i.ibb.co/zhCdPBN/check-button-removebg-preview.png",
-            "day6": "https://i.ibb.co/zhCdPBN/check-button-removebg-preview.png",
-            "day7": "https://i.ibb.co/RSxBmhW/360-F-340251800-LCw-H7-U3-LFo7-DUn-GNbp-EKX5fr-MJJD8a6-J-removebg-preview.png",
-            "day8": "https://i.ibb.co/RSxBmhW/360-F-340251800-LCw-H7-U3-LFo7-DUn-GNbp-EKX5fr-MJJD8a6-J-removebg-preview.png",
-            "day9": "https://i.ibb.co/RSxBmhW/360-F-340251800-LCw-H7-U3-LFo7-DUn-GNbp-EKX5fr-MJJD8a6-J-removebg-preview.png",
-            "day10": "https://i.ibb.co/zhCdPBN/check-button-removebg-preview.png",
-            "day11": "https://i.ibb.co/zhCdPBN/check-button-removebg-preview.png",
-            "day12": "https://i.ibb.co/zhCdPBN/check-button-removebg-preview.png",
-            "day13": "https://i.ibb.co/zhCdPBN/check-button-removebg-preview.png",
-            "day14": "https://i.ibb.co/zhCdPBN/check-button-removebg-preview.png",
-            "day15": "https://i.ibb.co/RSxBmhW/360-F-340251800-LCw-H7-U3-LFo7-DUn-GNbp-EKX5fr-MJJD8a6-J-removebg-preview.png",
-            "day16": "https://i.ibb.co/zhCdPBN/check-button-removebg-preview.png",
-            "day17": "https://i.ibb.co/zhCdPBN/check-button-removebg-preview.png",
-            "day18": "https://i.ibb.co/zhCdPBN/check-button-removebg-preview.png",
-            "day19": "https://i.ibb.co/zhCdPBN/check-button-removebg-preview.png",
-            "day20": "https://i.ibb.co/zhCdPBN/check-button-removebg-preview.png",
-            "day21": "https://i.ibb.co/zhCdPBN/check-button-removebg-preview.png",
-            "day22": "https://i.ibb.co/zhCdPBN/check-button-removebg-preview.png",
-            "day23": "https://i.ibb.co/zhCdPBN/check-button-removebg-preview.png",
-            "day24": "https://i.ibb.co/zhCdPBN/check-button-removebg-preview.png",
-            "day25": "https://i.ibb.co/zhCdPBN/check-button-removebg-preview.png",
-            "day26": "https://i.ibb.co/zhCdPBN/check-button-removebg-preview.png",
-            "day27": "https://i.ibb.co/zhCdPBN/check-button-removebg-preview.png",
-            "day28": "https://i.ibb.co/zhCdPBN/check-button-removebg-preview.png",
-            "day29": "https://i.ibb.co/RSxBmhW/360-F-340251800-LCw-H7-U3-LFo7-DUn-GNbp-EKX5fr-MJJD8a6-J-removebg-preview.png",
-            "day30": "https://i.ibb.co/zhCdPBN/check-button-removebg-preview.png",
+            "day1": "present",
+            "day2": "present",
+            "day3": "present",
+            "day4": "present",
+            "day5": "present",
+            "day6": "present",
+            "day7": "absent",
+            "day8": "absent",
+            "day9": "absent",
+            "day10": "present",
+            "day11": "present",
+            "day12": "present",
+            "day13": "present",
+            "day14": "present",
+            "day15": "absent",
+            "day16": "present",
+            "day17": "present",
+            "day18": "present",
+            "day19": "present",
+            "day20": "present",
+            "day21": "present",
+            "day22": "absent",
+            "day23": "present",
+            "day24": "present",
+            "day25": "present",
+            "day26": "present",
+            "day27": "present",
+            "day28": "present",
+            "day29": "present",
+            "day30": "present",
         },
         {
             "name": "Bernardo Galaviz",
-            "day1": "https://i.ibb.co/zhCdPBN/check-button-removebg-preview.png",
-            "day2": "https://i.ibb.co/zhCdPBN/check-button-removebg-preview.png",
-            "day3": "https://i.ibb.co/zhCdPBN/check-button-removebg-preview.png",
-            "day4": "https://i.ibb.co/zhCdPBN/check-button-removebg-preview.png",
-            "day5": "https://i.ibb.co/zhCdPBN/check-button-removebg-preview.png",
-            "day6": "https://i.ibb.co/zhCdPBN/check-button-removebg-preview.png",
-            "day7": "https://i.ibb.co/RSxBmhW/360-F-340251800-LCw-H7-U3-LFo7-DUn-GNbp-EKX5fr-MJJD8a6-J-removebg-preview.png",
-            "day8": "https://i.ibb.co/RSxBmhW/360-F-340251800-LCw-H7-U3-LFo7-DUn-GNbp-EKX5fr-MJJD8a6-J-removebg-preview.png",
-            "day9": "https://i.ibb.co/RSxBmhW/360-F-340251800-LCw-H7-U3-LFo7-DUn-GNbp-EKX5fr-MJJD8a6-J-removebg-preview.png",
-            "day10": "https://i.ibb.co/zhCdPBN/check-button-removebg-preview.png",
-            "day11": "https://i.ibb.co/zhCdPBN/check-button-removebg-preview.png",
-            "day12": "https://i.ibb.co/zhCdPBN/check-button-removebg-preview.png",
-            "day13": "https://i.ibb.co/zhCdPBN/check-button-removebg-preview.png",
-            "day14": "https://i.ibb.co/zhCdPBN/check-button-removebg-preview.png",
-            "day15": "https://i.ibb.co/RSxBmhW/360-F-340251800-LCw-H7-U3-LFo7-DUn-GNbp-EKX5fr-MJJD8a6-J-removebg-preview.png",
-            "day16": "https://i.ibb.co/zhCdPBN/check-button-removebg-preview.png",
-            "day17": "https://i.ibb.co/zhCdPBN/check-button-removebg-preview.png",
-            "day18": "https://i.ibb.co/zhCdPBN/check-button-removebg-preview.png",
-            "day19": "https://i.ibb.co/zhCdPBN/check-button-removebg-preview.png",
-            "day20": "https://i.ibb.co/zhCdPBN/check-button-removebg-preview.png",
-            "day21": "https://i.ibb.co/zhCdPBN/check-button-removebg-preview.png",
-            "day22": "https://i.ibb.co/RSxBmhW/360-F-340251800-LCw-H7-U3-LFo7-DUn-GNbp-EKX5fr-MJJD8a6-J-removebg-preview.png",
-            "day23": "https://i.ibb.co/zhCdPBN/check-button-removebg-preview.png",
-            "day24": "https://i.ibb.co/zhCdPBN/check-button-removebg-preview.png",
-            "day25": "https://i.ibb.co/zhCdPBN/check-button-removebg-preview.png",
-            "day26": "https://i.ibb.co/zhCdPBN/check-button-removebg-preview.png",
-            "day27": "https://i.ibb.co/zhCdPBN/check-button-removebg-preview.png",
-            "day28": "https://i.ibb.co/zhCdPBN/check-button-removebg-preview.png",
-            "day29": "https://i.ibb.co/zhCdPBN/check-button-removebg-preview.png",
-            "day30": "https://i.ibb.co/zhCdPBN/check-button-removebg-preview.png",
+            "day1": "present",
+            "day2": "present",
+            "day3": "present",
+            "day4": "present",
+            "day5": "present",
+            "day6": "present",
+            "day7": "absent",
+            "day8": "absent",
+            "day9": "absent",
+            "day10": "present",
+            "day11": "present",
+            "day12": "present",
+            "day13": "present",
+            "day14": "present",
+            "day15": "absent",
+            "day16": "present",
+            "day17": "present",
+            "day18": "present",
+            "day19": "present",
+            "day20": "present",
+            "day21": "present",
+            "day22": "absent",
+            "day23": "present",
+            "day24": "present",
+            "day25": "present",
+            "day26": "present",
+            "day27": "present",
+            "day28": "present",
+            "day29": "present",
+            "day30": "present",
         },
         {
             "name": "Lesley Gatlin",
-            "day1": "https://i.ibb.co/zhCdPBN/check-button-removebg-preview.png",
-            "day2": "https://i.ibb.co/zhCdPBN/check-button-removebg-preview.png",
-            "day3": "https://i.ibb.co/zhCdPBN/check-button-removebg-preview.png",
-            "day4": "https://i.ibb.co/zhCdPBN/check-button-removebg-preview.png",
-            "day5": "https://i.ibb.co/zhCdPBN/check-button-removebg-preview.png",
-            "day6": "https://i.ibb.co/zhCdPBN/check-button-removebg-preview.png",
-            "day7": "https://i.ibb.co/RSxBmhW/360-F-340251800-LCw-H7-U3-LFo7-DUn-GNbp-EKX5fr-MJJD8a6-J-removebg-preview.png",
-            "day8": "https://i.ibb.co/RSxBmhW/360-F-340251800-LCw-H7-U3-LFo7-DUn-GNbp-EKX5fr-MJJD8a6-J-removebg-preview.png",
-            "day9": "https://i.ibb.co/RSxBmhW/360-F-340251800-LCw-H7-U3-LFo7-DUn-GNbp-EKX5fr-MJJD8a6-J-removebg-preview.png",
-            "day10": "https://i.ibb.co/zhCdPBN/check-button-removebg-preview.png",
-            "day11": "https://i.ibb.co/zhCdPBN/check-button-removebg-preview.png",
-            "day12": "https://i.ibb.co/zhCdPBN/check-button-removebg-preview.png",
-            "day13": "https://i.ibb.co/zhCdPBN/check-button-removebg-preview.png",
-            "day14": "https://i.ibb.co/zhCdPBN/check-button-removebg-preview.png",
-            "day15": "https://i.ibb.co/RSxBmhW/360-F-340251800-LCw-H7-U3-LFo7-DUn-GNbp-EKX5fr-MJJD8a6-J-removebg-preview.png",
-            "day16": "https://i.ibb.co/zhCdPBN/check-button-removebg-preview.png",
-            "day17": "https://i.ibb.co/zhCdPBN/check-button-removebg-preview.png",
-            "day18": "https://i.ibb.co/zhCdPBN/check-button-removebg-preview.png",
-            "day19": "https://i.ibb.co/zhCdPBN/check-button-removebg-preview.png",
-            "day20": "https://i.ibb.co/zhCdPBN/check-button-removebg-preview.png",
-            "day21": "https://i.ibb.co/zhCdPBN/check-button-removebg-preview.png",
-            "day22": "https://i.ibb.co/zhCdPBN/check-button-removebg-preview.png",
-            "day23": "https://i.ibb.co/zhCdPBN/check-button-removebg-preview.png",
-            "day24": "https://i.ibb.co/zhCdPBN/check-button-removebg-preview.png",
-            "day25": "https://i.ibb.co/zhCdPBN/check-button-removebg-preview.png",
-            "day26": "https://i.ibb.co/zhCdPBN/check-button-removebg-preview.png",
-            "day27": "https://i.ibb.co/zhCdPBN/check-button-removebg-preview.png",
-            "day28": "https://i.ibb.co/zhCdPBN/check-button-removebg-preview.png",
-            "day29": "https://i.ibb.co/zhCdPBN/check-button-removebg-preview.png",
-            "day30": "https://i.ibb.co/zhCdPBN/check-button-removebg-preview.png",
+            "day1": "present",
+            "day2": "present",
+            "day3": "present",
+            "day4": "present",
+            "day5": "present",
+            "day6": "present",
+            "day7": "absent",
+            "day8": "absent",
+            "day9": "absent",
+            "day10": "present",
+            "day11": "present",
+            "day12": "present",
+            "day13": "present",
+            "day14": "present",
+            "day15": "absent",
+            "day16": "present",
+            "day17": "present",
+            "day18": "present",
+            "day19": "present",
+            "day20": "present",
+            "day21": "present",
+            "day22": "absent",
+            "day23": "present",
+            "day24": "present",
+            "day25": "present",
+            "day26": "present",
+            "day27": "present",
+            "day28": "present",
+            "day29": "present",
+            "day30": "present",
         },
         {
             "name": "Bernardo Galaviz",
-            "day1": "https://i.ibb.co/zhCdPBN/check-button-removebg-preview.png",
-            "day2": "https://i.ibb.co/zhCdPBN/check-button-removebg-preview.png",
-            "day3": "https://i.ibb.co/zhCdPBN/check-button-removebg-preview.png",
-            "day4": "https://i.ibb.co/zhCdPBN/check-button-removebg-preview.png",
-            "day5": "https://i.ibb.co/zhCdPBN/check-button-removebg-preview.png",
-            "day6": "https://i.ibb.co/zhCdPBN/check-button-removebg-preview.png",
-            "day7": "https://i.ibb.co/RSxBmhW/360-F-340251800-LCw-H7-U3-LFo7-DUn-GNbp-EKX5fr-MJJD8a6-J-removebg-preview.png",
-            "day8": "https://i.ibb.co/RSxBmhW/360-F-340251800-LCw-H7-U3-LFo7-DUn-GNbp-EKX5fr-MJJD8a6-J-removebg-preview.png",
-            "day9": "https://i.ibb.co/RSxBmhW/360-F-340251800-LCw-H7-U3-LFo7-DUn-GNbp-EKX5fr-MJJD8a6-J-removebg-preview.png",
-            "day10": "https://i.ibb.co/zhCdPBN/check-button-removebg-preview.png",
-            "day11": "https://i.ibb.co/zhCdPBN/check-button-removebg-preview.png",
-            "day12": "https://i.ibb.co/zhCdPBN/check-button-removebg-preview.png",
-            "day13": "https://i.ibb.co/zhCdPBN/check-button-removebg-preview.png",
-            "day14": "https://i.ibb.co/zhCdPBN/check-button-removebg-preview.png",
-            "day15": "https://i.ibb.co/RSxBmhW/360-F-340251800-LCw-H7-U3-LFo7-DUn-GNbp-EKX5fr-MJJD8a6-J-removebg-preview.png",
-            "day16": "https://i.ibb.co/zhCdPBN/check-button-removebg-preview.png",
-            "day17": "https://i.ibb.co/zhCdPBN/check-button-removebg-preview.png",
-            "day18": "https://i.ibb.co/zhCdPBN/check-button-removebg-preview.png",
-            "day19": "https://i.ibb.co/zhCdPBN/check-button-removebg-preview.png",
-            "day20": "https://i.ibb.co/zhCdPBN/check-button-removebg-preview.png",
-            "day21": "https://i.ibb.co/zhCdPBN/check-button-removebg-preview.png",
-            "day22": "https://i.ibb.co/zhCdPBN/check-button-removebg-preview.png",
-            "day23": "https://i.ibb.co/zhCdPBN/check-button-removebg-preview.png",
-            "day24": "https://i.ibb.co/zhCdPBN/check-button-removebg-preview.png",
-            "day25": "https://i.ibb.co/RSxBmhW/360-F-340251800-LCw-H7-U3-LFo7-DUn-GNbp-EKX5fr-MJJD8a6-J-removebg-preview.png",
-            "day26": "https://i.ibb.co/zhCdPBN/check-button-removebg-preview.png",
-            "day27": "https://i.ibb.co/zhCdPBN/check-button-removebg-preview.png",
-            "day28": "https://i.ibb.co/zhCdPBN/check-button-removebg-preview.png",
-            "day29": "https://i.ibb.co/zhCdPBN/check-button-removebg-preview.png",
-            "day30": "https://i.ibb.co/zhCdPBN/check-button-removebg-preview.png",
+            "day1": "present",
+            "day2": "present",
+            "day3": "present",
+            "day4": "present",
+            "day5": "present",
+            "day6": "present",
+            "day7": "absent",
+            "day8": "absent",
+            "day9": "absent",
+            "day10": "present",
+            "day11": "present",
+            "day12": "present",
+            "day13": "present",
+            "day14": "present",
+            "day15": "absent",
+            "day16": "present",
+            "day17": "present",
+            "day18": "present",
+            "day19": "present",
+            "day20": "present",
+            "day21": "present",
+            "day22": "absent",
+            "day23": "present",
+            "day24": "present",
+            "day25": "present",
+            "day26": "present",
+            "day27": "present",
+            "day28": "present",
+            "day29": "present",
+            "day30": "present",
         },
         {
             "name": "Jeffrey Warden",
-            "day1": "https://i.ibb.co/zhCdPBN/check-button-removebg-preview.png",
-            "day2": "https://i.ibb.co/zhCdPBN/check-button-removebg-preview.png",
-            "day3": "https://i.ibb.co/zhCdPBN/check-button-removebg-preview.png",
-            "day4": "https://i.ibb.co/zhCdPBN/check-button-removebg-preview.png",
-            "day5": "https://i.ibb.co/zhCdPBN/check-button-removebg-preview.png",
-            "day6": "https://i.ibb.co/zhCdPBN/check-button-removebg-preview.png",
-            "day7": "https://i.ibb.co/RSxBmhW/360-F-340251800-LCw-H7-U3-LFo7-DUn-GNbp-EKX5fr-MJJD8a6-J-removebg-preview.png",
-            "day8": "https://i.ibb.co/RSxBmhW/360-F-340251800-LCw-H7-U3-LFo7-DUn-GNbp-EKX5fr-MJJD8a6-J-removebg-preview.png",
-            "day9": "https://i.ibb.co/RSxBmhW/360-F-340251800-LCw-H7-U3-LFo7-DUn-GNbp-EKX5fr-MJJD8a6-J-removebg-preview.png",
-            "day10": "https://i.ibb.co/zhCdPBN/check-button-removebg-preview.png",
-            "day11": "https://i.ibb.co/zhCdPBN/check-button-removebg-preview.png",
-            "day12": "https://i.ibb.co/zhCdPBN/check-button-removebg-preview.png",
-            "day13": "https://i.ibb.co/zhCdPBN/check-button-removebg-preview.png",
-            "day14": "https://i.ibb.co/zhCdPBN/check-button-removebg-preview.png",
-            "day15": "https://i.ibb.co/RSxBmhW/360-F-340251800-LCw-H7-U3-LFo7-DUn-GNbp-EKX5fr-MJJD8a6-J-removebg-preview.png",
-            "day16": "https://i.ibb.co/zhCdPBN/check-button-removebg-preview.png",
-            "day17": "https://i.ibb.co/zhCdPBN/check-button-removebg-preview.png",
-            "day18": "https://i.ibb.co/zhCdPBN/check-button-removebg-preview.png",
-            "day19": "https://i.ibb.co/zhCdPBN/check-button-removebg-preview.png",
-            "day20": "https://i.ibb.co/zhCdPBN/check-button-removebg-preview.png",
-            "day21": "https://i.ibb.co/zhCdPBN/check-button-removebg-preview.png",
-            "day22": "https://i.ibb.co/zhCdPBN/check-button-removebg-preview.png",
-            "day23": "https://i.ibb.co/zhCdPBN/check-button-removebg-preview.png",
-            "day24": "https://i.ibb.co/zhCdPBN/check-button-removebg-preview.png",
-            "day25": "https://i.ibb.co/zhCdPBN/check-button-removebg-preview.png",
-            "day26": "https://i.ibb.co/zhCdPBN/check-button-removebg-preview.png",
-            "day27": "https://i.ibb.co/zhCdPBN/check-button-removebg-preview.png",
-            "day28": "https://i.ibb.co/zhCdPBN/check-button-removebg-preview.png",
-            "day29": "https://i.ibb.co/zhCdPBN/check-button-removebg-preview.png",
-            "day30": "https://i.ibb.co/zhCdPBN/check-button-removebg-preview.png",
+            "day1": "present",
+            "day2": "present",
+            "day3": "present",
+            "day4": "present",
+            "day5": "present",
+            "day6": "present",
+            "day7": "absent",
+            "day8": "absent",
+            "day9": "absent",
+            "day10": "present",
+            "day11": "present",
+            "day12": "present",
+            "day13": "present",
+            "day14": "present",
+            "day15": "absent",
+            "day16": "present",
+            "day17": "present",
+            "day18": "present",
+            "day19": "present",
+            "day20": "present",
+            "day21": "present",
+            "day22": "absent",
+            "day23": "present",
+            "day24": "present",
+            "day25": "present",
+            "day26": "present",
+            "day27": "present",
+            "day28": "present",
+            "day29": "present",
+            "day30": "present",
         },
         {
             "name": "Lesley Gatlin",
-            "day1": "https://i.ibb.co/zhCdPBN/check-button-removebg-preview.png",
-            "day2": "https://i.ibb.co/zhCdPBN/check-button-removebg-preview.png",
-            "day3": "https://i.ibb.co/zhCdPBN/check-button-removebg-preview.png",
-            "day4": "https://i.ibb.co/zhCdPBN/check-button-removebg-preview.png",
-            "day5": "https://i.ibb.co/zhCdPBN/check-button-removebg-preview.png",
-            "day6": "https://i.ibb.co/zhCdPBN/check-button-removebg-preview.png",
-            "day7": "https://i.ibb.co/RSxBmhW/360-F-340251800-LCw-H7-U3-LFo7-DUn-GNbp-EKX5fr-MJJD8a6-J-removebg-preview.png",
-            "day8": "https://i.ibb.co/RSxBmhW/360-F-340251800-LCw-H7-U3-LFo7-DUn-GNbp-EKX5fr-MJJD8a6-J-removebg-preview.png",
-            "day9": "https://i.ibb.co/RSxBmhW/360-F-340251800-LCw-H7-U3-LFo7-DUn-GNbp-EKX5fr-MJJD8a6-J-removebg-preview.png",
-            "day10": "https://i.ibb.co/zhCdPBN/check-button-removebg-preview.png",
-            "day11": "https://i.ibb.co/zhCdPBN/check-button-removebg-preview.png",
-            "day12": "https://i.ibb.co/zhCdPBN/check-button-removebg-preview.png",
-            "day13": "https://i.ibb.co/zhCdPBN/check-button-removebg-preview.png",
-            "day14": "https://i.ibb.co/zhCdPBN/check-button-removebg-preview.png",
-            "day15": "https://i.ibb.co/RSxBmhW/360-F-340251800-LCw-H7-U3-LFo7-DUn-GNbp-EKX5fr-MJJD8a6-J-removebg-preview.png",
-            "day16": "https://i.ibb.co/zhCdPBN/check-button-removebg-preview.png",
-            "day17": "https://i.ibb.co/zhCdPBN/check-button-removebg-preview.png",
-            "day18": "https://i.ibb.co/zhCdPBN/check-button-removebg-preview.png",
-            "day19": "https://i.ibb.co/zhCdPBN/check-button-removebg-preview.png",
-            "day20": "https://i.ibb.co/zhCdPBN/check-button-removebg-preview.png",
-            "day21": "https://i.ibb.co/RSxBmhW/360-F-340251800-LCw-H7-U3-LFo7-DUn-GNbp-EKX5fr-MJJD8a6-J-removebg-preview.png",
-            "day22": "https://i.ibb.co/zhCdPBN/check-button-removebg-preview.png",
-            "day23": "https://i.ibb.co/zhCdPBN/check-button-removebg-preview.png",
-            "day24": "https://i.ibb.co/zhCdPBN/check-button-removebg-preview.png",
-            "day25": "https://i.ibb.co/zhCdPBN/check-button-removebg-preview.png",
-            "day26": "https://i.ibb.co/zhCdPBN/check-button-removebg-preview.png",
-            "day27": "https://i.ibb.co/zhCdPBN/check-button-removebg-preview.png",
-            "day28": "https://i.ibb.co/zhCdPBN/check-button-removebg-preview.png",
-            "day29": "https://i.ibb.co/zhCdPBN/check-button-removebg-preview.png",
-            "day30": "https://i.ibb.co/zhCdPBN/check-button-removebg-preview.png",
+            "day1": "present",
+            "day2": "present",
+            "day3": "present",
+            "day4": "present",
+            "day5": "present",
+            "day6": "present",
+            "day7": "absent",
+            "day8": "absent",
+            "day9": "absent",
+            "day10": "present",
+            "day11": "present",
+            "day12": "present",
+            "day13": "present",
+            "day14": "present",
+            "day15": "absent",
+            "day16": "present",
+            "day17": "present",
+            "day18": "present",
+            "day19": "present",
+            "day20": "present",
+            "day21": "present",
+            "day22": "absent",
+            "day23": "present",
+            "day24": "present",
+            "day25": "present",
+            "day26": "present",
+            "day27": "present",
+            "day28": "present",
+            "day29": "present",
+            "day30": "present",
         }
 
     ]
@@ -274,7 +278,7 @@ const AdminAttendance = () => {
             <div className="lg:flex items-center justify-between">
                 <div>
                     <h1 className="my-6 text-2xl">Admin Attendance</h1>
-                    <div className="text-lg breadcrumbs mr-2">
+                    <div className="text-base font-bold cursor-pointer breadcrumbs mr-2">
                         <ul>
                             <li><a>Dashboard</a></li>
                             <li><a>Admin Attendance</a></li>
@@ -329,215 +333,2887 @@ const AdminAttendance = () => {
                                     {attendance.name}
                                 </td>
                                 <td className="text-base text-center">
-                                    <div className="avatar">
-                                        <div className="mask mask-squircle w-4 h-4">
-                                            <img src={attendance.day1} alt="Avatar Tailwind CSS Component" />
-                                        </div>
-                                    </div>
+                                    {attendance.day1 == "present" ?
+                                        <>
+                                            <FaCheck onClick={() => document.getElementById('my_modal_339845784').showModal()} className="text-base font-bold cursor-pointer text-green-400"></FaCheck>
+                                            {/* You can open the modal using document.getElementById('ID').showModal() method */}
+                                            <dialog id="my_modal_339845784" className="modal">
+                                                <div className="modal-box w-11/12 max-w-5xl">
+                                                    <form method="dialog">
+                                                        {/* if there is a button in form, it will close the modal */}
+                                                        <button className="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">✕</button>
+                                                    </form>
+                                                    <div className="p-4">
+
+                                                        <div className='lg:flex gap-3'>
+                                                            <div className='lg:flex-1'>
+                                                                <div className="card bg-base-100 shadow-xl">
+                                                                    <h1 className='text-xl my-3 text-center'>Timesheet 11 Mar 2023 </h1>
+                                                                    <figure><img src={img1} className='h-40 w-44 rounded-full mx-auto' alt="Shoes" /></figure>
+                                                                    <Button className='p-3 text-white mx-auto'>Punch Out</Button>
+                                                                    <div className="card-body text-center">
+                                                                        <h1 className='text-center'>Punch In at</h1>
+                                                                        <p className='text-center'>Wed, 11th Mar 2023 10.00 AM</p>
+                                                                        <div className='flex justify-around gap-4'>
+                                                                            <p className='bg-slate-500 bg-opacity-15 py-4'>Break 1.21 hrs</p>
+                                                                            <p className='bg-slate-500 bg-opacity-15 py-4'>Overtime 3 hrs</p>
+                                                                        </div>
+                                                                    </div>
+
+                                                                </div>
+                                                            </div>
+
+                                                            <div className='my-8 lg:flex-1'>
+                                                                <div className="card bg-base-100 shadow-xl p-4">
+                                                                    <h1 className='text-xl my-3 text-center'>Today Activity</h1>
+                                                                    <ul className="timeline timeline-vertical">
+                                                                        <li>
+                                                                            <div className="timeline-middle">
+                                                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="w-5 h-5"><path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z" clipRule="evenodd" /></svg>
+                                                                            </div>
+                                                                            <div className="timeline-end timeline-box">Punch In at
+
+                                                                                2.00 PM</div>
+                                                                            <hr />
+                                                                        </li>
+                                                                        <li>
+                                                                            <hr />
+                                                                            <div className="timeline-middle">
+                                                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="w-5 h-5"><path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z" clipRule="evenodd" /></svg>
+                                                                            </div>
+                                                                            <div className="timeline-end timeline-box">Punch Out at
+
+                                                                                1.30 PM</div>
+                                                                            <hr />
+                                                                        </li>
+                                                                        <li>
+                                                                            <hr />
+                                                                            <div className="timeline-middle">
+                                                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="w-5 h-5"><path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z" clipRule="evenodd" /></svg>
+                                                                            </div>
+                                                                            <div className="timeline-end timeline-box">Punch In at
+
+                                                                                11.15 AM</div>
+                                                                            <hr />
+                                                                        </li>
+                                                                        <li>
+                                                                            <hr />
+                                                                            <div className="timeline-middle">
+                                                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="w-5 h-5"><path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z" clipRule="evenodd" /></svg>
+                                                                            </div>
+                                                                            <div className="timeline-end timeline-box">Punch Out at
+
+                                                                                11.00 AM</div>
+                                                                            <hr />
+                                                                        </li>
+                                                                        <li>
+                                                                            <hr />
+                                                                            <div className="timeline-middle">
+                                                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="w-5 h-5"><path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z" clipRule="evenodd" /></svg>
+                                                                            </div>
+                                                                            <div className="timeline-end timeline-box">Punch Out at
+
+                                                                                7.30 PM</div>
+                                                                        </li>
+                                                                    </ul>
+
+                                                                </div>
+                                                            </div>
+                                                            <div></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </dialog>
+                                        </>
+                                        :
+                                        <RxCross2 className="text-base font-bold cursor-pointer text-red-500"></RxCross2>}
                                 </td>
                                 <td className="text-base text-center">
-                                    <div className="avatar">
-                                        <div className="mask mask-squircle w-4 h-4">
-                                            <img src={attendance.day2} alt="Avatar Tailwind CSS Component" />
-                                        </div>
-                                    </div>
+                                    {attendance.day2 == "present" ?
+                                        <>
+                                            <FaCheck onClick={() => document.getElementById('my_modal_339845784').showModal()} className="text-base font-bold cursor-pointer text-green-400"></FaCheck>
+                                            {/* You can open the modal using document.getElementById('ID').showModal() method */}
+                                            <dialog id="my_modal_339845784" className="modal">
+                                                <div className="modal-box w-11/12 max-w-5xl">
+                                                    <form method="dialog">
+                                                        {/* if there is a button in form, it will close the modal */}
+                                                        <button className="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">✕</button>
+                                                    </form>
+                                                    <div className="p-4">
+
+                                                        <div className='lg:flex gap-3'>
+                                                            <div className='lg:flex-1'>
+                                                                <div className="card bg-base-100 shadow-xl">
+                                                                    <h1 className='text-xl my-3 text-center'>Timesheet 11 Mar 2023 </h1>
+                                                                    <figure><img src={img1} className='h-40 w-44 rounded-full mx-auto' alt="Shoes" /></figure>
+                                                                    <Button className='p-3 text-white mx-auto'>Punch Out</Button>
+                                                                    <div className="card-body text-center">
+                                                                        <h1 className='text-center'>Punch In at</h1>
+                                                                        <p className='text-center'>Wed, 11th Mar 2023 10.00 AM</p>
+                                                                        <div className='flex justify-around gap-4'>
+                                                                            <p className='bg-slate-500 bg-opacity-15 py-4'>Break 1.21 hrs</p>
+                                                                            <p className='bg-slate-500 bg-opacity-15 py-4'>Overtime 3 hrs</p>
+                                                                        </div>
+                                                                    </div>
+
+                                                                </div>
+                                                            </div>
+
+                                                            <div className='my-8 lg:flex-1'>
+                                                                <div className="card bg-base-100 shadow-xl p-4">
+                                                                    <h1 className='text-xl my-3 text-center'>Today Activity</h1>
+                                                                    <ul className="timeline timeline-vertical">
+                                                                        <li>
+                                                                            <div className="timeline-middle">
+                                                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="w-5 h-5"><path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z" clipRule="evenodd" /></svg>
+                                                                            </div>
+                                                                            <div className="timeline-end timeline-box">Punch In at
+
+                                                                                2.00 PM</div>
+                                                                            <hr />
+                                                                        </li>
+                                                                        <li>
+                                                                            <hr />
+                                                                            <div className="timeline-middle">
+                                                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="w-5 h-5"><path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z" clipRule="evenodd" /></svg>
+                                                                            </div>
+                                                                            <div className="timeline-end timeline-box">Punch Out at
+
+                                                                                1.30 PM</div>
+                                                                            <hr />
+                                                                        </li>
+                                                                        <li>
+                                                                            <hr />
+                                                                            <div className="timeline-middle">
+                                                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="w-5 h-5"><path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z" clipRule="evenodd" /></svg>
+                                                                            </div>
+                                                                            <div className="timeline-end timeline-box">Punch In at
+
+                                                                                11.15 AM</div>
+                                                                            <hr />
+                                                                        </li>
+                                                                        <li>
+                                                                            <hr />
+                                                                            <div className="timeline-middle">
+                                                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="w-5 h-5"><path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z" clipRule="evenodd" /></svg>
+                                                                            </div>
+                                                                            <div className="timeline-end timeline-box">Punch Out at
+
+                                                                                11.00 AM</div>
+                                                                            <hr />
+                                                                        </li>
+                                                                        <li>
+                                                                            <hr />
+                                                                            <div className="timeline-middle">
+                                                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="w-5 h-5"><path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z" clipRule="evenodd" /></svg>
+                                                                            </div>
+                                                                            <div className="timeline-end timeline-box">Punch Out at
+
+                                                                                7.30 PM</div>
+                                                                        </li>
+                                                                    </ul>
+
+                                                                </div>
+                                                            </div>
+                                                            <div></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </dialog>
+                                        </>
+                                        :
+                                        <RxCross2 className="text-base font-bold cursor-pointer text-red-500"></RxCross2>}
                                 </td>
                                 <td className="text-base text-center">
-                                    <div className="avatar">
-                                        <div className="mask mask-squircle w-4 h-4">
-                                            <img src={attendance.day3} alt="Avatar Tailwind CSS Component" />
-                                        </div>
-                                    </div>
+                                    {attendance.day3 == "present" ?
+                                        <>
+                                            <FaCheck onClick={() => document.getElementById('my_modal_339845784').showModal()} className="text-base font-bold cursor-pointer text-green-400"></FaCheck>
+                                            {/* You can open the modal using document.getElementById('ID').showModal() method */}
+                                            <dialog id="my_modal_339845784" className="modal">
+                                                <div className="modal-box w-11/12 max-w-5xl">
+                                                    <form method="dialog">
+                                                        {/* if there is a button in form, it will close the modal */}
+                                                        <button className="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">✕</button>
+                                                    </form>
+                                                    <div className="p-4">
+
+                                                        <div className='lg:flex gap-3'>
+                                                            <div className='lg:flex-1'>
+                                                                <div className="card bg-base-100 shadow-xl">
+                                                                    <h1 className='text-xl my-3 text-center'>Timesheet 11 Mar 2023 </h1>
+                                                                    <figure><img src={img1} className='h-40 w-44 rounded-full mx-auto' alt="Shoes" /></figure>
+                                                                    <Button className='p-3 text-white mx-auto'>Punch Out</Button>
+                                                                    <div className="card-body text-center">
+                                                                        <h1 className='text-center'>Punch In at</h1>
+                                                                        <p className='text-center'>Wed, 11th Mar 2023 10.00 AM</p>
+                                                                        <div className='flex justify-around gap-4'>
+                                                                            <p className='bg-slate-500 bg-opacity-15 py-4'>Break 1.21 hrs</p>
+                                                                            <p className='bg-slate-500 bg-opacity-15 py-4'>Overtime 3 hrs</p>
+                                                                        </div>
+                                                                    </div>
+
+                                                                </div>
+                                                            </div>
+
+                                                            <div className='my-8 lg:flex-1'>
+                                                                <div className="card bg-base-100 shadow-xl p-4">
+                                                                    <h1 className='text-xl my-3 text-center'>Today Activity</h1>
+                                                                    <ul className="timeline timeline-vertical">
+                                                                        <li>
+                                                                            <div className="timeline-middle">
+                                                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="w-5 h-5"><path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z" clipRule="evenodd" /></svg>
+                                                                            </div>
+                                                                            <div className="timeline-end timeline-box">Punch In at
+
+                                                                                2.00 PM</div>
+                                                                            <hr />
+                                                                        </li>
+                                                                        <li>
+                                                                            <hr />
+                                                                            <div className="timeline-middle">
+                                                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="w-5 h-5"><path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z" clipRule="evenodd" /></svg>
+                                                                            </div>
+                                                                            <div className="timeline-end timeline-box">Punch Out at
+
+                                                                                1.30 PM</div>
+                                                                            <hr />
+                                                                        </li>
+                                                                        <li>
+                                                                            <hr />
+                                                                            <div className="timeline-middle">
+                                                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="w-5 h-5"><path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z" clipRule="evenodd" /></svg>
+                                                                            </div>
+                                                                            <div className="timeline-end timeline-box">Punch In at
+
+                                                                                11.15 AM</div>
+                                                                            <hr />
+                                                                        </li>
+                                                                        <li>
+                                                                            <hr />
+                                                                            <div className="timeline-middle">
+                                                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="w-5 h-5"><path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z" clipRule="evenodd" /></svg>
+                                                                            </div>
+                                                                            <div className="timeline-end timeline-box">Punch Out at
+
+                                                                                11.00 AM</div>
+                                                                            <hr />
+                                                                        </li>
+                                                                        <li>
+                                                                            <hr />
+                                                                            <div className="timeline-middle">
+                                                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="w-5 h-5"><path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z" clipRule="evenodd" /></svg>
+                                                                            </div>
+                                                                            <div className="timeline-end timeline-box">Punch Out at
+
+                                                                                7.30 PM</div>
+                                                                        </li>
+                                                                    </ul>
+
+                                                                </div>
+                                                            </div>
+                                                            <div></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </dialog>
+                                        </>
+                                        :
+                                        <RxCross2 className="text-base font-bold cursor-pointer text-red-500"></RxCross2>}
                                 </td>
                                 <td className="text-base text-center">
-                                    <div className="avatar">
-                                        <div className="mask mask-squircle w-4 h-4">
-                                            <img src={attendance.day4} alt="Avatar Tailwind CSS Component" />
-                                        </div>
-                                    </div>
+                                    {attendance.day4 == "present" ?
+                                        <>
+                                            <FaCheck onClick={() => document.getElementById('my_modal_339845784').showModal()} className="text-base font-bold cursor-pointer text-green-400"></FaCheck>
+                                            {/* You can open the modal using document.getElementById('ID').showModal() method */}
+                                            <dialog id="my_modal_339845784" className="modal">
+                                                <div className="modal-box w-11/12 max-w-5xl">
+                                                    <form method="dialog">
+                                                        {/* if there is a button in form, it will close the modal */}
+                                                        <button className="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">✕</button>
+                                                    </form>
+                                                    <div className="p-4">
+
+                                                        <div className='lg:flex gap-3'>
+                                                            <div className='lg:flex-1'>
+                                                                <div className="card bg-base-100 shadow-xl">
+                                                                    <h1 className='text-xl my-3 text-center'>Timesheet 11 Mar 2023 </h1>
+                                                                    <figure><img src={img1} className='h-40 w-44 rounded-full mx-auto' alt="Shoes" /></figure>
+                                                                    <Button className='p-3 text-white mx-auto'>Punch Out</Button>
+                                                                    <div className="card-body text-center">
+                                                                        <h1 className='text-center'>Punch In at</h1>
+                                                                        <p className='text-center'>Wed, 11th Mar 2023 10.00 AM</p>
+                                                                        <div className='flex justify-around gap-4'>
+                                                                            <p className='bg-slate-500 bg-opacity-15 py-4'>Break 1.21 hrs</p>
+                                                                            <p className='bg-slate-500 bg-opacity-15 py-4'>Overtime 3 hrs</p>
+                                                                        </div>
+                                                                    </div>
+
+                                                                </div>
+                                                            </div>
+
+                                                            <div className='my-8 lg:flex-1'>
+                                                                <div className="card bg-base-100 shadow-xl p-4">
+                                                                    <h1 className='text-xl my-3 text-center'>Today Activity</h1>
+                                                                    <ul className="timeline timeline-vertical">
+                                                                        <li>
+                                                                            <div className="timeline-middle">
+                                                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="w-5 h-5"><path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z" clipRule="evenodd" /></svg>
+                                                                            </div>
+                                                                            <div className="timeline-end timeline-box">Punch In at
+
+                                                                                2.00 PM</div>
+                                                                            <hr />
+                                                                        </li>
+                                                                        <li>
+                                                                            <hr />
+                                                                            <div className="timeline-middle">
+                                                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="w-5 h-5"><path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z" clipRule="evenodd" /></svg>
+                                                                            </div>
+                                                                            <div className="timeline-end timeline-box">Punch Out at
+
+                                                                                1.30 PM</div>
+                                                                            <hr />
+                                                                        </li>
+                                                                        <li>
+                                                                            <hr />
+                                                                            <div className="timeline-middle">
+                                                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="w-5 h-5"><path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z" clipRule="evenodd" /></svg>
+                                                                            </div>
+                                                                            <div className="timeline-end timeline-box">Punch In at
+
+                                                                                11.15 AM</div>
+                                                                            <hr />
+                                                                        </li>
+                                                                        <li>
+                                                                            <hr />
+                                                                            <div className="timeline-middle">
+                                                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="w-5 h-5"><path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z" clipRule="evenodd" /></svg>
+                                                                            </div>
+                                                                            <div className="timeline-end timeline-box">Punch Out at
+
+                                                                                11.00 AM</div>
+                                                                            <hr />
+                                                                        </li>
+                                                                        <li>
+                                                                            <hr />
+                                                                            <div className="timeline-middle">
+                                                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="w-5 h-5"><path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z" clipRule="evenodd" /></svg>
+                                                                            </div>
+                                                                            <div className="timeline-end timeline-box">Punch Out at
+
+                                                                                7.30 PM</div>
+                                                                        </li>
+                                                                    </ul>
+
+                                                                </div>
+                                                            </div>
+                                                            <div></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </dialog>
+                                        </>
+                                        :
+                                        <RxCross2 className="text-base font-bold cursor-pointer text-red-500"></RxCross2>}
                                 </td>
                                 <td className="text-base text-center">
-                                    <div className="avatar">
-                                        <div className="mask mask-squircle w-4 h-4">
-                                            <img src={attendance.day5} alt="Avatar Tailwind CSS Component" />
-                                        </div>
-                                    </div>
+                                    {attendance.day5 == "present" ?
+                                        <>
+                                            <FaCheck onClick={() => document.getElementById('my_modal_339845784').showModal()} className="text-base font-bold cursor-pointer text-green-400"></FaCheck>
+                                            {/* You can open the modal using document.getElementById('ID').showModal() method */}
+                                            <dialog id="my_modal_339845784" className="modal">
+                                                <div className="modal-box w-11/12 max-w-5xl">
+                                                    <form method="dialog">
+                                                        {/* if there is a button in form, it will close the modal */}
+                                                        <button className="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">✕</button>
+                                                    </form>
+                                                    <div className="p-4">
+
+                                                        <div className='lg:flex gap-3'>
+                                                            <div className='lg:flex-1'>
+                                                                <div className="card bg-base-100 shadow-xl">
+                                                                    <h1 className='text-xl my-3 text-center'>Timesheet 11 Mar 2023 </h1>
+                                                                    <figure><img src={img1} className='h-40 w-44 rounded-full mx-auto' alt="Shoes" /></figure>
+                                                                    <Button className='p-3 text-white mx-auto'>Punch Out</Button>
+                                                                    <div className="card-body text-center">
+                                                                        <h1 className='text-center'>Punch In at</h1>
+                                                                        <p className='text-center'>Wed, 11th Mar 2023 10.00 AM</p>
+                                                                        <div className='flex justify-around gap-4'>
+                                                                            <p className='bg-slate-500 bg-opacity-15 py-4'>Break 1.21 hrs</p>
+                                                                            <p className='bg-slate-500 bg-opacity-15 py-4'>Overtime 3 hrs</p>
+                                                                        </div>
+                                                                    </div>
+
+                                                                </div>
+                                                            </div>
+
+                                                            <div className='my-8 lg:flex-1'>
+                                                                <div className="card bg-base-100 shadow-xl p-4">
+                                                                    <h1 className='text-xl my-3 text-center'>Today Activity</h1>
+                                                                    <ul className="timeline timeline-vertical">
+                                                                        <li>
+                                                                            <div className="timeline-middle">
+                                                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="w-5 h-5"><path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z" clipRule="evenodd" /></svg>
+                                                                            </div>
+                                                                            <div className="timeline-end timeline-box">Punch In at
+
+                                                                                2.00 PM</div>
+                                                                            <hr />
+                                                                        </li>
+                                                                        <li>
+                                                                            <hr />
+                                                                            <div className="timeline-middle">
+                                                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="w-5 h-5"><path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z" clipRule="evenodd" /></svg>
+                                                                            </div>
+                                                                            <div className="timeline-end timeline-box">Punch Out at
+
+                                                                                1.30 PM</div>
+                                                                            <hr />
+                                                                        </li>
+                                                                        <li>
+                                                                            <hr />
+                                                                            <div className="timeline-middle">
+                                                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="w-5 h-5"><path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z" clipRule="evenodd" /></svg>
+                                                                            </div>
+                                                                            <div className="timeline-end timeline-box">Punch In at
+
+                                                                                11.15 AM</div>
+                                                                            <hr />
+                                                                        </li>
+                                                                        <li>
+                                                                            <hr />
+                                                                            <div className="timeline-middle">
+                                                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="w-5 h-5"><path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z" clipRule="evenodd" /></svg>
+                                                                            </div>
+                                                                            <div className="timeline-end timeline-box">Punch Out at
+
+                                                                                11.00 AM</div>
+                                                                            <hr />
+                                                                        </li>
+                                                                        <li>
+                                                                            <hr />
+                                                                            <div className="timeline-middle">
+                                                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="w-5 h-5"><path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z" clipRule="evenodd" /></svg>
+                                                                            </div>
+                                                                            <div className="timeline-end timeline-box">Punch Out at
+
+                                                                                7.30 PM</div>
+                                                                        </li>
+                                                                    </ul>
+
+                                                                </div>
+                                                            </div>
+                                                            <div></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </dialog>
+                                        </>
+                                        :
+                                        <RxCross2 className="text-base font-bold cursor-pointer text-red-500"></RxCross2>}
                                 </td>
                                 <td className="text-base text-center">
-                                    <div className="avatar">
-                                        <div className="mask mask-squircle w-4 h-4">
-                                            <img src={attendance.day6} alt="Avatar Tailwind CSS Component" />
-                                        </div>
-                                    </div>
+                                    {attendance.day6 == "present" ?
+                                        <>
+                                            <FaCheck onClick={() => document.getElementById('my_modal_339845784').showModal()} className="text-base font-bold cursor-pointer text-green-400"></FaCheck>
+                                            {/* You can open the modal using document.getElementById('ID').showModal() method */}
+                                            <dialog id="my_modal_339845784" className="modal">
+                                                <div className="modal-box w-11/12 max-w-5xl">
+                                                    <form method="dialog">
+                                                        {/* if there is a button in form, it will close the modal */}
+                                                        <button className="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">✕</button>
+                                                    </form>
+                                                    <div className="p-4">
+
+                                                        <div className='lg:flex gap-3'>
+                                                            <div className='lg:flex-1'>
+                                                                <div className="card bg-base-100 shadow-xl">
+                                                                    <h1 className='text-xl my-3 text-center'>Timesheet 11 Mar 2023 </h1>
+                                                                    <figure><img src={img1} className='h-40 w-44 rounded-full mx-auto' alt="Shoes" /></figure>
+                                                                    <Button className='p-3 text-white mx-auto'>Punch Out</Button>
+                                                                    <div className="card-body text-center">
+                                                                        <h1 className='text-center'>Punch In at</h1>
+                                                                        <p className='text-center'>Wed, 11th Mar 2023 10.00 AM</p>
+                                                                        <div className='flex justify-around gap-4'>
+                                                                            <p className='bg-slate-500 bg-opacity-15 py-4'>Break 1.21 hrs</p>
+                                                                            <p className='bg-slate-500 bg-opacity-15 py-4'>Overtime 3 hrs</p>
+                                                                        </div>
+                                                                    </div>
+
+                                                                </div>
+                                                            </div>
+
+                                                            <div className='my-8 lg:flex-1'>
+                                                                <div className="card bg-base-100 shadow-xl p-4">
+                                                                    <h1 className='text-xl my-3 text-center'>Today Activity</h1>
+                                                                    <ul className="timeline timeline-vertical">
+                                                                        <li>
+                                                                            <div className="timeline-middle">
+                                                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="w-5 h-5"><path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z" clipRule="evenodd" /></svg>
+                                                                            </div>
+                                                                            <div className="timeline-end timeline-box">Punch In at
+
+                                                                                2.00 PM</div>
+                                                                            <hr />
+                                                                        </li>
+                                                                        <li>
+                                                                            <hr />
+                                                                            <div className="timeline-middle">
+                                                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="w-5 h-5"><path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z" clipRule="evenodd" /></svg>
+                                                                            </div>
+                                                                            <div className="timeline-end timeline-box">Punch Out at
+
+                                                                                1.30 PM</div>
+                                                                            <hr />
+                                                                        </li>
+                                                                        <li>
+                                                                            <hr />
+                                                                            <div className="timeline-middle">
+                                                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="w-5 h-5"><path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z" clipRule="evenodd" /></svg>
+                                                                            </div>
+                                                                            <div className="timeline-end timeline-box">Punch In at
+
+                                                                                11.15 AM</div>
+                                                                            <hr />
+                                                                        </li>
+                                                                        <li>
+                                                                            <hr />
+                                                                            <div className="timeline-middle">
+                                                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="w-5 h-5"><path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z" clipRule="evenodd" /></svg>
+                                                                            </div>
+                                                                            <div className="timeline-end timeline-box">Punch Out at
+
+                                                                                11.00 AM</div>
+                                                                            <hr />
+                                                                        </li>
+                                                                        <li>
+                                                                            <hr />
+                                                                            <div className="timeline-middle">
+                                                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="w-5 h-5"><path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z" clipRule="evenodd" /></svg>
+                                                                            </div>
+                                                                            <div className="timeline-end timeline-box">Punch Out at
+
+                                                                                7.30 PM</div>
+                                                                        </li>
+                                                                    </ul>
+
+                                                                </div>
+                                                            </div>
+                                                            <div></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </dialog>
+                                        </>
+                                        :
+                                        <RxCross2 className="text-base font-bold cursor-pointer text-red-500"></RxCross2>}
                                 </td>
                                 <td className="text-base text-center">
-                                    <div className="avatar">
-                                        <div className="mask mask-squircle w-4 h-4">
-                                            <img src={attendance.day7} alt="Avatar Tailwind CSS Component" />
-                                        </div>
-                                    </div>
+                                    {attendance.day7 == "present" ?
+                                        <>
+                                            <FaCheck onClick={() => document.getElementById('my_modal_339845784').showModal()} className="text-base font-bold cursor-pointer text-green-400"></FaCheck>
+                                            {/* You can open the modal using document.getElementById('ID').showModal() method */}
+                                            <dialog id="my_modal_339845784" className="modal">
+                                                <div className="modal-box w-11/12 max-w-5xl">
+                                                    <form method="dialog">
+                                                        {/* if there is a button in form, it will close the modal */}
+                                                        <button className="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">✕</button>
+                                                    </form>
+                                                    <div className="p-4">
+
+                                                        <div className='lg:flex gap-3'>
+                                                            <div className='lg:flex-1'>
+                                                                <div className="card bg-base-100 shadow-xl">
+                                                                    <h1 className='text-xl my-3 text-center'>Timesheet 11 Mar 2023 </h1>
+                                                                    <figure><img src={img1} className='h-40 w-44 rounded-full mx-auto' alt="Shoes" /></figure>
+                                                                    <Button className='p-3 text-white mx-auto'>Punch Out</Button>
+                                                                    <div className="card-body text-center">
+                                                                        <h1 className='text-center'>Punch In at</h1>
+                                                                        <p className='text-center'>Wed, 11th Mar 2023 10.00 AM</p>
+                                                                        <div className='flex justify-around gap-4'>
+                                                                            <p className='bg-slate-500 bg-opacity-15 py-4'>Break 1.21 hrs</p>
+                                                                            <p className='bg-slate-500 bg-opacity-15 py-4'>Overtime 3 hrs</p>
+                                                                        </div>
+                                                                    </div>
+
+                                                                </div>
+                                                            </div>
+
+                                                            <div className='my-8 lg:flex-1'>
+                                                                <div className="card bg-base-100 shadow-xl p-4">
+                                                                    <h1 className='text-xl my-3 text-center'>Today Activity</h1>
+                                                                    <ul className="timeline timeline-vertical">
+                                                                        <li>
+                                                                            <div className="timeline-middle">
+                                                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="w-5 h-5"><path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z" clipRule="evenodd" /></svg>
+                                                                            </div>
+                                                                            <div className="timeline-end timeline-box">Punch In at
+
+                                                                                2.00 PM</div>
+                                                                            <hr />
+                                                                        </li>
+                                                                        <li>
+                                                                            <hr />
+                                                                            <div className="timeline-middle">
+                                                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="w-5 h-5"><path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z" clipRule="evenodd" /></svg>
+                                                                            </div>
+                                                                            <div className="timeline-end timeline-box">Punch Out at
+
+                                                                                1.30 PM</div>
+                                                                            <hr />
+                                                                        </li>
+                                                                        <li>
+                                                                            <hr />
+                                                                            <div className="timeline-middle">
+                                                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="w-5 h-5"><path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z" clipRule="evenodd" /></svg>
+                                                                            </div>
+                                                                            <div className="timeline-end timeline-box">Punch In at
+
+                                                                                11.15 AM</div>
+                                                                            <hr />
+                                                                        </li>
+                                                                        <li>
+                                                                            <hr />
+                                                                            <div className="timeline-middle">
+                                                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="w-5 h-5"><path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z" clipRule="evenodd" /></svg>
+                                                                            </div>
+                                                                            <div className="timeline-end timeline-box">Punch Out at
+
+                                                                                11.00 AM</div>
+                                                                            <hr />
+                                                                        </li>
+                                                                        <li>
+                                                                            <hr />
+                                                                            <div className="timeline-middle">
+                                                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="w-5 h-5"><path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z" clipRule="evenodd" /></svg>
+                                                                            </div>
+                                                                            <div className="timeline-end timeline-box">Punch Out at
+
+                                                                                7.30 PM</div>
+                                                                        </li>
+                                                                    </ul>
+
+                                                                </div>
+                                                            </div>
+                                                            <div></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </dialog>
+                                        </>
+                                        :
+                                        <RxCross2 className="text-base font-bold cursor-pointer text-red-500"></RxCross2>}
                                 </td>
                                 <td className="text-base text-center">
-                                    <div className="avatar">
-                                        <div className="mask mask-squircle w-4 h-4">
-                                            <img src={attendance.day8} alt="Avatar Tailwind CSS Component" />
-                                        </div>
-                                    </div>
+                                    {attendance.day8 == "present" ?
+                                        <>
+                                            <FaCheck onClick={() => document.getElementById('my_modal_339845784').showModal()} className="text-base font-bold cursor-pointer text-green-400"></FaCheck>
+                                            {/* You can open the modal using document.getElementById('ID').showModal() method */}
+                                            <dialog id="my_modal_339845784" className="modal">
+                                                <div className="modal-box w-11/12 max-w-5xl">
+                                                    <form method="dialog">
+                                                        {/* if there is a button in form, it will close the modal */}
+                                                        <button className="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">✕</button>
+                                                    </form>
+                                                    <div className="p-4">
+
+                                                        <div className='lg:flex gap-3'>
+                                                            <div className='lg:flex-1'>
+                                                                <div className="card bg-base-100 shadow-xl">
+                                                                    <h1 className='text-xl my-3 text-center'>Timesheet 11 Mar 2023 </h1>
+                                                                    <figure><img src={img1} className='h-40 w-44 rounded-full mx-auto' alt="Shoes" /></figure>
+                                                                    <Button className='p-3 text-white mx-auto'>Punch Out</Button>
+                                                                    <div className="card-body text-center">
+                                                                        <h1 className='text-center'>Punch In at</h1>
+                                                                        <p className='text-center'>Wed, 11th Mar 2023 10.00 AM</p>
+                                                                        <div className='flex justify-around gap-4'>
+                                                                            <p className='bg-slate-500 bg-opacity-15 py-4'>Break 1.21 hrs</p>
+                                                                            <p className='bg-slate-500 bg-opacity-15 py-4'>Overtime 3 hrs</p>
+                                                                        </div>
+                                                                    </div>
+
+                                                                </div>
+                                                            </div>
+
+                                                            <div className='my-8 lg:flex-1'>
+                                                                <div className="card bg-base-100 shadow-xl p-4">
+                                                                    <h1 className='text-xl my-3 text-center'>Today Activity</h1>
+                                                                    <ul className="timeline timeline-vertical">
+                                                                        <li>
+                                                                            <div className="timeline-middle">
+                                                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="w-5 h-5"><path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z" clipRule="evenodd" /></svg>
+                                                                            </div>
+                                                                            <div className="timeline-end timeline-box">Punch In at
+
+                                                                                2.00 PM</div>
+                                                                            <hr />
+                                                                        </li>
+                                                                        <li>
+                                                                            <hr />
+                                                                            <div className="timeline-middle">
+                                                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="w-5 h-5"><path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z" clipRule="evenodd" /></svg>
+                                                                            </div>
+                                                                            <div className="timeline-end timeline-box">Punch Out at
+
+                                                                                1.30 PM</div>
+                                                                            <hr />
+                                                                        </li>
+                                                                        <li>
+                                                                            <hr />
+                                                                            <div className="timeline-middle">
+                                                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="w-5 h-5"><path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z" clipRule="evenodd" /></svg>
+                                                                            </div>
+                                                                            <div className="timeline-end timeline-box">Punch In at
+
+                                                                                11.15 AM</div>
+                                                                            <hr />
+                                                                        </li>
+                                                                        <li>
+                                                                            <hr />
+                                                                            <div className="timeline-middle">
+                                                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="w-5 h-5"><path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z" clipRule="evenodd" /></svg>
+                                                                            </div>
+                                                                            <div className="timeline-end timeline-box">Punch Out at
+
+                                                                                11.00 AM</div>
+                                                                            <hr />
+                                                                        </li>
+                                                                        <li>
+                                                                            <hr />
+                                                                            <div className="timeline-middle">
+                                                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="w-5 h-5"><path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z" clipRule="evenodd" /></svg>
+                                                                            </div>
+                                                                            <div className="timeline-end timeline-box">Punch Out at
+
+                                                                                7.30 PM</div>
+                                                                        </li>
+                                                                    </ul>
+
+                                                                </div>
+                                                            </div>
+                                                            <div></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </dialog>
+                                        </>
+                                        :
+                                        <RxCross2 className="text-base font-bold cursor-pointer text-red-500"></RxCross2>}
                                 </td>
                                 <td className="text-base text-center">
-                                    <div className="avatar">
-                                        <div className="mask mask-squircle w-4 h-4">
-                                            <img src={attendance.day9} alt="Avatar Tailwind CSS Component" />
-                                        </div>
-                                    </div>
+                                    {attendance.day9 == "present" ?
+                                        <>
+                                            <FaCheck onClick={() => document.getElementById('my_modal_339845784').showModal()} className="text-base font-bold cursor-pointer text-green-400"></FaCheck>
+                                            {/* You can open the modal using document.getElementById('ID').showModal() method */}
+                                            <dialog id="my_modal_339845784" className="modal">
+                                                <div className="modal-box w-11/12 max-w-5xl">
+                                                    <form method="dialog">
+                                                        {/* if there is a button in form, it will close the modal */}
+                                                        <button className="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">✕</button>
+                                                    </form>
+                                                    <div className="p-4">
+
+                                                        <div className='lg:flex gap-3'>
+                                                            <div className='lg:flex-1'>
+                                                                <div className="card bg-base-100 shadow-xl">
+                                                                    <h1 className='text-xl my-3 text-center'>Timesheet 11 Mar 2023 </h1>
+                                                                    <figure><img src={img1} className='h-40 w-44 rounded-full mx-auto' alt="Shoes" /></figure>
+                                                                    <Button className='p-3 text-white mx-auto'>Punch Out</Button>
+                                                                    <div className="card-body text-center">
+                                                                        <h1 className='text-center'>Punch In at</h1>
+                                                                        <p className='text-center'>Wed, 11th Mar 2023 10.00 AM</p>
+                                                                        <div className='flex justify-around gap-4'>
+                                                                            <p className='bg-slate-500 bg-opacity-15 py-4'>Break 1.21 hrs</p>
+                                                                            <p className='bg-slate-500 bg-opacity-15 py-4'>Overtime 3 hrs</p>
+                                                                        </div>
+                                                                    </div>
+
+                                                                </div>
+                                                            </div>
+
+                                                            <div className='my-8 lg:flex-1'>
+                                                                <div className="card bg-base-100 shadow-xl p-4">
+                                                                    <h1 className='text-xl my-3 text-center'>Today Activity</h1>
+                                                                    <ul className="timeline timeline-vertical">
+                                                                        <li>
+                                                                            <div className="timeline-middle">
+                                                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="w-5 h-5"><path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z" clipRule="evenodd" /></svg>
+                                                                            </div>
+                                                                            <div className="timeline-end timeline-box">Punch In at
+
+                                                                                2.00 PM</div>
+                                                                            <hr />
+                                                                        </li>
+                                                                        <li>
+                                                                            <hr />
+                                                                            <div className="timeline-middle">
+                                                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="w-5 h-5"><path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z" clipRule="evenodd" /></svg>
+                                                                            </div>
+                                                                            <div className="timeline-end timeline-box">Punch Out at
+
+                                                                                1.30 PM</div>
+                                                                            <hr />
+                                                                        </li>
+                                                                        <li>
+                                                                            <hr />
+                                                                            <div className="timeline-middle">
+                                                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="w-5 h-5"><path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z" clipRule="evenodd" /></svg>
+                                                                            </div>
+                                                                            <div className="timeline-end timeline-box">Punch In at
+
+                                                                                11.15 AM</div>
+                                                                            <hr />
+                                                                        </li>
+                                                                        <li>
+                                                                            <hr />
+                                                                            <div className="timeline-middle">
+                                                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="w-5 h-5"><path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z" clipRule="evenodd" /></svg>
+                                                                            </div>
+                                                                            <div className="timeline-end timeline-box">Punch Out at
+
+                                                                                11.00 AM</div>
+                                                                            <hr />
+                                                                        </li>
+                                                                        <li>
+                                                                            <hr />
+                                                                            <div className="timeline-middle">
+                                                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="w-5 h-5"><path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z" clipRule="evenodd" /></svg>
+                                                                            </div>
+                                                                            <div className="timeline-end timeline-box">Punch Out at
+
+                                                                                7.30 PM</div>
+                                                                        </li>
+                                                                    </ul>
+
+                                                                </div>
+                                                            </div>
+                                                            <div></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </dialog>
+                                        </>
+                                        :
+                                        <RxCross2 className="text-base font-bold cursor-pointer text-red-500"></RxCross2>}
                                 </td>
                                 <td className="text-base text-center">
-                                    <div className="avatar">
-                                        <div className="mask mask-squircle w-4 h-4">
-                                            <img src={attendance.day10} alt="Avatar Tailwind CSS Component" />
-                                        </div>
-                                    </div>
+                                    {attendance.day10 == "present" ?
+                                        <>
+                                            <FaCheck onClick={() => document.getElementById('my_modal_339845784').showModal()} className="text-base font-bold cursor-pointer text-green-400"></FaCheck>
+                                            {/* You can open the modal using document.getElementById('ID').showModal() method */}
+                                            <dialog id="my_modal_339845784" className="modal">
+                                                <div className="modal-box w-11/12 max-w-5xl">
+                                                    <form method="dialog">
+                                                        {/* if there is a button in form, it will close the modal */}
+                                                        <button className="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">✕</button>
+                                                    </form>
+                                                    <div className="p-4">
+
+                                                        <div className='lg:flex gap-3'>
+                                                            <div className='lg:flex-1'>
+                                                                <div className="card bg-base-100 shadow-xl">
+                                                                    <h1 className='text-xl my-3 text-center'>Timesheet 11 Mar 2023 </h1>
+                                                                    <figure><img src={img1} className='h-40 w-44 rounded-full mx-auto' alt="Shoes" /></figure>
+                                                                    <Button className='p-3 text-white mx-auto'>Punch Out</Button>
+                                                                    <div className="card-body text-center">
+                                                                        <h1 className='text-center'>Punch In at</h1>
+                                                                        <p className='text-center'>Wed, 11th Mar 2023 10.00 AM</p>
+                                                                        <div className='flex justify-around gap-4'>
+                                                                            <p className='bg-slate-500 bg-opacity-15 py-4'>Break 1.21 hrs</p>
+                                                                            <p className='bg-slate-500 bg-opacity-15 py-4'>Overtime 3 hrs</p>
+                                                                        </div>
+                                                                    </div>
+
+                                                                </div>
+                                                            </div>
+
+                                                            <div className='my-8 lg:flex-1'>
+                                                                <div className="card bg-base-100 shadow-xl p-4">
+                                                                    <h1 className='text-xl my-3 text-center'>Today Activity</h1>
+                                                                    <ul className="timeline timeline-vertical">
+                                                                        <li>
+                                                                            <div className="timeline-middle">
+                                                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="w-5 h-5"><path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z" clipRule="evenodd" /></svg>
+                                                                            </div>
+                                                                            <div className="timeline-end timeline-box">Punch In at
+
+                                                                                2.00 PM</div>
+                                                                            <hr />
+                                                                        </li>
+                                                                        <li>
+                                                                            <hr />
+                                                                            <div className="timeline-middle">
+                                                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="w-5 h-5"><path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z" clipRule="evenodd" /></svg>
+                                                                            </div>
+                                                                            <div className="timeline-end timeline-box">Punch Out at
+
+                                                                                1.30 PM</div>
+                                                                            <hr />
+                                                                        </li>
+                                                                        <li>
+                                                                            <hr />
+                                                                            <div className="timeline-middle">
+                                                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="w-5 h-5"><path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z" clipRule="evenodd" /></svg>
+                                                                            </div>
+                                                                            <div className="timeline-end timeline-box">Punch In at
+
+                                                                                11.15 AM</div>
+                                                                            <hr />
+                                                                        </li>
+                                                                        <li>
+                                                                            <hr />
+                                                                            <div className="timeline-middle">
+                                                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="w-5 h-5"><path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z" clipRule="evenodd" /></svg>
+                                                                            </div>
+                                                                            <div className="timeline-end timeline-box">Punch Out at
+
+                                                                                11.00 AM</div>
+                                                                            <hr />
+                                                                        </li>
+                                                                        <li>
+                                                                            <hr />
+                                                                            <div className="timeline-middle">
+                                                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="w-5 h-5"><path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z" clipRule="evenodd" /></svg>
+                                                                            </div>
+                                                                            <div className="timeline-end timeline-box">Punch Out at
+
+                                                                                7.30 PM</div>
+                                                                        </li>
+                                                                    </ul>
+
+                                                                </div>
+                                                            </div>
+                                                            <div></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </dialog>
+                                        </>
+                                        :
+                                        <RxCross2 className="text-base font-bold cursor-pointer text-red-500"></RxCross2>}
                                 </td>
                                 <td className="text-base text-center">
-                                    <div className="avatar">
-                                        <div className="mask mask-squircle w-4 h-4">
-                                            <img src={attendance.day11} alt="Avatar Tailwind CSS Component" />
-                                        </div>
-                                    </div>
+                                    {attendance.day11 == "present" ?
+                                        <>
+                                            <FaCheck onClick={() => document.getElementById('my_modal_339845784').showModal()} className="text-base font-bold cursor-pointer text-green-400"></FaCheck>
+                                            {/* You can open the modal using document.getElementById('ID').showModal() method */}
+                                            <dialog id="my_modal_339845784" className="modal">
+                                                <div className="modal-box w-11/12 max-w-5xl">
+                                                    <form method="dialog">
+                                                        {/* if there is a button in form, it will close the modal */}
+                                                        <button className="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">✕</button>
+                                                    </form>
+                                                    <div className="p-4">
+
+                                                        <div className='lg:flex gap-3'>
+                                                            <div className='lg:flex-1'>
+                                                                <div className="card bg-base-100 shadow-xl">
+                                                                    <h1 className='text-xl my-3 text-center'>Timesheet 11 Mar 2023 </h1>
+                                                                    <figure><img src={img1} className='h-40 w-44 rounded-full mx-auto' alt="Shoes" /></figure>
+                                                                    <Button className='p-3 text-white mx-auto'>Punch Out</Button>
+                                                                    <div className="card-body text-center">
+                                                                        <h1 className='text-center'>Punch In at</h1>
+                                                                        <p className='text-center'>Wed, 11th Mar 2023 10.00 AM</p>
+                                                                        <div className='flex justify-around gap-4'>
+                                                                            <p className='bg-slate-500 bg-opacity-15 py-4'>Break 1.21 hrs</p>
+                                                                            <p className='bg-slate-500 bg-opacity-15 py-4'>Overtime 3 hrs</p>
+                                                                        </div>
+                                                                    </div>
+
+                                                                </div>
+                                                            </div>
+
+                                                            <div className='my-8 lg:flex-1'>
+                                                                <div className="card bg-base-100 shadow-xl p-4">
+                                                                    <h1 className='text-xl my-3 text-center'>Today Activity</h1>
+                                                                    <ul className="timeline timeline-vertical">
+                                                                        <li>
+                                                                            <div className="timeline-middle">
+                                                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="w-5 h-5"><path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z" clipRule="evenodd" /></svg>
+                                                                            </div>
+                                                                            <div className="timeline-end timeline-box">Punch In at
+
+                                                                                2.00 PM</div>
+                                                                            <hr />
+                                                                        </li>
+                                                                        <li>
+                                                                            <hr />
+                                                                            <div className="timeline-middle">
+                                                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="w-5 h-5"><path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z" clipRule="evenodd" /></svg>
+                                                                            </div>
+                                                                            <div className="timeline-end timeline-box">Punch Out at
+
+                                                                                1.30 PM</div>
+                                                                            <hr />
+                                                                        </li>
+                                                                        <li>
+                                                                            <hr />
+                                                                            <div className="timeline-middle">
+                                                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="w-5 h-5"><path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z" clipRule="evenodd" /></svg>
+                                                                            </div>
+                                                                            <div className="timeline-end timeline-box">Punch In at
+
+                                                                                11.15 AM</div>
+                                                                            <hr />
+                                                                        </li>
+                                                                        <li>
+                                                                            <hr />
+                                                                            <div className="timeline-middle">
+                                                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="w-5 h-5"><path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z" clipRule="evenodd" /></svg>
+                                                                            </div>
+                                                                            <div className="timeline-end timeline-box">Punch Out at
+
+                                                                                11.00 AM</div>
+                                                                            <hr />
+                                                                        </li>
+                                                                        <li>
+                                                                            <hr />
+                                                                            <div className="timeline-middle">
+                                                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="w-5 h-5"><path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z" clipRule="evenodd" /></svg>
+                                                                            </div>
+                                                                            <div className="timeline-end timeline-box">Punch Out at
+
+                                                                                7.30 PM</div>
+                                                                        </li>
+                                                                    </ul>
+
+                                                                </div>
+                                                            </div>
+                                                            <div></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </dialog>
+                                        </>
+                                        :
+                                        <RxCross2 className="text-base font-bold cursor-pointer text-red-500"></RxCross2>}
                                 </td>
                                 <td className="text-base text-center">
-                                    <div className="avatar">
-                                        <div className="mask mask-squircle w-4 h-4">
-                                            <img src={attendance.day12} alt="Avatar Tailwind CSS Component" />
-                                        </div>
-                                    </div>
+                                    {attendance.day12 == "present" ?
+                                        <>
+                                            <FaCheck onClick={() => document.getElementById('my_modal_339845784').showModal()} className="text-base font-bold cursor-pointer text-green-400"></FaCheck>
+                                            {/* You can open the modal using document.getElementById('ID').showModal() method */}
+                                            <dialog id="my_modal_339845784" className="modal">
+                                                <div className="modal-box w-11/12 max-w-5xl">
+                                                    <form method="dialog">
+                                                        {/* if there is a button in form, it will close the modal */}
+                                                        <button className="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">✕</button>
+                                                    </form>
+                                                    <div className="p-4">
+
+                                                        <div className='lg:flex gap-3'>
+                                                            <div className='lg:flex-1'>
+                                                                <div className="card bg-base-100 shadow-xl">
+                                                                    <h1 className='text-xl my-3 text-center'>Timesheet 11 Mar 2023 </h1>
+                                                                    <figure><img src={img1} className='h-40 w-44 rounded-full mx-auto' alt="Shoes" /></figure>
+                                                                    <Button className='p-3 text-white mx-auto'>Punch Out</Button>
+                                                                    <div className="card-body text-center">
+                                                                        <h1 className='text-center'>Punch In at</h1>
+                                                                        <p className='text-center'>Wed, 11th Mar 2023 10.00 AM</p>
+                                                                        <div className='flex justify-around gap-4'>
+                                                                            <p className='bg-slate-500 bg-opacity-15 py-4'>Break 1.21 hrs</p>
+                                                                            <p className='bg-slate-500 bg-opacity-15 py-4'>Overtime 3 hrs</p>
+                                                                        </div>
+                                                                    </div>
+
+                                                                </div>
+                                                            </div>
+
+                                                            <div className='my-8 lg:flex-1'>
+                                                                <div className="card bg-base-100 shadow-xl p-4">
+                                                                    <h1 className='text-xl my-3 text-center'>Today Activity</h1>
+                                                                    <ul className="timeline timeline-vertical">
+                                                                        <li>
+                                                                            <div className="timeline-middle">
+                                                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="w-5 h-5"><path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z" clipRule="evenodd" /></svg>
+                                                                            </div>
+                                                                            <div className="timeline-end timeline-box">Punch In at
+
+                                                                                2.00 PM</div>
+                                                                            <hr />
+                                                                        </li>
+                                                                        <li>
+                                                                            <hr />
+                                                                            <div className="timeline-middle">
+                                                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="w-5 h-5"><path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z" clipRule="evenodd" /></svg>
+                                                                            </div>
+                                                                            <div className="timeline-end timeline-box">Punch Out at
+
+                                                                                1.30 PM</div>
+                                                                            <hr />
+                                                                        </li>
+                                                                        <li>
+                                                                            <hr />
+                                                                            <div className="timeline-middle">
+                                                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="w-5 h-5"><path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z" clipRule="evenodd" /></svg>
+                                                                            </div>
+                                                                            <div className="timeline-end timeline-box">Punch In at
+
+                                                                                11.15 AM</div>
+                                                                            <hr />
+                                                                        </li>
+                                                                        <li>
+                                                                            <hr />
+                                                                            <div className="timeline-middle">
+                                                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="w-5 h-5"><path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z" clipRule="evenodd" /></svg>
+                                                                            </div>
+                                                                            <div className="timeline-end timeline-box">Punch Out at
+
+                                                                                11.00 AM</div>
+                                                                            <hr />
+                                                                        </li>
+                                                                        <li>
+                                                                            <hr />
+                                                                            <div className="timeline-middle">
+                                                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="w-5 h-5"><path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z" clipRule="evenodd" /></svg>
+                                                                            </div>
+                                                                            <div className="timeline-end timeline-box">Punch Out at
+
+                                                                                7.30 PM</div>
+                                                                        </li>
+                                                                    </ul>
+
+                                                                </div>
+                                                            </div>
+                                                            <div></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </dialog>
+                                        </>
+                                        :
+                                        <RxCross2 className="text-base font-bold cursor-pointer text-red-500"></RxCross2>}
                                 </td>
                                 <td className="text-base text-center">
-                                    <div className="avatar">
-                                        <div className="mask mask-squircle w-4 h-4">
-                                            <img src={attendance.day13} alt="Avatar Tailwind CSS Component" />
-                                        </div>
-                                    </div>
+                                    {attendance.day13 == "present" ?
+                                        <>
+                                            <FaCheck onClick={() => document.getElementById('my_modal_339845784').showModal()} className="text-base font-bold cursor-pointer text-green-400"></FaCheck>
+                                            {/* You can open the modal using document.getElementById('ID').showModal() method */}
+                                            <dialog id="my_modal_339845784" className="modal">
+                                                <div className="modal-box w-11/12 max-w-5xl">
+                                                    <form method="dialog">
+                                                        {/* if there is a button in form, it will close the modal */}
+                                                        <button className="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">✕</button>
+                                                    </form>
+                                                    <div className="p-4">
+
+                                                        <div className='lg:flex gap-3'>
+                                                            <div className='lg:flex-1'>
+                                                                <div className="card bg-base-100 shadow-xl">
+                                                                    <h1 className='text-xl my-3 text-center'>Timesheet 11 Mar 2023 </h1>
+                                                                    <figure><img src={img1} className='h-40 w-44 rounded-full mx-auto' alt="Shoes" /></figure>
+                                                                    <Button className='p-3 text-white mx-auto'>Punch Out</Button>
+                                                                    <div className="card-body text-center">
+                                                                        <h1 className='text-center'>Punch In at</h1>
+                                                                        <p className='text-center'>Wed, 11th Mar 2023 10.00 AM</p>
+                                                                        <div className='flex justify-around gap-4'>
+                                                                            <p className='bg-slate-500 bg-opacity-15 py-4'>Break 1.21 hrs</p>
+                                                                            <p className='bg-slate-500 bg-opacity-15 py-4'>Overtime 3 hrs</p>
+                                                                        </div>
+                                                                    </div>
+
+                                                                </div>
+                                                            </div>
+
+                                                            <div className='my-8 lg:flex-1'>
+                                                                <div className="card bg-base-100 shadow-xl p-4">
+                                                                    <h1 className='text-xl my-3 text-center'>Today Activity</h1>
+                                                                    <ul className="timeline timeline-vertical">
+                                                                        <li>
+                                                                            <div className="timeline-middle">
+                                                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="w-5 h-5"><path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z" clipRule="evenodd" /></svg>
+                                                                            </div>
+                                                                            <div className="timeline-end timeline-box">Punch In at
+
+                                                                                2.00 PM</div>
+                                                                            <hr />
+                                                                        </li>
+                                                                        <li>
+                                                                            <hr />
+                                                                            <div className="timeline-middle">
+                                                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="w-5 h-5"><path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z" clipRule="evenodd" /></svg>
+                                                                            </div>
+                                                                            <div className="timeline-end timeline-box">Punch Out at
+
+                                                                                1.30 PM</div>
+                                                                            <hr />
+                                                                        </li>
+                                                                        <li>
+                                                                            <hr />
+                                                                            <div className="timeline-middle">
+                                                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="w-5 h-5"><path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z" clipRule="evenodd" /></svg>
+                                                                            </div>
+                                                                            <div className="timeline-end timeline-box">Punch In at
+
+                                                                                11.15 AM</div>
+                                                                            <hr />
+                                                                        </li>
+                                                                        <li>
+                                                                            <hr />
+                                                                            <div className="timeline-middle">
+                                                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="w-5 h-5"><path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z" clipRule="evenodd" /></svg>
+                                                                            </div>
+                                                                            <div className="timeline-end timeline-box">Punch Out at
+
+                                                                                11.00 AM</div>
+                                                                            <hr />
+                                                                        </li>
+                                                                        <li>
+                                                                            <hr />
+                                                                            <div className="timeline-middle">
+                                                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="w-5 h-5"><path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z" clipRule="evenodd" /></svg>
+                                                                            </div>
+                                                                            <div className="timeline-end timeline-box">Punch Out at
+
+                                                                                7.30 PM</div>
+                                                                        </li>
+                                                                    </ul>
+
+                                                                </div>
+                                                            </div>
+                                                            <div></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </dialog>
+                                        </>
+                                        :
+                                        <RxCross2 className="text-base font-bold cursor-pointer text-red-500"></RxCross2>}
                                 </td>
                                 <td className="text-base text-center">
-                                    <div className="avatar">
-                                        <div className="mask mask-squircle w-4 h-4">
-                                            <img src={attendance.day14} alt="Avatar Tailwind CSS Component" />
-                                        </div>
-                                    </div>
+                                    {attendance.day14 == "present" ?
+                                        <>
+                                            <FaCheck onClick={() => document.getElementById('my_modal_339845784').showModal()} className="text-base font-bold cursor-pointer text-green-400"></FaCheck>
+                                            {/* You can open the modal using document.getElementById('ID').showModal() method */}
+                                            <dialog id="my_modal_339845784" className="modal">
+                                                <div className="modal-box w-11/12 max-w-5xl">
+                                                    <form method="dialog">
+                                                        {/* if there is a button in form, it will close the modal */}
+                                                        <button className="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">✕</button>
+                                                    </form>
+                                                    <div className="p-4">
+
+                                                        <div className='lg:flex gap-3'>
+                                                            <div className='lg:flex-1'>
+                                                                <div className="card bg-base-100 shadow-xl">
+                                                                    <h1 className='text-xl my-3 text-center'>Timesheet 11 Mar 2023 </h1>
+                                                                    <figure><img src={img1} className='h-40 w-44 rounded-full mx-auto' alt="Shoes" /></figure>
+                                                                    <Button className='p-3 text-white mx-auto'>Punch Out</Button>
+                                                                    <div className="card-body text-center">
+                                                                        <h1 className='text-center'>Punch In at</h1>
+                                                                        <p className='text-center'>Wed, 11th Mar 2023 10.00 AM</p>
+                                                                        <div className='flex justify-around gap-4'>
+                                                                            <p className='bg-slate-500 bg-opacity-15 py-4'>Break 1.21 hrs</p>
+                                                                            <p className='bg-slate-500 bg-opacity-15 py-4'>Overtime 3 hrs</p>
+                                                                        </div>
+                                                                    </div>
+
+                                                                </div>
+                                                            </div>
+
+                                                            <div className='my-8 lg:flex-1'>
+                                                                <div className="card bg-base-100 shadow-xl p-4">
+                                                                    <h1 className='text-xl my-3 text-center'>Today Activity</h1>
+                                                                    <ul className="timeline timeline-vertical">
+                                                                        <li>
+                                                                            <div className="timeline-middle">
+                                                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="w-5 h-5"><path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z" clipRule="evenodd" /></svg>
+                                                                            </div>
+                                                                            <div className="timeline-end timeline-box">Punch In at
+
+                                                                                2.00 PM</div>
+                                                                            <hr />
+                                                                        </li>
+                                                                        <li>
+                                                                            <hr />
+                                                                            <div className="timeline-middle">
+                                                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="w-5 h-5"><path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z" clipRule="evenodd" /></svg>
+                                                                            </div>
+                                                                            <div className="timeline-end timeline-box">Punch Out at
+
+                                                                                1.30 PM</div>
+                                                                            <hr />
+                                                                        </li>
+                                                                        <li>
+                                                                            <hr />
+                                                                            <div className="timeline-middle">
+                                                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="w-5 h-5"><path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z" clipRule="evenodd" /></svg>
+                                                                            </div>
+                                                                            <div className="timeline-end timeline-box">Punch In at
+
+                                                                                11.15 AM</div>
+                                                                            <hr />
+                                                                        </li>
+                                                                        <li>
+                                                                            <hr />
+                                                                            <div className="timeline-middle">
+                                                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="w-5 h-5"><path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z" clipRule="evenodd" /></svg>
+                                                                            </div>
+                                                                            <div className="timeline-end timeline-box">Punch Out at
+
+                                                                                11.00 AM</div>
+                                                                            <hr />
+                                                                        </li>
+                                                                        <li>
+                                                                            <hr />
+                                                                            <div className="timeline-middle">
+                                                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="w-5 h-5"><path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z" clipRule="evenodd" /></svg>
+                                                                            </div>
+                                                                            <div className="timeline-end timeline-box">Punch Out at
+
+                                                                                7.30 PM</div>
+                                                                        </li>
+                                                                    </ul>
+
+                                                                </div>
+                                                            </div>
+                                                            <div></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </dialog>
+                                        </>
+                                        :
+                                        <RxCross2 className="text-base font-bold cursor-pointer text-red-500"></RxCross2>}
                                 </td>
                                 <td className="text-base text-center">
-                                    <div className="avatar">
-                                        <div className="mask mask-squircle w-4 h-4">
-                                            <img src={attendance.day15} alt="Avatar Tailwind CSS Component" />
-                                        </div>
-                                    </div>
+                                    {attendance.day15 == "present" ?
+                                        <>
+                                            <FaCheck onClick={() => document.getElementById('my_modal_339845784').showModal()} className="text-base font-bold cursor-pointer text-green-400"></FaCheck>
+                                            {/* You can open the modal using document.getElementById('ID').showModal() method */}
+                                            <dialog id="my_modal_339845784" className="modal">
+                                                <div className="modal-box w-11/12 max-w-5xl">
+                                                    <form method="dialog">
+                                                        {/* if there is a button in form, it will close the modal */}
+                                                        <button className="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">✕</button>
+                                                    </form>
+                                                    <div className="p-4">
+
+                                                        <div className='lg:flex gap-3'>
+                                                            <div className='lg:flex-1'>
+                                                                <div className="card bg-base-100 shadow-xl">
+                                                                    <h1 className='text-xl my-3 text-center'>Timesheet 11 Mar 2023 </h1>
+                                                                    <figure><img src={img1} className='h-40 w-44 rounded-full mx-auto' alt="Shoes" /></figure>
+                                                                    <Button className='p-3 text-white mx-auto'>Punch Out</Button>
+                                                                    <div className="card-body text-center">
+                                                                        <h1 className='text-center'>Punch In at</h1>
+                                                                        <p className='text-center'>Wed, 11th Mar 2023 10.00 AM</p>
+                                                                        <div className='flex justify-around gap-4'>
+                                                                            <p className='bg-slate-500 bg-opacity-15 py-4'>Break 1.21 hrs</p>
+                                                                            <p className='bg-slate-500 bg-opacity-15 py-4'>Overtime 3 hrs</p>
+                                                                        </div>
+                                                                    </div>
+
+                                                                </div>
+                                                            </div>
+
+                                                            <div className='my-8 lg:flex-1'>
+                                                                <div className="card bg-base-100 shadow-xl p-4">
+                                                                    <h1 className='text-xl my-3 text-center'>Today Activity</h1>
+                                                                    <ul className="timeline timeline-vertical">
+                                                                        <li>
+                                                                            <div className="timeline-middle">
+                                                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="w-5 h-5"><path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z" clipRule="evenodd" /></svg>
+                                                                            </div>
+                                                                            <div className="timeline-end timeline-box">Punch In at
+
+                                                                                2.00 PM</div>
+                                                                            <hr />
+                                                                        </li>
+                                                                        <li>
+                                                                            <hr />
+                                                                            <div className="timeline-middle">
+                                                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="w-5 h-5"><path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z" clipRule="evenodd" /></svg>
+                                                                            </div>
+                                                                            <div className="timeline-end timeline-box">Punch Out at
+
+                                                                                1.30 PM</div>
+                                                                            <hr />
+                                                                        </li>
+                                                                        <li>
+                                                                            <hr />
+                                                                            <div className="timeline-middle">
+                                                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="w-5 h-5"><path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z" clipRule="evenodd" /></svg>
+                                                                            </div>
+                                                                            <div className="timeline-end timeline-box">Punch In at
+
+                                                                                11.15 AM</div>
+                                                                            <hr />
+                                                                        </li>
+                                                                        <li>
+                                                                            <hr />
+                                                                            <div className="timeline-middle">
+                                                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="w-5 h-5"><path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z" clipRule="evenodd" /></svg>
+                                                                            </div>
+                                                                            <div className="timeline-end timeline-box">Punch Out at
+
+                                                                                11.00 AM</div>
+                                                                            <hr />
+                                                                        </li>
+                                                                        <li>
+                                                                            <hr />
+                                                                            <div className="timeline-middle">
+                                                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="w-5 h-5"><path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z" clipRule="evenodd" /></svg>
+                                                                            </div>
+                                                                            <div className="timeline-end timeline-box">Punch Out at
+
+                                                                                7.30 PM</div>
+                                                                        </li>
+                                                                    </ul>
+
+                                                                </div>
+                                                            </div>
+                                                            <div></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </dialog>
+                                        </>
+                                        :
+                                        <RxCross2 className="text-base font-bold cursor-pointer text-red-500"></RxCross2>}
                                 </td>
                                 <td className="text-base text-center">
-                                    <div className="avatar">
-                                        <div className="mask mask-squircle w-4 h-4">
-                                            <img src={attendance.day16} alt="Avatar Tailwind CSS Component" />
-                                        </div>
-                                    </div>
+                                    {attendance.day16 == "present" ?
+                                        <>
+                                            <FaCheck onClick={() => document.getElementById('my_modal_339845784').showModal()} className="text-base font-bold cursor-pointer text-green-400"></FaCheck>
+                                            {/* You can open the modal using document.getElementById('ID').showModal() method */}
+                                            <dialog id="my_modal_339845784" className="modal">
+                                                <div className="modal-box w-11/12 max-w-5xl">
+                                                    <form method="dialog">
+                                                        {/* if there is a button in form, it will close the modal */}
+                                                        <button className="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">✕</button>
+                                                    </form>
+                                                    <div className="p-4">
+
+                                                        <div className='lg:flex gap-3'>
+                                                            <div className='lg:flex-1'>
+                                                                <div className="card bg-base-100 shadow-xl">
+                                                                    <h1 className='text-xl my-3 text-center'>Timesheet 11 Mar 2023 </h1>
+                                                                    <figure><img src={img1} className='h-40 w-44 rounded-full mx-auto' alt="Shoes" /></figure>
+                                                                    <Button className='p-3 text-white mx-auto'>Punch Out</Button>
+                                                                    <div className="card-body text-center">
+                                                                        <h1 className='text-center'>Punch In at</h1>
+                                                                        <p className='text-center'>Wed, 11th Mar 2023 10.00 AM</p>
+                                                                        <div className='flex justify-around gap-4'>
+                                                                            <p className='bg-slate-500 bg-opacity-15 py-4'>Break 1.21 hrs</p>
+                                                                            <p className='bg-slate-500 bg-opacity-15 py-4'>Overtime 3 hrs</p>
+                                                                        </div>
+                                                                    </div>
+
+                                                                </div>
+                                                            </div>
+
+                                                            <div className='my-8 lg:flex-1'>
+                                                                <div className="card bg-base-100 shadow-xl p-4">
+                                                                    <h1 className='text-xl my-3 text-center'>Today Activity</h1>
+                                                                    <ul className="timeline timeline-vertical">
+                                                                        <li>
+                                                                            <div className="timeline-middle">
+                                                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="w-5 h-5"><path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z" clipRule="evenodd" /></svg>
+                                                                            </div>
+                                                                            <div className="timeline-end timeline-box">Punch In at
+
+                                                                                2.00 PM</div>
+                                                                            <hr />
+                                                                        </li>
+                                                                        <li>
+                                                                            <hr />
+                                                                            <div className="timeline-middle">
+                                                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="w-5 h-5"><path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z" clipRule="evenodd" /></svg>
+                                                                            </div>
+                                                                            <div className="timeline-end timeline-box">Punch Out at
+
+                                                                                1.30 PM</div>
+                                                                            <hr />
+                                                                        </li>
+                                                                        <li>
+                                                                            <hr />
+                                                                            <div className="timeline-middle">
+                                                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="w-5 h-5"><path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z" clipRule="evenodd" /></svg>
+                                                                            </div>
+                                                                            <div className="timeline-end timeline-box">Punch In at
+
+                                                                                11.15 AM</div>
+                                                                            <hr />
+                                                                        </li>
+                                                                        <li>
+                                                                            <hr />
+                                                                            <div className="timeline-middle">
+                                                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="w-5 h-5"><path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z" clipRule="evenodd" /></svg>
+                                                                            </div>
+                                                                            <div className="timeline-end timeline-box">Punch Out at
+
+                                                                                11.00 AM</div>
+                                                                            <hr />
+                                                                        </li>
+                                                                        <li>
+                                                                            <hr />
+                                                                            <div className="timeline-middle">
+                                                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="w-5 h-5"><path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z" clipRule="evenodd" /></svg>
+                                                                            </div>
+                                                                            <div className="timeline-end timeline-box">Punch Out at
+
+                                                                                7.30 PM</div>
+                                                                        </li>
+                                                                    </ul>
+
+                                                                </div>
+                                                            </div>
+                                                            <div></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </dialog>
+                                        </>
+                                        :
+                                        <RxCross2 className="text-base font-bold cursor-pointer text-red-500"></RxCross2>}
                                 </td>
                                 <td className="text-base text-center">
-                                    <div className="avatar">
-                                        <div className="mask mask-squircle w-4 h-4">
-                                            <img src={attendance.day17} alt="Avatar Tailwind CSS Component" />
-                                        </div>
-                                    </div>
+                                    {attendance.day17 == "present" ?
+                                        <>
+                                            <FaCheck onClick={() => document.getElementById('my_modal_339845784').showModal()} className="text-base font-bold cursor-pointer text-green-400"></FaCheck>
+                                            {/* You can open the modal using document.getElementById('ID').showModal() method */}
+                                            <dialog id="my_modal_339845784" className="modal">
+                                                <div className="modal-box w-11/12 max-w-5xl">
+                                                    <form method="dialog">
+                                                        {/* if there is a button in form, it will close the modal */}
+                                                        <button className="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">✕</button>
+                                                    </form>
+                                                    <div className="p-4">
+
+                                                        <div className='lg:flex gap-3'>
+                                                            <div className='lg:flex-1'>
+                                                                <div className="card bg-base-100 shadow-xl">
+                                                                    <h1 className='text-xl my-3 text-center'>Timesheet 11 Mar 2023 </h1>
+                                                                    <figure><img src={img1} className='h-40 w-44 rounded-full mx-auto' alt="Shoes" /></figure>
+                                                                    <Button className='p-3 text-white mx-auto'>Punch Out</Button>
+                                                                    <div className="card-body text-center">
+                                                                        <h1 className='text-center'>Punch In at</h1>
+                                                                        <p className='text-center'>Wed, 11th Mar 2023 10.00 AM</p>
+                                                                        <div className='flex justify-around gap-4'>
+                                                                            <p className='bg-slate-500 bg-opacity-15 py-4'>Break 1.21 hrs</p>
+                                                                            <p className='bg-slate-500 bg-opacity-15 py-4'>Overtime 3 hrs</p>
+                                                                        </div>
+                                                                    </div>
+
+                                                                </div>
+                                                            </div>
+
+                                                            <div className='my-8 lg:flex-1'>
+                                                                <div className="card bg-base-100 shadow-xl p-4">
+                                                                    <h1 className='text-xl my-3 text-center'>Today Activity</h1>
+                                                                    <ul className="timeline timeline-vertical">
+                                                                        <li>
+                                                                            <div className="timeline-middle">
+                                                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="w-5 h-5"><path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z" clipRule="evenodd" /></svg>
+                                                                            </div>
+                                                                            <div className="timeline-end timeline-box">Punch In at
+
+                                                                                2.00 PM</div>
+                                                                            <hr />
+                                                                        </li>
+                                                                        <li>
+                                                                            <hr />
+                                                                            <div className="timeline-middle">
+                                                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="w-5 h-5"><path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z" clipRule="evenodd" /></svg>
+                                                                            </div>
+                                                                            <div className="timeline-end timeline-box">Punch Out at
+
+                                                                                1.30 PM</div>
+                                                                            <hr />
+                                                                        </li>
+                                                                        <li>
+                                                                            <hr />
+                                                                            <div className="timeline-middle">
+                                                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="w-5 h-5"><path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z" clipRule="evenodd" /></svg>
+                                                                            </div>
+                                                                            <div className="timeline-end timeline-box">Punch In at
+
+                                                                                11.15 AM</div>
+                                                                            <hr />
+                                                                        </li>
+                                                                        <li>
+                                                                            <hr />
+                                                                            <div className="timeline-middle">
+                                                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="w-5 h-5"><path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z" clipRule="evenodd" /></svg>
+                                                                            </div>
+                                                                            <div className="timeline-end timeline-box">Punch Out at
+
+                                                                                11.00 AM</div>
+                                                                            <hr />
+                                                                        </li>
+                                                                        <li>
+                                                                            <hr />
+                                                                            <div className="timeline-middle">
+                                                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="w-5 h-5"><path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z" clipRule="evenodd" /></svg>
+                                                                            </div>
+                                                                            <div className="timeline-end timeline-box">Punch Out at
+
+                                                                                7.30 PM</div>
+                                                                        </li>
+                                                                    </ul>
+
+                                                                </div>
+                                                            </div>
+                                                            <div></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </dialog>
+                                        </>
+                                        :
+                                        <RxCross2 className="text-base font-bold cursor-pointer text-red-500"></RxCross2>}
                                 </td>
                                 <td className="text-base text-center">
-                                    <div className="avatar">
-                                        <div className="mask mask-squircle w-4 h-4">
-                                            <img src={attendance.day18} alt="Avatar Tailwind CSS Component" />
-                                        </div>
-                                    </div>
+                                    {attendance.day18 == "present" ?
+                                        <>
+                                            <FaCheck onClick={() => document.getElementById('my_modal_339845784').showModal()} className="text-base font-bold cursor-pointer text-green-400"></FaCheck>
+                                            {/* You can open the modal using document.getElementById('ID').showModal() method */}
+                                            <dialog id="my_modal_339845784" className="modal">
+                                                <div className="modal-box w-11/12 max-w-5xl">
+                                                    <form method="dialog">
+                                                        {/* if there is a button in form, it will close the modal */}
+                                                        <button className="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">✕</button>
+                                                    </form>
+                                                    <div className="p-4">
+
+                                                        <div className='lg:flex gap-3'>
+                                                            <div className='lg:flex-1'>
+                                                                <div className="card bg-base-100 shadow-xl">
+                                                                    <h1 className='text-xl my-3 text-center'>Timesheet 11 Mar 2023 </h1>
+                                                                    <figure><img src={img1} className='h-40 w-44 rounded-full mx-auto' alt="Shoes" /></figure>
+                                                                    <Button className='p-3 text-white mx-auto'>Punch Out</Button>
+                                                                    <div className="card-body text-center">
+                                                                        <h1 className='text-center'>Punch In at</h1>
+                                                                        <p className='text-center'>Wed, 11th Mar 2023 10.00 AM</p>
+                                                                        <div className='flex justify-around gap-4'>
+                                                                            <p className='bg-slate-500 bg-opacity-15 py-4'>Break 1.21 hrs</p>
+                                                                            <p className='bg-slate-500 bg-opacity-15 py-4'>Overtime 3 hrs</p>
+                                                                        </div>
+                                                                    </div>
+
+                                                                </div>
+                                                            </div>
+
+                                                            <div className='my-8 lg:flex-1'>
+                                                                <div className="card bg-base-100 shadow-xl p-4">
+                                                                    <h1 className='text-xl my-3 text-center'>Today Activity</h1>
+                                                                    <ul className="timeline timeline-vertical">
+                                                                        <li>
+                                                                            <div className="timeline-middle">
+                                                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="w-5 h-5"><path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z" clipRule="evenodd" /></svg>
+                                                                            </div>
+                                                                            <div className="timeline-end timeline-box">Punch In at
+
+                                                                                2.00 PM</div>
+                                                                            <hr />
+                                                                        </li>
+                                                                        <li>
+                                                                            <hr />
+                                                                            <div className="timeline-middle">
+                                                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="w-5 h-5"><path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z" clipRule="evenodd" /></svg>
+                                                                            </div>
+                                                                            <div className="timeline-end timeline-box">Punch Out at
+
+                                                                                1.30 PM</div>
+                                                                            <hr />
+                                                                        </li>
+                                                                        <li>
+                                                                            <hr />
+                                                                            <div className="timeline-middle">
+                                                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="w-5 h-5"><path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z" clipRule="evenodd" /></svg>
+                                                                            </div>
+                                                                            <div className="timeline-end timeline-box">Punch In at
+
+                                                                                11.15 AM</div>
+                                                                            <hr />
+                                                                        </li>
+                                                                        <li>
+                                                                            <hr />
+                                                                            <div className="timeline-middle">
+                                                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="w-5 h-5"><path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z" clipRule="evenodd" /></svg>
+                                                                            </div>
+                                                                            <div className="timeline-end timeline-box">Punch Out at
+
+                                                                                11.00 AM</div>
+                                                                            <hr />
+                                                                        </li>
+                                                                        <li>
+                                                                            <hr />
+                                                                            <div className="timeline-middle">
+                                                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="w-5 h-5"><path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z" clipRule="evenodd" /></svg>
+                                                                            </div>
+                                                                            <div className="timeline-end timeline-box">Punch Out at
+
+                                                                                7.30 PM</div>
+                                                                        </li>
+                                                                    </ul>
+
+                                                                </div>
+                                                            </div>
+                                                            <div></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </dialog>
+                                        </>
+                                        :
+                                        <RxCross2 className="text-base font-bold cursor-pointer text-red-500"></RxCross2>}
                                 </td>
                                 <td className="text-base text-center">
-                                    <div className="avatar">
-                                        <div className="mask mask-squircle w-4 h-4">
-                                            <img src={attendance.day19} alt="Avatar Tailwind CSS Component" />
-                                        </div>
-                                    </div>
+                                    {attendance.day19 == "present" ?
+                                        <>
+                                            <FaCheck onClick={() => document.getElementById('my_modal_339845784').showModal()} className="text-base font-bold cursor-pointer text-green-400"></FaCheck>
+                                            {/* You can open the modal using document.getElementById('ID').showModal() method */}
+                                            <dialog id="my_modal_339845784" className="modal">
+                                                <div className="modal-box w-11/12 max-w-5xl">
+                                                    <form method="dialog">
+                                                        {/* if there is a button in form, it will close the modal */}
+                                                        <button className="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">✕</button>
+                                                    </form>
+                                                    <div className="p-4">
+
+                                                        <div className='lg:flex gap-3'>
+                                                            <div className='lg:flex-1'>
+                                                                <div className="card bg-base-100 shadow-xl">
+                                                                    <h1 className='text-xl my-3 text-center'>Timesheet 11 Mar 2023 </h1>
+                                                                    <figure><img src={img1} className='h-40 w-44 rounded-full mx-auto' alt="Shoes" /></figure>
+                                                                    <Button className='p-3 text-white mx-auto'>Punch Out</Button>
+                                                                    <div className="card-body text-center">
+                                                                        <h1 className='text-center'>Punch In at</h1>
+                                                                        <p className='text-center'>Wed, 11th Mar 2023 10.00 AM</p>
+                                                                        <div className='flex justify-around gap-4'>
+                                                                            <p className='bg-slate-500 bg-opacity-15 py-4'>Break 1.21 hrs</p>
+                                                                            <p className='bg-slate-500 bg-opacity-15 py-4'>Overtime 3 hrs</p>
+                                                                        </div>
+                                                                    </div>
+
+                                                                </div>
+                                                            </div>
+
+                                                            <div className='my-8 lg:flex-1'>
+                                                                <div className="card bg-base-100 shadow-xl p-4">
+                                                                    <h1 className='text-xl my-3 text-center'>Today Activity</h1>
+                                                                    <ul className="timeline timeline-vertical">
+                                                                        <li>
+                                                                            <div className="timeline-middle">
+                                                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="w-5 h-5"><path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z" clipRule="evenodd" /></svg>
+                                                                            </div>
+                                                                            <div className="timeline-end timeline-box">Punch In at
+
+                                                                                2.00 PM</div>
+                                                                            <hr />
+                                                                        </li>
+                                                                        <li>
+                                                                            <hr />
+                                                                            <div className="timeline-middle">
+                                                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="w-5 h-5"><path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z" clipRule="evenodd" /></svg>
+                                                                            </div>
+                                                                            <div className="timeline-end timeline-box">Punch Out at
+
+                                                                                1.30 PM</div>
+                                                                            <hr />
+                                                                        </li>
+                                                                        <li>
+                                                                            <hr />
+                                                                            <div className="timeline-middle">
+                                                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="w-5 h-5"><path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z" clipRule="evenodd" /></svg>
+                                                                            </div>
+                                                                            <div className="timeline-end timeline-box">Punch In at
+
+                                                                                11.15 AM</div>
+                                                                            <hr />
+                                                                        </li>
+                                                                        <li>
+                                                                            <hr />
+                                                                            <div className="timeline-middle">
+                                                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="w-5 h-5"><path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z" clipRule="evenodd" /></svg>
+                                                                            </div>
+                                                                            <div className="timeline-end timeline-box">Punch Out at
+
+                                                                                11.00 AM</div>
+                                                                            <hr />
+                                                                        </li>
+                                                                        <li>
+                                                                            <hr />
+                                                                            <div className="timeline-middle">
+                                                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="w-5 h-5"><path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z" clipRule="evenodd" /></svg>
+                                                                            </div>
+                                                                            <div className="timeline-end timeline-box">Punch Out at
+
+                                                                                7.30 PM</div>
+                                                                        </li>
+                                                                    </ul>
+
+                                                                </div>
+                                                            </div>
+                                                            <div></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </dialog>
+                                        </>
+                                        :
+                                        <RxCross2 className="text-base font-bold cursor-pointer text-red-500"></RxCross2>}
                                 </td>
                                 <td className="text-base text-center">
-                                    <div className="avatar">
-                                        <div className="mask mask-squircle w-4 h-4">
-                                            <img src={attendance.day20} alt="Avatar Tailwind CSS Component" />
-                                        </div>
-                                    </div>
+                                    {attendance.day20 == "present" ?
+                                        <>
+                                            <FaCheck onClick={() => document.getElementById('my_modal_339845784').showModal()} className="text-base font-bold cursor-pointer text-green-400"></FaCheck>
+                                            {/* You can open the modal using document.getElementById('ID').showModal() method */}
+                                            <dialog id="my_modal_339845784" className="modal">
+                                                <div className="modal-box w-11/12 max-w-5xl">
+                                                    <form method="dialog">
+                                                        {/* if there is a button in form, it will close the modal */}
+                                                        <button className="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">✕</button>
+                                                    </form>
+                                                    <div className="p-4">
+
+                                                        <div className='lg:flex gap-3'>
+                                                            <div className='lg:flex-1'>
+                                                                <div className="card bg-base-100 shadow-xl">
+                                                                    <h1 className='text-xl my-3 text-center'>Timesheet 11 Mar 2023 </h1>
+                                                                    <figure><img src={img1} className='h-40 w-44 rounded-full mx-auto' alt="Shoes" /></figure>
+                                                                    <Button className='p-3 text-white mx-auto'>Punch Out</Button>
+                                                                    <div className="card-body text-center">
+                                                                        <h1 className='text-center'>Punch In at</h1>
+                                                                        <p className='text-center'>Wed, 11th Mar 2023 10.00 AM</p>
+                                                                        <div className='flex justify-around gap-4'>
+                                                                            <p className='bg-slate-500 bg-opacity-15 py-4'>Break 1.21 hrs</p>
+                                                                            <p className='bg-slate-500 bg-opacity-15 py-4'>Overtime 3 hrs</p>
+                                                                        </div>
+                                                                    </div>
+
+                                                                </div>
+                                                            </div>
+
+                                                            <div className='my-8 lg:flex-1'>
+                                                                <div className="card bg-base-100 shadow-xl p-4">
+                                                                    <h1 className='text-xl my-3 text-center'>Today Activity</h1>
+                                                                    <ul className="timeline timeline-vertical">
+                                                                        <li>
+                                                                            <div className="timeline-middle">
+                                                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="w-5 h-5"><path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z" clipRule="evenodd" /></svg>
+                                                                            </div>
+                                                                            <div className="timeline-end timeline-box">Punch In at
+
+                                                                                2.00 PM</div>
+                                                                            <hr />
+                                                                        </li>
+                                                                        <li>
+                                                                            <hr />
+                                                                            <div className="timeline-middle">
+                                                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="w-5 h-5"><path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z" clipRule="evenodd" /></svg>
+                                                                            </div>
+                                                                            <div className="timeline-end timeline-box">Punch Out at
+
+                                                                                1.30 PM</div>
+                                                                            <hr />
+                                                                        </li>
+                                                                        <li>
+                                                                            <hr />
+                                                                            <div className="timeline-middle">
+                                                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="w-5 h-5"><path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z" clipRule="evenodd" /></svg>
+                                                                            </div>
+                                                                            <div className="timeline-end timeline-box">Punch In at
+
+                                                                                11.15 AM</div>
+                                                                            <hr />
+                                                                        </li>
+                                                                        <li>
+                                                                            <hr />
+                                                                            <div className="timeline-middle">
+                                                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="w-5 h-5"><path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z" clipRule="evenodd" /></svg>
+                                                                            </div>
+                                                                            <div className="timeline-end timeline-box">Punch Out at
+
+                                                                                11.00 AM</div>
+                                                                            <hr />
+                                                                        </li>
+                                                                        <li>
+                                                                            <hr />
+                                                                            <div className="timeline-middle">
+                                                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="w-5 h-5"><path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z" clipRule="evenodd" /></svg>
+                                                                            </div>
+                                                                            <div className="timeline-end timeline-box">Punch Out at
+
+                                                                                7.30 PM</div>
+                                                                        </li>
+                                                                    </ul>
+
+                                                                </div>
+                                                            </div>
+                                                            <div></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </dialog>
+                                        </>
+                                        :
+                                        <RxCross2 className="text-base font-bold cursor-pointer text-red-500"></RxCross2>}
                                 </td>
                                 <td className="text-base text-center">
-                                    <div className="avatar">
-                                        <div className="mask mask-squircle w-4 h-4">
-                                            <img src={attendance.day21} alt="Avatar Tailwind CSS Component" />
-                                        </div>
-                                    </div>
+                                    {attendance.day21 == "present" ?
+                                        <>
+                                            <FaCheck onClick={() => document.getElementById('my_modal_339845784').showModal()} className="text-base font-bold cursor-pointer text-green-400"></FaCheck>
+                                            {/* You can open the modal using document.getElementById('ID').showModal() method */}
+                                            <dialog id="my_modal_339845784" className="modal">
+                                                <div className="modal-box w-11/12 max-w-5xl">
+                                                    <form method="dialog">
+                                                        {/* if there is a button in form, it will close the modal */}
+                                                        <button className="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">✕</button>
+                                                    </form>
+                                                    <div className="p-4">
+
+                                                        <div className='lg:flex gap-3'>
+                                                            <div className='lg:flex-1'>
+                                                                <div className="card bg-base-100 shadow-xl">
+                                                                    <h1 className='text-xl my-3 text-center'>Timesheet 11 Mar 2023 </h1>
+                                                                    <figure><img src={img1} className='h-40 w-44 rounded-full mx-auto' alt="Shoes" /></figure>
+                                                                    <Button className='p-3 text-white mx-auto'>Punch Out</Button>
+                                                                    <div className="card-body text-center">
+                                                                        <h1 className='text-center'>Punch In at</h1>
+                                                                        <p className='text-center'>Wed, 11th Mar 2023 10.00 AM</p>
+                                                                        <div className='flex justify-around gap-4'>
+                                                                            <p className='bg-slate-500 bg-opacity-15 py-4'>Break 1.21 hrs</p>
+                                                                            <p className='bg-slate-500 bg-opacity-15 py-4'>Overtime 3 hrs</p>
+                                                                        </div>
+                                                                    </div>
+
+                                                                </div>
+                                                            </div>
+
+                                                            <div className='my-8 lg:flex-1'>
+                                                                <div className="card bg-base-100 shadow-xl p-4">
+                                                                    <h1 className='text-xl my-3 text-center'>Today Activity</h1>
+                                                                    <ul className="timeline timeline-vertical">
+                                                                        <li>
+                                                                            <div className="timeline-middle">
+                                                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="w-5 h-5"><path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z" clipRule="evenodd" /></svg>
+                                                                            </div>
+                                                                            <div className="timeline-end timeline-box">Punch In at
+
+                                                                                2.00 PM</div>
+                                                                            <hr />
+                                                                        </li>
+                                                                        <li>
+                                                                            <hr />
+                                                                            <div className="timeline-middle">
+                                                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="w-5 h-5"><path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z" clipRule="evenodd" /></svg>
+                                                                            </div>
+                                                                            <div className="timeline-end timeline-box">Punch Out at
+
+                                                                                1.30 PM</div>
+                                                                            <hr />
+                                                                        </li>
+                                                                        <li>
+                                                                            <hr />
+                                                                            <div className="timeline-middle">
+                                                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="w-5 h-5"><path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z" clipRule="evenodd" /></svg>
+                                                                            </div>
+                                                                            <div className="timeline-end timeline-box">Punch In at
+
+                                                                                11.15 AM</div>
+                                                                            <hr />
+                                                                        </li>
+                                                                        <li>
+                                                                            <hr />
+                                                                            <div className="timeline-middle">
+                                                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="w-5 h-5"><path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z" clipRule="evenodd" /></svg>
+                                                                            </div>
+                                                                            <div className="timeline-end timeline-box">Punch Out at
+
+                                                                                11.00 AM</div>
+                                                                            <hr />
+                                                                        </li>
+                                                                        <li>
+                                                                            <hr />
+                                                                            <div className="timeline-middle">
+                                                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="w-5 h-5"><path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z" clipRule="evenodd" /></svg>
+                                                                            </div>
+                                                                            <div className="timeline-end timeline-box">Punch Out at
+
+                                                                                7.30 PM</div>
+                                                                        </li>
+                                                                    </ul>
+
+                                                                </div>
+                                                            </div>
+                                                            <div></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </dialog>
+                                        </>
+                                        :
+                                        <RxCross2 className="text-base font-bold cursor-pointer text-red-500"></RxCross2>}
                                 </td>
                                 <td className="text-base text-center">
-                                    <div className="avatar">
-                                        <div className="mask mask-squircle w-4 h-4">
-                                            <img src={attendance.day22} alt="Avatar Tailwind CSS Component" />
-                                        </div>
-                                    </div>
+                                    {attendance.day22 == "present" ?
+                                        <>
+                                            <FaCheck onClick={() => document.getElementById('my_modal_339845784').showModal()} className="text-base font-bold cursor-pointer text-green-400"></FaCheck>
+                                            {/* You can open the modal using document.getElementById('ID').showModal() method */}
+                                            <dialog id="my_modal_339845784" className="modal">
+                                                <div className="modal-box w-11/12 max-w-5xl">
+                                                    <form method="dialog">
+                                                        {/* if there is a button in form, it will close the modal */}
+                                                        <button className="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">✕</button>
+                                                    </form>
+                                                    <div className="p-4">
+
+                                                        <div className='lg:flex gap-3'>
+                                                            <div className='lg:flex-1'>
+                                                                <div className="card bg-base-100 shadow-xl">
+                                                                    <h1 className='text-xl my-3 text-center'>Timesheet 11 Mar 2023 </h1>
+                                                                    <figure><img src={img1} className='h-40 w-44 rounded-full mx-auto' alt="Shoes" /></figure>
+                                                                    <Button className='p-3 text-white mx-auto'>Punch Out</Button>
+                                                                    <div className="card-body text-center">
+                                                                        <h1 className='text-center'>Punch In at</h1>
+                                                                        <p className='text-center'>Wed, 11th Mar 2023 10.00 AM</p>
+                                                                        <div className='flex justify-around gap-4'>
+                                                                            <p className='bg-slate-500 bg-opacity-15 py-4'>Break 1.21 hrs</p>
+                                                                            <p className='bg-slate-500 bg-opacity-15 py-4'>Overtime 3 hrs</p>
+                                                                        </div>
+                                                                    </div>
+
+                                                                </div>
+                                                            </div>
+
+                                                            <div className='my-8 lg:flex-1'>
+                                                                <div className="card bg-base-100 shadow-xl p-4">
+                                                                    <h1 className='text-xl my-3 text-center'>Today Activity</h1>
+                                                                    <ul className="timeline timeline-vertical">
+                                                                        <li>
+                                                                            <div className="timeline-middle">
+                                                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="w-5 h-5"><path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z" clipRule="evenodd" /></svg>
+                                                                            </div>
+                                                                            <div className="timeline-end timeline-box">Punch In at
+
+                                                                                2.00 PM</div>
+                                                                            <hr />
+                                                                        </li>
+                                                                        <li>
+                                                                            <hr />
+                                                                            <div className="timeline-middle">
+                                                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="w-5 h-5"><path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z" clipRule="evenodd" /></svg>
+                                                                            </div>
+                                                                            <div className="timeline-end timeline-box">Punch Out at
+
+                                                                                1.30 PM</div>
+                                                                            <hr />
+                                                                        </li>
+                                                                        <li>
+                                                                            <hr />
+                                                                            <div className="timeline-middle">
+                                                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="w-5 h-5"><path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z" clipRule="evenodd" /></svg>
+                                                                            </div>
+                                                                            <div className="timeline-end timeline-box">Punch In at
+
+                                                                                11.15 AM</div>
+                                                                            <hr />
+                                                                        </li>
+                                                                        <li>
+                                                                            <hr />
+                                                                            <div className="timeline-middle">
+                                                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="w-5 h-5"><path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z" clipRule="evenodd" /></svg>
+                                                                            </div>
+                                                                            <div className="timeline-end timeline-box">Punch Out at
+
+                                                                                11.00 AM</div>
+                                                                            <hr />
+                                                                        </li>
+                                                                        <li>
+                                                                            <hr />
+                                                                            <div className="timeline-middle">
+                                                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="w-5 h-5"><path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z" clipRule="evenodd" /></svg>
+                                                                            </div>
+                                                                            <div className="timeline-end timeline-box">Punch Out at
+
+                                                                                7.30 PM</div>
+                                                                        </li>
+                                                                    </ul>
+
+                                                                </div>
+                                                            </div>
+                                                            <div></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </dialog>
+                                        </>
+                                        :
+                                        <RxCross2 className="text-base font-bold cursor-pointer text-red-500"></RxCross2>}
                                 </td>
                                 <td className="text-base text-center">
-                                    <div className="avatar">
-                                        <div className="mask mask-squircle w-4 h-4">
-                                            <img src={attendance.day23} alt="Avatar Tailwind CSS Component" />
-                                        </div>
-                                    </div>
+                                    {attendance.day23 == "present" ?
+                                        <>
+                                            <FaCheck onClick={() => document.getElementById('my_modal_339845784').showModal()} className="text-base font-bold cursor-pointer text-green-400"></FaCheck>
+                                            {/* You can open the modal using document.getElementById('ID').showModal() method */}
+                                            <dialog id="my_modal_339845784" className="modal">
+                                                <div className="modal-box w-11/12 max-w-5xl">
+                                                    <form method="dialog">
+                                                        {/* if there is a button in form, it will close the modal */}
+                                                        <button className="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">✕</button>
+                                                    </form>
+                                                    <div className="p-4">
+
+                                                        <div className='lg:flex gap-3'>
+                                                            <div className='lg:flex-1'>
+                                                                <div className="card bg-base-100 shadow-xl">
+                                                                    <h1 className='text-xl my-3 text-center'>Timesheet 11 Mar 2023 </h1>
+                                                                    <figure><img src={img1} className='h-40 w-44 rounded-full mx-auto' alt="Shoes" /></figure>
+                                                                    <Button className='p-3 text-white mx-auto'>Punch Out</Button>
+                                                                    <div className="card-body text-center">
+                                                                        <h1 className='text-center'>Punch In at</h1>
+                                                                        <p className='text-center'>Wed, 11th Mar 2023 10.00 AM</p>
+                                                                        <div className='flex justify-around gap-4'>
+                                                                            <p className='bg-slate-500 bg-opacity-15 py-4'>Break 1.21 hrs</p>
+                                                                            <p className='bg-slate-500 bg-opacity-15 py-4'>Overtime 3 hrs</p>
+                                                                        </div>
+                                                                    </div>
+
+                                                                </div>
+                                                            </div>
+
+                                                            <div className='my-8 lg:flex-1'>
+                                                                <div className="card bg-base-100 shadow-xl p-4">
+                                                                    <h1 className='text-xl my-3 text-center'>Today Activity</h1>
+                                                                    <ul className="timeline timeline-vertical">
+                                                                        <li>
+                                                                            <div className="timeline-middle">
+                                                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="w-5 h-5"><path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z" clipRule="evenodd" /></svg>
+                                                                            </div>
+                                                                            <div className="timeline-end timeline-box">Punch In at
+
+                                                                                2.00 PM</div>
+                                                                            <hr />
+                                                                        </li>
+                                                                        <li>
+                                                                            <hr />
+                                                                            <div className="timeline-middle">
+                                                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="w-5 h-5"><path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z" clipRule="evenodd" /></svg>
+                                                                            </div>
+                                                                            <div className="timeline-end timeline-box">Punch Out at
+
+                                                                                1.30 PM</div>
+                                                                            <hr />
+                                                                        </li>
+                                                                        <li>
+                                                                            <hr />
+                                                                            <div className="timeline-middle">
+                                                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="w-5 h-5"><path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z" clipRule="evenodd" /></svg>
+                                                                            </div>
+                                                                            <div className="timeline-end timeline-box">Punch In at
+
+                                                                                11.15 AM</div>
+                                                                            <hr />
+                                                                        </li>
+                                                                        <li>
+                                                                            <hr />
+                                                                            <div className="timeline-middle">
+                                                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="w-5 h-5"><path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z" clipRule="evenodd" /></svg>
+                                                                            </div>
+                                                                            <div className="timeline-end timeline-box">Punch Out at
+
+                                                                                11.00 AM</div>
+                                                                            <hr />
+                                                                        </li>
+                                                                        <li>
+                                                                            <hr />
+                                                                            <div className="timeline-middle">
+                                                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="w-5 h-5"><path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z" clipRule="evenodd" /></svg>
+                                                                            </div>
+                                                                            <div className="timeline-end timeline-box">Punch Out at
+
+                                                                                7.30 PM</div>
+                                                                        </li>
+                                                                    </ul>
+
+                                                                </div>
+                                                            </div>
+                                                            <div></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </dialog>
+                                        </>
+                                        :
+                                        <RxCross2 className="text-base font-bold cursor-pointer text-red-500"></RxCross2>}
                                 </td>
                                 <td className="text-base text-center">
-                                    <div className="avatar">
-                                        <div className="mask mask-squircle w-4 h-4">
-                                            <img src={attendance.day24} alt="Avatar Tailwind CSS Component" />
-                                        </div>
-                                    </div>
+                                    {attendance.day24 == "present" ?
+                                        <>
+                                            <FaCheck onClick={() => document.getElementById('my_modal_339845784').showModal()} className="text-base font-bold cursor-pointer text-green-400"></FaCheck>
+                                            {/* You can open the modal using document.getElementById('ID').showModal() method */}
+                                            <dialog id="my_modal_339845784" className="modal">
+                                                <div className="modal-box w-11/12 max-w-5xl">
+                                                    <form method="dialog">
+                                                        {/* if there is a button in form, it will close the modal */}
+                                                        <button className="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">✕</button>
+                                                    </form>
+                                                    <div className="p-4">
+
+                                                        <div className='lg:flex gap-3'>
+                                                            <div className='lg:flex-1'>
+                                                                <div className="card bg-base-100 shadow-xl">
+                                                                    <h1 className='text-xl my-3 text-center'>Timesheet 11 Mar 2023 </h1>
+                                                                    <figure><img src={img1} className='h-40 w-44 rounded-full mx-auto' alt="Shoes" /></figure>
+                                                                    <Button className='p-3 text-white mx-auto'>Punch Out</Button>
+                                                                    <div className="card-body text-center">
+                                                                        <h1 className='text-center'>Punch In at</h1>
+                                                                        <p className='text-center'>Wed, 11th Mar 2023 10.00 AM</p>
+                                                                        <div className='flex justify-around gap-4'>
+                                                                            <p className='bg-slate-500 bg-opacity-15 py-4'>Break 1.21 hrs</p>
+                                                                            <p className='bg-slate-500 bg-opacity-15 py-4'>Overtime 3 hrs</p>
+                                                                        </div>
+                                                                    </div>
+
+                                                                </div>
+                                                            </div>
+
+                                                            <div className='my-8 lg:flex-1'>
+                                                                <div className="card bg-base-100 shadow-xl p-4">
+                                                                    <h1 className='text-xl my-3 text-center'>Today Activity</h1>
+                                                                    <ul className="timeline timeline-vertical">
+                                                                        <li>
+                                                                            <div className="timeline-middle">
+                                                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="w-5 h-5"><path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z" clipRule="evenodd" /></svg>
+                                                                            </div>
+                                                                            <div className="timeline-end timeline-box">Punch In at
+
+                                                                                2.00 PM</div>
+                                                                            <hr />
+                                                                        </li>
+                                                                        <li>
+                                                                            <hr />
+                                                                            <div className="timeline-middle">
+                                                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="w-5 h-5"><path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z" clipRule="evenodd" /></svg>
+                                                                            </div>
+                                                                            <div className="timeline-end timeline-box">Punch Out at
+
+                                                                                1.30 PM</div>
+                                                                            <hr />
+                                                                        </li>
+                                                                        <li>
+                                                                            <hr />
+                                                                            <div className="timeline-middle">
+                                                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="w-5 h-5"><path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z" clipRule="evenodd" /></svg>
+                                                                            </div>
+                                                                            <div className="timeline-end timeline-box">Punch In at
+
+                                                                                11.15 AM</div>
+                                                                            <hr />
+                                                                        </li>
+                                                                        <li>
+                                                                            <hr />
+                                                                            <div className="timeline-middle">
+                                                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="w-5 h-5"><path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z" clipRule="evenodd" /></svg>
+                                                                            </div>
+                                                                            <div className="timeline-end timeline-box">Punch Out at
+
+                                                                                11.00 AM</div>
+                                                                            <hr />
+                                                                        </li>
+                                                                        <li>
+                                                                            <hr />
+                                                                            <div className="timeline-middle">
+                                                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="w-5 h-5"><path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z" clipRule="evenodd" /></svg>
+                                                                            </div>
+                                                                            <div className="timeline-end timeline-box">Punch Out at
+
+                                                                                7.30 PM</div>
+                                                                        </li>
+                                                                    </ul>
+
+                                                                </div>
+                                                            </div>
+                                                            <div></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </dialog>
+                                        </>
+                                        :
+                                        <RxCross2 className="text-base font-bold cursor-pointer text-red-500"></RxCross2>}
                                 </td>
                                 <td className="text-base text-center">
-                                    <div className="avatar">
-                                        <div className="mask mask-squircle w-4 h-4">
-                                            <img src={attendance.day25} alt="Avatar Tailwind CSS Component" />
-                                        </div>
-                                    </div>
+                                    {attendance.day25 == "present" ?
+                                        <>
+                                            <FaCheck onClick={() => document.getElementById('my_modal_339845784').showModal()} className="text-base font-bold cursor-pointer text-green-400"></FaCheck>
+                                            {/* You can open the modal using document.getElementById('ID').showModal() method */}
+                                            <dialog id="my_modal_339845784" className="modal">
+                                                <div className="modal-box w-11/12 max-w-5xl">
+                                                    <form method="dialog">
+                                                        {/* if there is a button in form, it will close the modal */}
+                                                        <button className="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">✕</button>
+                                                    </form>
+                                                    <div className="p-4">
+
+                                                        <div className='lg:flex gap-3'>
+                                                            <div className='lg:flex-1'>
+                                                                <div className="card bg-base-100 shadow-xl">
+                                                                    <h1 className='text-xl my-3 text-center'>Timesheet 11 Mar 2023 </h1>
+                                                                    <figure><img src={img1} className='h-40 w-44 rounded-full mx-auto' alt="Shoes" /></figure>
+                                                                    <Button className='p-3 text-white mx-auto'>Punch Out</Button>
+                                                                    <div className="card-body text-center">
+                                                                        <h1 className='text-center'>Punch In at</h1>
+                                                                        <p className='text-center'>Wed, 11th Mar 2023 10.00 AM</p>
+                                                                        <div className='flex justify-around gap-4'>
+                                                                            <p className='bg-slate-500 bg-opacity-15 py-4'>Break 1.21 hrs</p>
+                                                                            <p className='bg-slate-500 bg-opacity-15 py-4'>Overtime 3 hrs</p>
+                                                                        </div>
+                                                                    </div>
+
+                                                                </div>
+                                                            </div>
+
+                                                            <div className='my-8 lg:flex-1'>
+                                                                <div className="card bg-base-100 shadow-xl p-4">
+                                                                    <h1 className='text-xl my-3 text-center'>Today Activity</h1>
+                                                                    <ul className="timeline timeline-vertical">
+                                                                        <li>
+                                                                            <div className="timeline-middle">
+                                                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="w-5 h-5"><path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z" clipRule="evenodd" /></svg>
+                                                                            </div>
+                                                                            <div className="timeline-end timeline-box">Punch In at
+
+                                                                                2.00 PM</div>
+                                                                            <hr />
+                                                                        </li>
+                                                                        <li>
+                                                                            <hr />
+                                                                            <div className="timeline-middle">
+                                                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="w-5 h-5"><path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z" clipRule="evenodd" /></svg>
+                                                                            </div>
+                                                                            <div className="timeline-end timeline-box">Punch Out at
+
+                                                                                1.30 PM</div>
+                                                                            <hr />
+                                                                        </li>
+                                                                        <li>
+                                                                            <hr />
+                                                                            <div className="timeline-middle">
+                                                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="w-5 h-5"><path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z" clipRule="evenodd" /></svg>
+                                                                            </div>
+                                                                            <div className="timeline-end timeline-box">Punch In at
+
+                                                                                11.15 AM</div>
+                                                                            <hr />
+                                                                        </li>
+                                                                        <li>
+                                                                            <hr />
+                                                                            <div className="timeline-middle">
+                                                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="w-5 h-5"><path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z" clipRule="evenodd" /></svg>
+                                                                            </div>
+                                                                            <div className="timeline-end timeline-box">Punch Out at
+
+                                                                                11.00 AM</div>
+                                                                            <hr />
+                                                                        </li>
+                                                                        <li>
+                                                                            <hr />
+                                                                            <div className="timeline-middle">
+                                                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="w-5 h-5"><path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z" clipRule="evenodd" /></svg>
+                                                                            </div>
+                                                                            <div className="timeline-end timeline-box">Punch Out at
+
+                                                                                7.30 PM</div>
+                                                                        </li>
+                                                                    </ul>
+
+                                                                </div>
+                                                            </div>
+                                                            <div></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </dialog>
+                                        </>
+                                        :
+                                        <RxCross2 className="text-base font-bold cursor-pointer text-red-500"></RxCross2>}
                                 </td>
                                 <td className="text-base text-center">
-                                    <div className="avatar">
-                                        <div className="mask mask-squircle w-4 h-4">
-                                            <img src={attendance.day26} alt="Avatar Tailwind CSS Component" />
-                                        </div>
-                                    </div>
+                                    {attendance.day26 == "present" ?
+                                        <>
+                                            <FaCheck onClick={() => document.getElementById('my_modal_339845784').showModal()} className="text-base font-bold cursor-pointer text-green-400"></FaCheck>
+                                            {/* You can open the modal using document.getElementById('ID').showModal() method */}
+                                            <dialog id="my_modal_339845784" className="modal">
+                                                <div className="modal-box w-11/12 max-w-5xl">
+                                                    <form method="dialog">
+                                                        {/* if there is a button in form, it will close the modal */}
+                                                        <button className="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">✕</button>
+                                                    </form>
+                                                    <div className="p-4">
+
+                                                        <div className='lg:flex gap-3'>
+                                                            <div className='lg:flex-1'>
+                                                                <div className="card bg-base-100 shadow-xl">
+                                                                    <h1 className='text-xl my-3 text-center'>Timesheet 11 Mar 2023 </h1>
+                                                                    <figure><img src={img1} className='h-40 w-44 rounded-full mx-auto' alt="Shoes" /></figure>
+                                                                    <Button className='p-3 text-white mx-auto'>Punch Out</Button>
+                                                                    <div className="card-body text-center">
+                                                                        <h1 className='text-center'>Punch In at</h1>
+                                                                        <p className='text-center'>Wed, 11th Mar 2023 10.00 AM</p>
+                                                                        <div className='flex justify-around gap-4'>
+                                                                            <p className='bg-slate-500 bg-opacity-15 py-4'>Break 1.21 hrs</p>
+                                                                            <p className='bg-slate-500 bg-opacity-15 py-4'>Overtime 3 hrs</p>
+                                                                        </div>
+                                                                    </div>
+
+                                                                </div>
+                                                            </div>
+
+                                                            <div className='my-8 lg:flex-1'>
+                                                                <div className="card bg-base-100 shadow-xl p-4">
+                                                                    <h1 className='text-xl my-3 text-center'>Today Activity</h1>
+                                                                    <ul className="timeline timeline-vertical">
+                                                                        <li>
+                                                                            <div className="timeline-middle">
+                                                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="w-5 h-5"><path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z" clipRule="evenodd" /></svg>
+                                                                            </div>
+                                                                            <div className="timeline-end timeline-box">Punch In at
+
+                                                                                2.00 PM</div>
+                                                                            <hr />
+                                                                        </li>
+                                                                        <li>
+                                                                            <hr />
+                                                                            <div className="timeline-middle">
+                                                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="w-5 h-5"><path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z" clipRule="evenodd" /></svg>
+                                                                            </div>
+                                                                            <div className="timeline-end timeline-box">Punch Out at
+
+                                                                                1.30 PM</div>
+                                                                            <hr />
+                                                                        </li>
+                                                                        <li>
+                                                                            <hr />
+                                                                            <div className="timeline-middle">
+                                                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="w-5 h-5"><path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z" clipRule="evenodd" /></svg>
+                                                                            </div>
+                                                                            <div className="timeline-end timeline-box">Punch In at
+
+                                                                                11.15 AM</div>
+                                                                            <hr />
+                                                                        </li>
+                                                                        <li>
+                                                                            <hr />
+                                                                            <div className="timeline-middle">
+                                                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="w-5 h-5"><path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z" clipRule="evenodd" /></svg>
+                                                                            </div>
+                                                                            <div className="timeline-end timeline-box">Punch Out at
+
+                                                                                11.00 AM</div>
+                                                                            <hr />
+                                                                        </li>
+                                                                        <li>
+                                                                            <hr />
+                                                                            <div className="timeline-middle">
+                                                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="w-5 h-5"><path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z" clipRule="evenodd" /></svg>
+                                                                            </div>
+                                                                            <div className="timeline-end timeline-box">Punch Out at
+
+                                                                                7.30 PM</div>
+                                                                        </li>
+                                                                    </ul>
+
+                                                                </div>
+                                                            </div>
+                                                            <div></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </dialog>
+                                        </>
+                                        :
+                                        <RxCross2 className="text-base font-bold cursor-pointer text-red-500"></RxCross2>}
                                 </td>
                                 <td className="text-base text-center">
-                                    <div className="avatar">
-                                        <div className="mask mask-squircle w-4 h-4">
-                                            <img src={attendance.day27} alt="Avatar Tailwind CSS Component" />
-                                        </div>
-                                    </div>
+                                    {attendance.day27 == "present" ?
+                                        <>
+                                            <FaCheck onClick={() => document.getElementById('my_modal_339845784').showModal()} className="text-base font-bold cursor-pointer text-green-400"></FaCheck>
+                                            {/* You can open the modal using document.getElementById('ID').showModal() method */}
+                                            <dialog id="my_modal_339845784" className="modal">
+                                                <div className="modal-box w-11/12 max-w-5xl">
+                                                    <form method="dialog">
+                                                        {/* if there is a button in form, it will close the modal */}
+                                                        <button className="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">✕</button>
+                                                    </form>
+                                                    <div className="p-4">
+
+                                                        <div className='lg:flex gap-3'>
+                                                            <div className='lg:flex-1'>
+                                                                <div className="card bg-base-100 shadow-xl">
+                                                                    <h1 className='text-xl my-3 text-center'>Timesheet 11 Mar 2023 </h1>
+                                                                    <figure><img src={img1} className='h-40 w-44 rounded-full mx-auto' alt="Shoes" /></figure>
+                                                                    <Button className='p-3 text-white mx-auto'>Punch Out</Button>
+                                                                    <div className="card-body text-center">
+                                                                        <h1 className='text-center'>Punch In at</h1>
+                                                                        <p className='text-center'>Wed, 11th Mar 2023 10.00 AM</p>
+                                                                        <div className='flex justify-around gap-4'>
+                                                                            <p className='bg-slate-500 bg-opacity-15 py-4'>Break 1.21 hrs</p>
+                                                                            <p className='bg-slate-500 bg-opacity-15 py-4'>Overtime 3 hrs</p>
+                                                                        </div>
+                                                                    </div>
+
+                                                                </div>
+                                                            </div>
+
+                                                            <div className='my-8 lg:flex-1'>
+                                                                <div className="card bg-base-100 shadow-xl p-4">
+                                                                    <h1 className='text-xl my-3 text-center'>Today Activity</h1>
+                                                                    <ul className="timeline timeline-vertical">
+                                                                        <li>
+                                                                            <div className="timeline-middle">
+                                                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="w-5 h-5"><path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z" clipRule="evenodd" /></svg>
+                                                                            </div>
+                                                                            <div className="timeline-end timeline-box">Punch In at
+
+                                                                                2.00 PM</div>
+                                                                            <hr />
+                                                                        </li>
+                                                                        <li>
+                                                                            <hr />
+                                                                            <div className="timeline-middle">
+                                                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="w-5 h-5"><path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z" clipRule="evenodd" /></svg>
+                                                                            </div>
+                                                                            <div className="timeline-end timeline-box">Punch Out at
+
+                                                                                1.30 PM</div>
+                                                                            <hr />
+                                                                        </li>
+                                                                        <li>
+                                                                            <hr />
+                                                                            <div className="timeline-middle">
+                                                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="w-5 h-5"><path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z" clipRule="evenodd" /></svg>
+                                                                            </div>
+                                                                            <div className="timeline-end timeline-box">Punch In at
+
+                                                                                11.15 AM</div>
+                                                                            <hr />
+                                                                        </li>
+                                                                        <li>
+                                                                            <hr />
+                                                                            <div className="timeline-middle">
+                                                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="w-5 h-5"><path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z" clipRule="evenodd" /></svg>
+                                                                            </div>
+                                                                            <div className="timeline-end timeline-box">Punch Out at
+
+                                                                                11.00 AM</div>
+                                                                            <hr />
+                                                                        </li>
+                                                                        <li>
+                                                                            <hr />
+                                                                            <div className="timeline-middle">
+                                                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="w-5 h-5"><path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z" clipRule="evenodd" /></svg>
+                                                                            </div>
+                                                                            <div className="timeline-end timeline-box">Punch Out at
+
+                                                                                7.30 PM</div>
+                                                                        </li>
+                                                                    </ul>
+
+                                                                </div>
+                                                            </div>
+                                                            <div></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </dialog>
+                                        </>
+                                        :
+                                        <RxCross2 className="text-base font-bold cursor-pointer text-red-500"></RxCross2>}
                                 </td>
                                 <td className="text-base text-center">
-                                    <div className="avatar">
-                                        <div className="mask mask-squircle w-4 h-4">
-                                            <img src={attendance.day28} alt="Avatar Tailwind CSS Component" />
-                                        </div>
-                                    </div>
+                                    {attendance.day28 == "present" ?
+                                        <>
+                                            <FaCheck onClick={() => document.getElementById('my_modal_339845784').showModal()} className="text-base font-bold cursor-pointer text-green-400"></FaCheck>
+                                            {/* You can open the modal using document.getElementById('ID').showModal() method */}
+                                            <dialog id="my_modal_339845784" className="modal">
+                                                <div className="modal-box w-11/12 max-w-5xl">
+                                                    <form method="dialog">
+                                                        {/* if there is a button in form, it will close the modal */}
+                                                        <button className="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">✕</button>
+                                                    </form>
+                                                    <div className="p-4">
+
+                                                        <div className='lg:flex gap-3'>
+                                                            <div className='lg:flex-1'>
+                                                                <div className="card bg-base-100 shadow-xl">
+                                                                    <h1 className='text-xl my-3 text-center'>Timesheet 11 Mar 2023 </h1>
+                                                                    <figure><img src={img1} className='h-40 w-44 rounded-full mx-auto' alt="Shoes" /></figure>
+                                                                    <Button className='p-3 text-white mx-auto'>Punch Out</Button>
+                                                                    <div className="card-body text-center">
+                                                                        <h1 className='text-center'>Punch In at</h1>
+                                                                        <p className='text-center'>Wed, 11th Mar 2023 10.00 AM</p>
+                                                                        <div className='flex justify-around gap-4'>
+                                                                            <p className='bg-slate-500 bg-opacity-15 py-4'>Break 1.21 hrs</p>
+                                                                            <p className='bg-slate-500 bg-opacity-15 py-4'>Overtime 3 hrs</p>
+                                                                        </div>
+                                                                    </div>
+
+                                                                </div>
+                                                            </div>
+
+                                                            <div className='my-8 lg:flex-1'>
+                                                                <div className="card bg-base-100 shadow-xl p-4">
+                                                                    <h1 className='text-xl my-3 text-center'>Today Activity</h1>
+                                                                    <ul className="timeline timeline-vertical">
+                                                                        <li>
+                                                                            <div className="timeline-middle">
+                                                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="w-5 h-5"><path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z" clipRule="evenodd" /></svg>
+                                                                            </div>
+                                                                            <div className="timeline-end timeline-box">Punch In at
+
+                                                                                2.00 PM</div>
+                                                                            <hr />
+                                                                        </li>
+                                                                        <li>
+                                                                            <hr />
+                                                                            <div className="timeline-middle">
+                                                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="w-5 h-5"><path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z" clipRule="evenodd" /></svg>
+                                                                            </div>
+                                                                            <div className="timeline-end timeline-box">Punch Out at
+
+                                                                                1.30 PM</div>
+                                                                            <hr />
+                                                                        </li>
+                                                                        <li>
+                                                                            <hr />
+                                                                            <div className="timeline-middle">
+                                                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="w-5 h-5"><path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z" clipRule="evenodd" /></svg>
+                                                                            </div>
+                                                                            <div className="timeline-end timeline-box">Punch In at
+
+                                                                                11.15 AM</div>
+                                                                            <hr />
+                                                                        </li>
+                                                                        <li>
+                                                                            <hr />
+                                                                            <div className="timeline-middle">
+                                                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="w-5 h-5"><path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z" clipRule="evenodd" /></svg>
+                                                                            </div>
+                                                                            <div className="timeline-end timeline-box">Punch Out at
+
+                                                                                11.00 AM</div>
+                                                                            <hr />
+                                                                        </li>
+                                                                        <li>
+                                                                            <hr />
+                                                                            <div className="timeline-middle">
+                                                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="w-5 h-5"><path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z" clipRule="evenodd" /></svg>
+                                                                            </div>
+                                                                            <div className="timeline-end timeline-box">Punch Out at
+
+                                                                                7.30 PM</div>
+                                                                        </li>
+                                                                    </ul>
+
+                                                                </div>
+                                                            </div>
+                                                            <div></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </dialog>
+                                        </>
+                                        :
+                                        <RxCross2 className="text-base font-bold cursor-pointer text-red-500"></RxCross2>}
                                 </td>
                                 <td className="text-base text-center">
-                                    <div className="avatar">
-                                        <div className="mask mask-squircle w-4 h-4">
-                                            <img src={attendance.day29} alt="Avatar Tailwind CSS Component" />
-                                        </div>
-                                    </div>
+                                    {attendance.day29 == "present" ?
+                                        <>
+                                            <FaCheck onClick={() => document.getElementById('my_modal_339845784').showModal()} className="text-base font-bold cursor-pointer text-green-400"></FaCheck>
+                                            {/* You can open the modal using document.getElementById('ID').showModal() method */}
+                                            <dialog id="my_modal_339845784" className="modal">
+                                                <div className="modal-box w-11/12 max-w-5xl">
+                                                    <form method="dialog">
+                                                        {/* if there is a button in form, it will close the modal */}
+                                                        <button className="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">✕</button>
+                                                    </form>
+                                                    <div className="p-4">
+
+                                                        <div className='lg:flex gap-3'>
+                                                            <div className='lg:flex-1'>
+                                                                <div className="card bg-base-100 shadow-xl">
+                                                                    <h1 className='text-xl my-3 text-center'>Timesheet 11 Mar 2023 </h1>
+                                                                    <figure><img src={img1} className='h-40 w-44 rounded-full mx-auto' alt="Shoes" /></figure>
+                                                                    <Button className='p-3 text-white mx-auto'>Punch Out</Button>
+                                                                    <div className="card-body text-center">
+                                                                        <h1 className='text-center'>Punch In at</h1>
+                                                                        <p className='text-center'>Wed, 11th Mar 2023 10.00 AM</p>
+                                                                        <div className='flex justify-around gap-4'>
+                                                                            <p className='bg-slate-500 bg-opacity-15 py-4'>Break 1.21 hrs</p>
+                                                                            <p className='bg-slate-500 bg-opacity-15 py-4'>Overtime 3 hrs</p>
+                                                                        </div>
+                                                                    </div>
+
+                                                                </div>
+                                                            </div>
+
+                                                            <div className='my-8 lg:flex-1'>
+                                                                <div className="card bg-base-100 shadow-xl p-4">
+                                                                    <h1 className='text-xl my-3 text-center'>Today Activity</h1>
+                                                                    <ul className="timeline timeline-vertical">
+                                                                        <li>
+                                                                            <div className="timeline-middle">
+                                                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="w-5 h-5"><path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z" clipRule="evenodd" /></svg>
+                                                                            </div>
+                                                                            <div className="timeline-end timeline-box">Punch In at
+
+                                                                                2.00 PM</div>
+                                                                            <hr />
+                                                                        </li>
+                                                                        <li>
+                                                                            <hr />
+                                                                            <div className="timeline-middle">
+                                                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="w-5 h-5"><path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z" clipRule="evenodd" /></svg>
+                                                                            </div>
+                                                                            <div className="timeline-end timeline-box">Punch Out at
+
+                                                                                1.30 PM</div>
+                                                                            <hr />
+                                                                        </li>
+                                                                        <li>
+                                                                            <hr />
+                                                                            <div className="timeline-middle">
+                                                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="w-5 h-5"><path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z" clipRule="evenodd" /></svg>
+                                                                            </div>
+                                                                            <div className="timeline-end timeline-box">Punch In at
+
+                                                                                11.15 AM</div>
+                                                                            <hr />
+                                                                        </li>
+                                                                        <li>
+                                                                            <hr />
+                                                                            <div className="timeline-middle">
+                                                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="w-5 h-5"><path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z" clipRule="evenodd" /></svg>
+                                                                            </div>
+                                                                            <div className="timeline-end timeline-box">Punch Out at
+
+                                                                                11.00 AM</div>
+                                                                            <hr />
+                                                                        </li>
+                                                                        <li>
+                                                                            <hr />
+                                                                            <div className="timeline-middle">
+                                                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="w-5 h-5"><path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z" clipRule="evenodd" /></svg>
+                                                                            </div>
+                                                                            <div className="timeline-end timeline-box">Punch Out at
+
+                                                                                7.30 PM</div>
+                                                                        </li>
+                                                                    </ul>
+
+                                                                </div>
+                                                            </div>
+                                                            <div></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </dialog>
+                                        </>
+                                        :
+                                        <RxCross2 className="text-base font-bold cursor-pointer text-red-500"></RxCross2>}
                                 </td>
                                 <td className="text-base text-center">
-                                    <div className="avatar">
-                                        <div className="mask mask-squircle w-4 h-4">
-                                            <img src={attendance.day30} alt="Avatar Tailwind CSS Component" />
-                                        </div>
-                                    </div>
+                                    {attendance.day30 == "present" ?
+                                        <>
+                                            <FaCheck onClick={() => document.getElementById('my_modal_339845784').showModal()} className="text-base font-bold cursor-pointer text-green-400"></FaCheck>
+                                            {/* You can open the modal using document.getElementById('ID').showModal() method */}
+                                            <dialog id="my_modal_339845784" className="modal">
+                                                <div className="modal-box w-11/12 max-w-5xl">
+                                                    <form method="dialog">
+                                                        {/* if there is a button in form, it will close the modal */}
+                                                        <button className="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">✕</button>
+                                                    </form>
+                                                    <div className="p-4">
+
+                                                        <div className='lg:flex gap-3'>
+                                                            <div className='lg:flex-1'>
+                                                                <div className="card bg-base-100 shadow-xl">
+                                                                    <h1 className='text-xl my-3 text-center'>Timesheet 11 Mar 2023 </h1>
+                                                                    <figure><img src={img1} className='h-40 w-44 rounded-full mx-auto' alt="Shoes" /></figure>
+                                                                    <Button className='p-3 text-white mx-auto'>Punch Out</Button>
+                                                                    <div className="card-body text-center">
+                                                                        <h1 className='text-center'>Punch In at</h1>
+                                                                        <p className='text-center'>Wed, 11th Mar 2023 10.00 AM</p>
+                                                                        <div className='flex justify-around gap-4'>
+                                                                            <p className='bg-slate-500 bg-opacity-15 py-4'>Break 1.21 hrs</p>
+                                                                            <p className='bg-slate-500 bg-opacity-15 py-4'>Overtime 3 hrs</p>
+                                                                        </div>
+                                                                    </div>
+
+                                                                </div>
+                                                            </div>
+
+                                                            <div className='my-8 lg:flex-1'>
+                                                                <div className="card bg-base-100 shadow-xl p-4">
+                                                                    <h1 className='text-xl my-3 text-center'>Today Activity</h1>
+                                                                    <ul className="timeline timeline-vertical">
+                                                                        <li>
+                                                                            <div className="timeline-middle">
+                                                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="w-5 h-5"><path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z" clipRule="evenodd" /></svg>
+                                                                            </div>
+                                                                            <div className="timeline-end timeline-box">Punch In at
+
+                                                                                2.00 PM</div>
+                                                                            <hr />
+                                                                        </li>
+                                                                        <li>
+                                                                            <hr />
+                                                                            <div className="timeline-middle">
+                                                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="w-5 h-5"><path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z" clipRule="evenodd" /></svg>
+                                                                            </div>
+                                                                            <div className="timeline-end timeline-box">Punch Out at
+
+                                                                                1.30 PM</div>
+                                                                            <hr />
+                                                                        </li>
+                                                                        <li>
+                                                                            <hr />
+                                                                            <div className="timeline-middle">
+                                                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="w-5 h-5"><path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z" clipRule="evenodd" /></svg>
+                                                                            </div>
+                                                                            <div className="timeline-end timeline-box">Punch In at
+
+                                                                                11.15 AM</div>
+                                                                            <hr />
+                                                                        </li>
+                                                                        <li>
+                                                                            <hr />
+                                                                            <div className="timeline-middle">
+                                                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="w-5 h-5"><path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z" clipRule="evenodd" /></svg>
+                                                                            </div>
+                                                                            <div className="timeline-end timeline-box">Punch Out at
+
+                                                                                11.00 AM</div>
+                                                                            <hr />
+                                                                        </li>
+                                                                        <li>
+                                                                            <hr />
+                                                                            <div className="timeline-middle">
+                                                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="w-5 h-5"><path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z" clipRule="evenodd" /></svg>
+                                                                            </div>
+                                                                            <div className="timeline-end timeline-box">Punch Out at
+
+                                                                                7.30 PM</div>
+                                                                        </li>
+                                                                    </ul>
+
+                                                                </div>
+                                                            </div>
+                                                            <div></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </dialog>
+                                        </>
+                                        :
+                                        <RxCross2 className="text-base font-bold cursor-pointer text-red-500"></RxCross2>}
                                 </td>
+
+
 
                             </tr>)}
                         </tbody>
